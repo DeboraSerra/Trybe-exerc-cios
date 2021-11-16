@@ -94,7 +94,7 @@ curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efc
 
 Nesse dia aprendi outros comandos do Linux, como comandos de Input e Output, alterar permissões de arquivos e diretórios e acessar processos em andamento, colocá-los em backgroud, pausá-los, retomá-los e encerrá-los.
 
-Os exercícios foram divididos em três partes e foram:
+Os exercícios foram divididos em quatro partes que pediam o seguinte:
 
 #### Parte I - Comandos de Input e Output
 
@@ -164,3 +164,27 @@ Os exercícios foram divididos em três partes e foram:
 8. Retome a execução do processo sleep 100 em background com o comando bg.
 
 9. Termine a execução de todos os processos sleep (mate os processos).
+
+
+#### (Bônus) - Parte IV - O despertar do terminal
+
+E pra terminar com a energia _óh_, lá no alto, que tal aprender agora alguns comandos divertidos do Unix? ☝ 🎊
+
+1. Se você utiliza o Linux, abra o terminal e execute o comando sudo apt-get install cmatrix, ou para pessoas usuárias de macOS, utilize no terminal brew install cmatrix. Depois, execute o comando cmatrix. Quando estiver se sentindo como o Neo, aperte ctrl+c para voltar ao terminal;
+
+2. No sistema Linux, execute o comando sudo apt-get install fortune, ou no macOS brew install fortune, e após a instalação, crie um arquivo de texto chamado fortune.txt que contenha a sua sorte do dia. Utilize apenas uma linha de comando. Dica: use o comando fortune, e o operador >;
+
+3. Conte quantas palavras tem a frase da sua sorte do dia. Dica: use o comando wc;
+
+4. Execute o comando sudo apt-get install sl em um terminal Linux, ou brew install sl em um terminal macOS. Após a instalação, execute o comando sl. Agora tente sl -F;
+
+5. No sistema Linux, execute o comando sudo apt-get install cowsay, ou brew install cowsay no macOS. Após a instalação, execute o comando cowsay e algo que você queira falar. Agora faça a vaquinha dizer a frase que está gravada no arquivo fortune.txt;
+
+6. Descubra os fatores primos usando o comando factor e em seguida o número 42;
+
+7. Veja como fica a sua sorte do dia ao contrário. Dica: utilize o comando rev.
+
+8. Execute o comando telnet towel.blinkenlights.nl e espere alguns segundos. Lembre-se que você tem mais exercícios para fazer! 😅
+
+Gostou das curiosidades? Nos Recursos Adicionais tem mais alguns comandos divertidos. Confere lá!
+
