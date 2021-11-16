@@ -1,12 +1,12 @@
 # Exercícios Bloco 1 Dias 3 e 4 - Unix & Bash
 
-#### Dia 1-3 - Unix & Bash - Part 1
+### Dia 1-3 - Unix & Bash - Part 1
 
 Nesse dia aprendi comandos básicos de acesso ao terminal do Linux.
 
 Os exercícios soliciatados para realização foram:
 
-###### Parte I - Criação de arquivos e diretórios
+#### Parte I - Criação de arquivos e diretórios
 
 Dica : Para criação de arquivos vazios você pode utilizar o comando touch nome-do-arquivo.extensao.
 
@@ -54,7 +54,7 @@ SQL
 16. Apague todos os arquivos que terminem em .txt.
 
 
-###### Parte II - Manipulação & Busca
+#### Parte II - Manipulação & Busca
 
 1. Na pasta unix_tests, baixe um arquivo com os nomes de todos os países do mundo utilizando o comando curl:
 
@@ -90,13 +90,13 @@ curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efc
 
 
 
-#### Dia 1-4 - Unix & Bash - Part 2
+### Dia 1-4 - Unix & Bash - Part 2
 
 Nesse dia aprendi outros comandos do Linux, como comandos de Input e Output, alterar permissões de arquivos e diretórios e acessar processos em andamento, colocá-los em backgroud, pausá-los, retomá-los e encerrá-los.
 
 Os exercícios foram divididos em três partes e foram:
 
-###### Parte I - Comandos de Input e Output
+#### Parte I - Comandos de Input e Output
 
 1. Navegue até a pasta unix_tests;
 
@@ -121,7 +121,7 @@ Os exercícios foram divididos em três partes e foram:
 11. Ordene o arquivo bunch_of_things.txt.
 
 
-###### Parte II - Permissões
+#### Parte II - Permissões
 
 1. Navegue até a pasta unix_tests;
 
@@ -143,7 +143,7 @@ Os exercícios foram divididos em três partes e foram:
 	-rw-r--r-- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt
 
 
-###### Parte III - Processos & Jobs
+#### Parte III - Processos & Jobs
 
 1. Liste todos os processos;
 
