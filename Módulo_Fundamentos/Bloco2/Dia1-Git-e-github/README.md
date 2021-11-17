@@ -55,11 +55,11 @@ No terminal:
 
   -Digite `git --version` para saber qual versão do git está instalada.
 
-	>Seu terminal deve conter algo parecido com:
+  >Seu terminal deve conter algo parecido com:
 	>`git version 2.x.y`
 
   -Digite `git config --list`
-	>Seu terminal deve conter algo similar a isso:
+  >Seu terminal deve conter algo similar a isso:
 	>`user.email=seuemail@gmail.com`
 	>`user.name=seunome`
 
@@ -147,9 +147,9 @@ Antes de começar, siga as instruções da página sobre Portfólio de Exercíci
 
 Durante seu curso na _Trybe_, seus projetos serão entregues através de `pushes` nos repositórios do ***GitHub***. Para podermos simular um exercício feito, você criará um arquivo _.txt_ com um nome de sua escolha (Exemplo: _trybe-skills.txt_) e utilizará o conteúdo abaixo.
 
-	>O que eu vou aprender na Trybe:
+  >O que eu vou aprender na Trybe:
 
-	>- Unix
+  >- Unix
 	>- Bash
 	>- Git
 
