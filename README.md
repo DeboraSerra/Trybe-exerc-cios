@@ -253,3 +253,5 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 36-4: _Entrada e Saída de dados_
 - [ ] 36-5: _[Projeto - Tech news]()_
 #
+
+Na pasta Academia de lógica encontram-se os exercícios realizados durante as mentorias do curso denominadas Academia de lógica.
