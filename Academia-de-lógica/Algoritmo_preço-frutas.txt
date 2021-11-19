@@ -1,0 +1,26 @@
+# Exercício lógica 
+
+1) guardar frutas
+- criar dado <fruta1> guardar um conteúdo em formato de texto <maçã>;
+- criar dado <fruta2> guardar um conteúdo em formato de texto <pera>;
+- criar dado <fruta3> guardar um conteúdo em formato de texto <laranja>;
+- criar dado <fruta4> guardar um conteúdo em formato de texto <melancia>;
+- criar dado <fruta5> guardar um conteúdo em formato de texto <uva.
+
+2) guardar o preço com e sem promoção
+- criar dado <precoNormal> guardar um conteúdo em formato de número <10>;
+- criar dado <preçoPromocao> guardar um conteúdo em formato de número <5>.
+
+3) Guardar a fruta que está em promoção
+- criar dado <frutaPromoção> guardar um conteúdo de um dado <fruta1>
+
+4) guardar o preço individual de cada fruta
+
+
+5) guardar 2 caixas contendo frutas sortidas
+
+6) confirmar que as maçãs estão em promoção
+
+7) Passar automaticamente fruta por fruta
+
+8) A cada passada pela fruta, mostrar ela na tela
