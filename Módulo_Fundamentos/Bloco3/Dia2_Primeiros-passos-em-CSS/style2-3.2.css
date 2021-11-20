@@ -1,0 +1,50 @@
+h1 {
+        font-size: 65px;
+        color: orange;
+        font-family: sans-serif;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 3em;
+    }
+
+    body {
+      font-size: 16px;
+      font-style: oblique;
+      text-decoration: dashed;
+    }
+
+    ul {
+        background-color: rgba(192, 179, 243, 0.568);
+    }
+
+    #list {
+        background-color: rgba(46, 32, 13, 0.507);
+        line-height: 25px;
+        color: whitesmoke
+    }
+
+    #black {
+      background-color: black;
+    }
+
+    #red {
+        background-color: red;
+    }
+
+    #moss-green {
+        background-color: rgb(24, 59, 24);
+    }
+
+    #marsala {
+        background-color: rgb(88, 29, 34);
+    }
+
+    #teal {
+        background-color: teal;
+    }
+
+    #orange {
+        background-color: orange;
+    }
