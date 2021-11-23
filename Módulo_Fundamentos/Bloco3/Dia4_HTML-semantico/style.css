@@ -1,0 +1,118 @@
+body {
+  font-family: 'Bubbler One', sans-serif;
+  color: rgb(46, 40, 42);
+  font-size: 20px;
+  margin: 20px;
+  background-color: rgba(46, 40, 42, 0.3);
+}
+
+header {
+  text-align: center;
+  background-color: rgba(15, 163, 177, 0.3);
+  border-bottom: 1px solid rgb(72, 67, 73);
+  padding-top: 2px;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  background-color: rgba(15, 136, 177, 0.3);
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid rgb(72, 67, 73);
+  margin: 10px;
+}
+
+a {
+  color: rgb(234, 82, 111);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section {
+  text-align: justify;
+  background-color: rgba(6, 222, 74, 0.3);
+}
+
+img {
+  border-radius: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;
+  background-color: rgb(234, 82, 111);
+}
+
+#imgBlock {
+  text-align: center;
+}
+
+#photoTwo, #photoThree {
+  display: inline-block;
+}
+
+#photoFour {
+  float: right;
+  top: 0;
+  background-color: rgba(234, 82, 110, 0);
+}
+
+#photoSeven {
+  border-radius: 0;
+}
+
+.crossed {
+  text-decoration: line-through;
+}
+
+#nerdTime {
+  font-weight: bold;
+}
+
+table {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid rgb(72, 67, 73);
+  margin-left: 30%;
+  background-color: rgba(6, 222, 74, 0.7);
+  border-radius: 7%;
+}
+
+table td {
+  border: 1px solid rgba(72, 67, 73, 0.678);
+}
+
+table td:first-of-type {
+ text-transform: uppercase;
+}
+
+#headerOne, #headerTwo, #headerThree, #headerFour {
+  text-align: end;
+  background-color: rgba(15, 136, 177, 0.3);
+  border-top: 1px solid rgb(72, 67, 73);
+  border-bottom: 1px solid rgb(72, 67, 73);
+}
+
+aside {
+  position: sticky;
+  top: 0;
+  background-color: rgb(46, 40, 42);
+  color: white;
+  text-align: center;
+}
+
+#headerBlock {
+ background-color: rgba(15, 163, 177, 0.795); 
+ border: 1px solid rgb(72, 67, 73);
+}
+
+footer {
+  color: wheat;
+  background-color: rgba(72, 67, 73, 0.678);
+  margin-bottom: 100px;
+  text-align: center;
+}
