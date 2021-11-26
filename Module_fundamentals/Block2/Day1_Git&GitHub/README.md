@@ -1,216 +1,176 @@
-# Dia 2-1 - Git & GitHub - O que é e para que serve
+# Day 2-1 - Git and GitHub - What it is and what it's for
 
-Nesse dia aprendi as definições e funções do Git e do GitHub. Aprendi também a iniciar um Git no repositório local no Linux e a criar um repositório remoto no GitHub, a definir uma senha SSH para poder fazer alterações no ropositório, entre outras coisas.
+On this day I learned the definitions and functions of Git and GitHub. I also learned how to start a Git in the local repository on Linux and how to create a remote repository on GitHub, how to set an SSH key so I can make changes to the repository, among other things.
 
-Os exercícios propostos encontram-se abaixo.
+The proposed exercises are listed below.
 
-### Parte I - Instalção e configuração
+### Part I - Installation and Configuration
 
-Vamos começar realizando a instalação e configuração do ***Git***. Siga o passo a passo para deixar o ***Git*** pronto em seu ambiente.
+Let's start by installing and configuring the *** Git ***.
 
-#### Instalação
+Follow the step-by-step instructions to get *** Git *** ready in your environment.
+
+#### Installation
 
 ##### Linux
 
-Para instalar o ***Git*** abra o seu terminal e digite o seguinte comando:
+To install *** Git *** open your terminal and type the following command:
 
-	`sudo apt-get install git-all`
-##### macOS
+`sudo apt-get install git-all`
 
-Para instalar o ***Git*** abra o seu terminal e digite o seguinte comando:
+[...]
 
-	`brew install git`
+#### Configuration
 
-Caso você não possua o brew instalado digite o comando abaixo no seu terminal e após a instalação execute novamente o comando acima:
+Git comes with a tool called `git config` that allows you to give conguration variables that control how ***Git*** shows and operate.
 
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+##### Identity
 
-#### Configuração
+The first step is to configurate your identity, your name, your e-mail, this is important because each commit use this information, and it is recorded in every commit that you create. To configurate this, use the command below on your terminal:
 
-O Git vem com uma ferramenta chamada `git config` que permite ver e atribuir variáveis de configuração que controlam todos os aspectos de como o ***Git*** aparece e opera.
-
-##### Identidade
-
-O primeiro passo é configurar sua identidade, seu nome e endereço de e-mail, isso é importante pois cada commit usa esta informação, e ela é carimbada de forma imutável nos commits que você criar. Para configurar isso digite o comando abaixo em seu terminal:
->É preciso que o e-mail informado seja o mesmo que você utilizará para criar a sua conta no GitHub
+>The e-mail you use here need to be the same you will use to create your account on GitHub.
 
 	`git config --global user.name "Seu nome"`
 	`git config --global user.email seuemail@exemplo.br`
 
 ##### Editor
 
-Um outro ponto legal de se configurar é o editor onde você poderá abrir o arquivo de configuração do ***Git***, `.gitconfig` , fica fácil de você visualizar as configurações do Git e também adicionar outras que julgue necessário. Para isso execute o comando à seguir no seu terminal:
+Another cool configuration to do is to stablish the editor where you can open the ***Git*** configuration file, _.gitconfig_, it's easier to see and add other configurations you find necessary. For that use the following command on you terminal:
 
 	`git config --global core.editor "code --wait"`
 
->Esse comando define o editor do `.gitconfig` como o _VS Code_, que é o editor que você usará ao longo curso. Caso queira abrir o arquivo de configuração no _VS Code_ basta executar em seu terminal o comando abaixo. Para isso certifique-se que você se encontra no diretório onde o arquivo `.gitconfig` está localizado.
+>This command defines the editor of the _.gitconfig_ file as the _VS Code_, that is the editor you will use during the course. In case you want to open the configuration file on _VS Code_ you just have to execute on the terminal the command below.
+>For that make sure you are on the directory were the _.gitconfig_ is located.
 
 	`code .gitconfig`
 
-##### Verificando a instalação e a configuração
+##### Verifying the instalation and configuration
 
-Agora que você já configurou tudo, vamos fazer uma validação e verificar se tudo está certinho! 😉
+Now that you configurated everything, let's check to see it is all right! 😉
 
-No terminal:
+On the terminal:
 
-  -Digite `git --version` para saber qual versão do git está instalada.
+  -Type `git --version` to know wich version of git is installed.
 
-  >Seu terminal deve conter algo parecido com:
+  >On you terminal must apear something like:
 	>`git version 2.x.y`
 
-  -Digite `git config --list`
-  >Seu terminal deve conter algo similar a isso:
-	>`user.email=seuemail@gmail.com`
-	>`user.name=seunome`
+  -Type `git config --list`
+  >You terminal must show something like this:
+	>`user.email=youremail@gmail.com`
+	>`user.name=yournome`
 
-O email deve ser o mesmo que você utilizou para se registrar no ***GitHub***
+Your e-mail must be the same one you used to register on ***GitHub***.
 
-Pronto, agora que tudo está devidamente instalado e configurado, vamos ao próximo passo.
+That's it, now that everything is ok, let's go to the next step.
 
-### Parte II - Criar conta no _GitHub_
+### Part II - Create your _GitHub_ account
 
-### Parte III - Adicionando uma chave SSH na sua conta do _GitHub_
+### Part III - Adding a SSH key on your _GitHub_ account
 
-Neste passo, vamos aprender como adicionar uma chave SSH à sua conta do ***GitHub***, o que vai te permitir fazer _pushes_ e _pulls_ sem ter que ficar digitando usuário e senha, como já explicamos. É de extrema importância que você siga **TODOS** os passos apresentados no artigo, apenas dessa forma você obterá o resultado esperado.
+On this step, we'ra going to add a SSH key to your ***GitHub*** account, that will allow you to make _pushes_ and _pulls_ without the need to type you user and password all the time, ass explained before. It's really important that you follow **ALL** the steps below, that is the only way you will have the expected results.
 
-##### Gerando uma chave SSH
+##### Generating an SSH key
 
-Abra seu terminal e digite o comando abaixo. Ele cria uma nova chave SSH, usando o seu email como rótulo.
->É preciso que o e-mail informado seja o mesmo que você utilizou para criar a sua conta no GitHub
+Open your terminal and type the command bellow. It creates a new SSH key, using your e-mail as label.
+>Your e-mail must be the same one you used to create your GitHub account.
 
 	`ssh-keygen -t rsa -b 4096 -C "seuemail@gmail.com"`
 
-Durante o processo irá aparecer escrito no terminal `Enter a file in which to save the key`, quando isso acontecer pressione `Enter` para aceitar a localização padrão _/home/you/.ssh/id_rsa_.
-
 	`Enter a file in which to save the key (/home/you/.ssh/id_rsa): [Press enter]`
 
-Agora você deve digitar uma senha segura.
+Now you have to type a secure password.
 
 	`Enter passphrase (empty for no passphrase): [Type a passphrase]`
 	`Enter same passphrase again: [Type passphrase again]`
 
-##### Adicionando sua chave SSH ao ssh-agent
+##### Adding your SSH key to the ssh-agent
 
-Primeiro você deve iniciar o `ssh-agent` em background:
+First you have to initiate the `ssh-agent` on the background:
 
 	`eval "$(ssh-agent -s)"`
 
-Agora você deve adicionar sua chave privada SSH ao `ssh-agent`. Para isso execute o comando abaixo no terminal:
+Now you must add your private SSH key to the `ssh-agent` using the command bellow on the terminal:
 
 	`ssh-add ~/.ssh/id_rsa`
 
-##### Adicionando a chave SSH na sua conta do GitHub
+##### Adding the SSH key to your GitHub Account
 
-Antes de tudo você deve copiar a sua chave SSH. Para isso, você vai aprender um comando bem útil, mas que nem sempre vem instalado nativamente no Linux: o `xclip`.
-
-Para entender como funciona o `xclip`, temos que nos perguntar uma coisa: como se copia um texto ou uma parte dele quando estamos trabalhando com um ambiente de terminal? Provavelmente a primeira coisa que se passou pela sua cabeça foi abrir o arquivo em um editor de texto, selecionar aquilo que você deseja copiar, fechar o editor de texto e depois colar em outro lugar.
-
-Não há nada de errado com essa lógica: ela funciona, mas convenhamos que dá pra ser um pouquinho mais eficiente, né? Aí entra o tal do `xclip`. Usando esse comando podemos fazer uma ponte diretamente entre os comandos que serão utilizados no terminal e a área de transferência do Linux, ou seja, dá pra copiar a saída de um comando de forma direta pelo terminal!
-
-Vamos ver como funciona? Execute a sequência de comandos abaixo:
-
-  > Como o `xclip` não vem instalado por padrão na maioria das distribuições, precisaremos instalá-lo usando o comando a seguir:
-
-	`sudo apt-get install xclip`
-
-  > Agora utilize o comando abaixo para copiar o conteúdo da sua chave _id_rsa.pub_ para garantir que o conteúdo foi copiado dê _Ctrl + V_ em um editor de texto
-
-	`xclip -sel clip < ~/.ssh/id_rsa.pub`
-
-Caso o xclip não funcione, execute o comando abaixo e copie manualmente a saída do terminal.
+First you will have to copy your public SSH key.[...]
 
 	`cat ~/.ssh/id_rsa.pub`
 
-Entre no seu ***GitHub*** e siga os passos abaixo:
+Enter your ***GitHub*** account and follow the steps bellow:
 
-  - No canto superior direito do ***GitHub***, clique na sua foto de perfil e clique em **Settings**;
+  - On the upper rigth corner on ***GitHub***, click on your profile photo and go to **Settings**;
 
-  - Na barra lateral esquerda, clique em **SSH and GPG keys**;
+  - on the left side bar, click on **SSH and GPG keys**;
 
-  - Clique em **New SSH key** ou **Add SSH key**;
+  - Click on **New SSH key** or **Add SSH key**;
 
-  - No campo _Título_, adicione um descrição para a nova chave;
+  - On _Título_, add a description to your new key;
 
-  - Cole sua chave dentro do campo _Key_;
+  - Paste your key on the area assigned _Key_;
 
-  - Clique em **Add SSH key**;
+  - Click on **Add SSH key**;
 
-  - Caso seja solicitado, confirme sua senha do Github.
+[...]
 
-Se tiver problemas ao seguir o tutorial acima, consulte a [documentação oficial do ***GitHub***](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-accoun).
+### Part IV - Your _GitHub_ repository
 
-### Parte IV - O seu repositório no _GitHub_
+That is it! Now that you can manage your codes localy and also send them to your ***GitHub***, its time to put the house in order!
 
-Pronto! Agora que você já é capaz de gerenciar localmente seus códigos e também enviá-los para o ***GitHub***, é hora de colocar a casa em ordem!
+[...]
 
-Antes de começar, siga as instruções da página sobre Portfólio de Exercícios para criar a estrutura de diretórios que usará ao longo de todo o curso para guardar seus exercícios.
+Now lets transform your diretory in a repository ***Git***:
 
-Durante seu curso na _Trybe_, seus projetos serão entregues através de `pushes` nos repositórios do ***GitHub***. Para podermos simular um exercício feito, você criará um arquivo _.txt_ com um nome de sua escolha (Exemplo: _trybe-skills.txt_) e utilizará o conteúdo abaixo.
+  - Return to the exercise root directory;
 
-  >O que eu vou aprender na Trybe:
+  - Initialize the repository with `git init`;
 
-  >- Unix
-	>- Bash
-	>- Git
+  - Create a _README_ file using the command `touch README.md`;
 
-No final, ao executar o comando `ls -l` na pasta de arquivos deste dia, você deverá receber um retorno parecido com:
+  - Create an `initial commit` using:
 
-```
-ls -l
+    ```
+    git add .
+    git commit -m "Initial commit"
+    ```
 
-total 0
--rw-r--r--  1 tryber  staff  0 Jan 27 00:34 trybe-skills.txt
-```
+  - Go to your GitHub and create a public repository, where you will store all the exercises you will make during the course;
 
-Agora vamos transformar essa pasta em um repositório ***Git***:
+    - Give it a descriptive name, for example _trybe-exercises_;
 
-  - Retorne para a raiz da pasta de exercícios;
+    - ⚠️ Remember not to initialize the repository with a _README.md_ file, since you already created one o previous step! 😉
 
-  - Inicialize o repositório com `git init`;
+  - Click on **SSH** and copy the _URL_ of the repository;
 
-  - Crie um arquivo de _README_ utilizando o comando `touch README.md`;
+    - Execute the command to add a _URL_ to the local repository using `git remote add origin "URL"`;
 
-  - Crie um `commit inicial` utilizando:
+  - Verify if it's every thing alrigth with your _URL_ remote using the command `git remote -v`. You terminal must show something likethis:
 
-```
-git add .
-git commit -m "Initial commit"
-```
+    ```
+    origin  git@github.com:john-snow/know-nothing.git (fetch)
+    origin  git@github.com:john-snow/know-nothing.git (push)
+    ```
 
-  - Vá até o seu GitHub e crie um repositório público, onde você irá guardar todos os exercícios que desenvolverá ao longo do curso;
+  - Where _john-snow_ is your username and _know-nothing_ is the name you gave to your repository;
 
-    - Dê ao repositório um nome descritivo, como por exemplo _trybe-exercicios_;
+  - Now that everything is properly configurated and verifyed, its time to push your first commit to ***GitHub***! 🤩
 
-    - ⚠️ Lembre-se de não inicializar o repositório com um arquivo _README.md_, pois você já criou um nos passos anteriores! 😉
+  - Execute the command `git push origin master` on your terminal;
 
-  - Clique no botão **SSH** e então copie a _URL_ do repositório;
+  - Go to your GitHub and check the new modifications.
 
-    - Execute o comando para adicionar a _URL_ ao repositório local `git remote add origin "URL_DO_REPOSITÓRIO"`;
+Now, how about add a description of what is you repository on _README.md_? 💪.
 
-  - Verifique se tudo está certo com sua _URL_ remota utilizando o comando `git remote -v`. Seu terminal deve conter algo similar a isso:
+  - The README.md that you created is about your _trybe-exercises_ repository, with that in mind you might add infomations regarding the Trybe course, what you are developing and what you will develop;
 
-```
-origin  git@github.com:john-snow/know-nothing.git (fetch)
-origin  git@github.com:john-snow/know-nothing.git (push)
-```
+  - Another intresting thing to do is add a _README.md_ file inside the daily exercises directory to put a description of the exercises you developed;
 
-  - Em que _john-snow_ corresponde ao seu username e _know-nothing_ ao nome que você deu ao seu repositório;
+  - Remember to make a _commit_ when you finish altering the files;
 
-  - Agora que tudo está devidamente configurado e verificado, é hora de subir seu primeiro commit para o ***GitHub***! 🤩
+  - After the _commit_, always make a `push`;
 
-  - Execute o comando `git push origin master` no terminal;
-
-  - Vá até o seu GitHub e verifique as novas alterações.
-
-Agora que tal adicionar uma descrição do que é seu repositório no _README.md_? 💪.
-
-  - O README.md que você recriou é referente ao repositório _trybe-exercicios_, tendo isso em mente é interessante que você adicione informações relacionadas ao curso da Trybe e o que você está desenvolvendo e o que irá desenvolver;
-
-  - Uma outra coisa interessante a se fazer é adicionar um _README.md_ dentro do diretório de exercícios do dia para colocar a descrição dos exercícios que você desenvolveu;
-
-  - Lembre-se de fazer um _commit_ quando terminar de alterar os arquivos;
-
-  - Depois do _commit_, faça sempre um `push`;
-
-  - Confira as alterações no ***GitHub***.
+  - Check the alterations on ***GitHub***.
 

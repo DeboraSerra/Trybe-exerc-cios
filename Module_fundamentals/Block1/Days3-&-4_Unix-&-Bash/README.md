@@ -1,104 +1,101 @@
-# Exercícios Bloco 1 Dias 3 e 4 - Unix & Bash
+# Exercises Block 1 - Days 3 & 4 - Unix & Bash
 
-Nos dias 3 e 4 do Bloco 1 foram ensinados comandos para serem utilizados no terminal do Linux para agilizar o trabalho em desenvolvimento web.
+On days 3 and 4, we were taugth a few commands to be used on Linux terminal, in order to make the work faster.
 
-Nessa pasta encontram-se os arquivos produzidos nos exercícios propostos nos dois dias e na pasta Dia3-_resolução-exercícios estão os códigos utilizados.
+In this directory you will find the files poduced with the exercises bellow and in directory Day1-3_exercises-resolutions are the codes I used.
 
-### Dia 1-4 - Unix & Bash - Part 2
+### Day 1-4 - Unix & Bash - Part 2
 
-Nesse dia aprendi outros comandos do Linux, como comandos de Input e Output, alterar permissões de arquivos e diretórios e acessar processos em andamento, colocá-los em backgroud, pausá-los, retomá-los e encerrá-los.
+On this day we learned other Linux commands, like Input and Outputz command , change files and directories permitions and access active processes, put them to run on background, pause them, resume and finish them.
 
-Os exercícios foram divididos em quatro partes que pediam o seguinte:
+The exercises were divided in four parts:
 
-#### Parte I - Comandos de Input e Output
+#### Part I - Input & Output commands
 
-1. Navegue até a pasta _unix_tests_;
+1. Go to the _unix-tests_ directory;
 
-2. Crie um arquivo texto pelo terminal com o nome _skills2.txt_ e adicione os valores Internet, Unix e Bash, um em cada linha.
+2. Create a text file through the terminal named _skills2.txt_ and add the values Internet, Unix and Bash, one for each line.
 
-3. Adicione mais 5 itens à sua lista de skills e depois imprima a lista ordenada no terminal. 🤓
+3. Add 5 more items to your skills' list and then show it sorted on the terminal. 🤓
 
-4. Conte quantas linhas tem o arquivo _skills2.txt_.
+4. Count how many lines there are in the file _skills2.txt_.
 
-5. Crie um arquivo chamado _top_skills.txt_ usando o _skills2.txt_, contendo as 3 primeiras skills em ordem alfabética.
+5. Create a file called _top-skills.txt_ using the _skills2.txt_ file, containing the first 3 skills in alphabetic order.
 
-6. Crie um novo arquivo chamado _phrases2.txt_ pelo terminal e adicione algumas frases de sua escolha.
+6. Create a new file called _phrases2.txt_ through the terminal and add a few phrases at your choice.
 
-7. Conte o número de linhas que contêm as letras br.
+7. Count the number of lines that have the letters 'br'.
 
-8. Conte o número de linhas que não contêm as letras br.
+8. Count the number of lines that doesn't have the letter 'br'.
 
-9. Adicione dois nomes de países ao final do arquivo _phrases2.txt_.
+9. Add two country names at the end of the file _phrases2.txt_.
 
-10. Crie um novo arquivo chamado _bunch_of_things.txt_ com os conteúdos dos arquivos _phrases2.txt_ e _countries.txt_.
+10. Create a new file called _bunch-of-things.txt_ with the content of the files _phrases2.txt_ and _countries.txt_.
 
-11. Ordene o arquivo _bunch_of_things.txt_.
+11. Sort the file _bunch-of-things.txt_.
 
 
-#### Parte II - Permissões
+#### Part II - Permitions
 
-1. Navegue até a pasta _unix_tests_;
+1. Go to the directory _unix-tests_;
 
-2. Rode o comando `ls -l` e veja quais as permissões dos arquivos;
+2. Use the command `ls -l` and see the permitions of the files;
 
-3. Mude a permissão do arquivo _bunch_of_things.txt_ para que todos os usuários possam ter acesso à leitura e escrita, e verifique se está correto com o comando `ls -l`;
+3. Change the permition of the file _bunch-of-things.txt_ so all the users will have access to reading and writing, and check it using the command `ls -l`;
 
-4. Resultado esperado:
+4. Expected result:
 	>-rw-rw-rw- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt
 
-5. Tire a permissão de escrita do arquivo _bunch_of_things.txt_ para todos os usuários, verifique se está correto com o comando `ls -l`;
+5. Remove the writing permition of the file _bunch-of-things.txt_ to all the users, check it using the command `ls -l`;
 
-6. Resultado esperado:
-	>-r--r--r-- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt
+6. Expected result:
+	>-r--r--r-- 1 ana ana 1860 ago 13 11:39 bunch-of-things.txt
 
-7. Volte a permissão do arquivo _bunch_of_things.txt_ para a listada inicialmente utilizando o comando `chmod 644 bunch_of_things.txt`.
+7. Give back the permitions on file _bunch-of-things.txt_ to what it was before using the command `chmod 644 bunch-of-things.txt`.
 
-8. Resultado esperado:
-	>-rw-r--r-- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt
-
-
-#### Parte III - Processos & Jobs
-
-1. Liste todos os processos;
-
-2. Agora use o comando `sleep 30 &`;
-
-3. Use a listagem de processos para encontrar o PID do processo que está executando o comando `sleep 30` e termine a sua execução ~~(mate o processo)~~;
-
-4. Execute novamente o comando `sleep 30`, mas agora sem o &. Depois, faça com que ele continue executando em background;
-
-5. Crie um processo em background que rode o comando `sleep` por 300 segundos.
-
-6. Crie mais dois processos que rodem o comando `sleep` por 200 e 100 segundos, respectivamente.
-	>Você deve criá-los em foreground (sem usar o &) e suspendê-los (apertando ctrl+z) após cada um começar a executar.
-
-7. Verifique que apenas o processo `sleep 300` está em execução com o comando `jobs`. Suspenda a execução desse processo.
-	>Você vai precisar trazer o processo para foreground (`fg`) e suspendê-lo (`ctrl+z`), ou enviar um sinal.
-
-8. Retome a execução do processo `sleep 100` em background com o comando `bg`.
+8. Expected result:
+	>-rw-r--r-- 1 ana ana 1860 ago 13 11:39 bunch-of-things.txt
 
 
-9. Termine a execução de todos os processos sleep ~~(mate os processos)~~.
+#### Part III - Processes & Jobs
+
+1. List all the processes;
+
+2. Now use the command `sleep 30 &`;
+
+3. Use the processes listing to find the PID of the process executed by the command `sleep 30` and finish your execution ~~(kill the process)~~;
+
+4. Execute again the command `sleep 30`, but now without the &. Then, make continue to execute on the background;
+
+5. Create a process on the background that run the command `sleep` for 300 seconds.
+
+6. Create two more processes that run the command `sleep` for 200 and 100 seconds.
+	>You must create them on the foreground (without using th &) en stop them (using crtl+Z) after each one start executing.
+
+7. Verify that only the process `sleep 300` is in execution with the command `jobs`. Stop its execution.
+	>You will have to bring the process to the foreground (`fg`) and stop it (`ctrl+z`), or send a signal.
+
+8. Resume the execution of the process `sleep 100` on the backgorund using the command `bg`.
+
+9. Finish the execution of all the sleep processes ~~(kill the processes)~~.
 
 
-#### (Bônus) - Parte IV - O despertar do terminal
+#### (Bonus) - Part IV - The terminal awakening
 
-E pra terminar com a energia ~óh~, lá no alto, que tal aprender agora alguns comandos divertidos do Unix? ☝ 🎊
+And to finish with the energy ~óh~, way up high, what about learn some fun command on Unix? ☝ 🎊
 
-1. Se você utiliza o Linux, abra o terminal e execute o comando `sudo apt-get install cmatrix`, ou para pessoas usuárias de macOS, utilize no terminal `brew install cmatrix`. Depois, execute o comando `cmatrix`. Quando estiver se sentindo como o Neo, aperte `ctrl+c` para voltar ao terminal;
+1. If you use Linux, open the terminal and execute the command `sudo apt-get install cmatrix`[...]. After that, execute the command `cmatrix`. When you are feeling like Neo, press ctrl+C to go back to the terminal;
 
-2. No sistema Linux, execute o comando `sudo apt-get install fortune`, ou no macOS `brew install fortune`, e após a instalação, crie um arquivo de texto chamado _fortune.txt_ que contenha a sua sorte do dia. Utilize apenas uma linha de comando. Dica: use o comando `fortune`, e o operador `>`;
+2. On Linux system, execute the command `sudo apt-get install fortune`[...], and after the instalation, create a text file called _fortune.txt_ that contains your fortune of the day. Use only one line of command. Hint: use the command `fortune`, and the operator `>`;
 
-3. Conte quantas palavras tem a frase da sua sorte do dia. Dica: use o comando `wc`;
+3. Count how many words your fortune of the day have. Hint: use the command `wc`;
 
-4. Execute o comando `sudo apt-get install sl` em um terminal Linux, ou `brew install sl` em um terminal macOS. Após a instalação, execute o comando `sl`. Agora tente `sl -F`;
+4. Execute the command `sudo apt-get install sl` on a Linux terminal[...]. After that, execute the command `sl`. Now try `sl -F`;
 
-5. No sistema Linux, execute o comando `sudo apt-get install cowsay`, ou `brew install cowsay` no macOS. Após a instalação, execute o comando `cowsay` e algo que você queira falar. Agora faça a vaquinha dizer a frase que está gravada no arquivo _fortune.txt_;
+5. On a Linux system, execute the command `sudo apt-get install cowsay`[...]. After that, execute the command `cowsay` and something you want it to say. Now make the cow say the frase you recorded in your file _fortune.txt_;
 
-6. Descubra os fatores primos usando o comando `factor` e em seguida o número _42_;
+6. Discover the prime factors using the command `factor` and the number _42_;
 
-7. Veja como fica a sua sorte do dia ao contrário. Dica: utilize o comando `rev`.
+7. See how your fortune looks like backwards. Hint: use the command `rev`.
 
-8. Execute o comando `telnet towel.blinkenlights.nl` e espere alguns segundos. Lembre-se que você tem mais exercícios para fazer! 😅
-
-Gostou das curiosidades? Nos Recursos Adicionais tem mais alguns comandos divertidos. Confere lá!
+8. Execute the command `telnet towel.blinkenlights.nl` and wait a few seconds. Remember you have more exercises to do! 😅
