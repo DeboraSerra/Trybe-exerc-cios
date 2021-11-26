@@ -1,41 +1,41 @@
-### Dia 1-3 - Unix & Bash - Part 1
+### Day 1-3 - Unix & Bash - Part-1
 
-Nesse dia aprendi comandos básicos de acesso ao terminal do Linux.
+On this day I learned basic commands to access the Linux terminal.
 
-Nesta pasta encontram-se os códigos utilizados para a realização dos exercícios, que foram:
+This directory contains the codes I used to complete the exercises, which were:
 
 
-#### Parte I - Criação de arquivos e diretórios
+#### Part I - Creating files and directories
 
-Dica : Para criação de arquivos vazios você pode utilizar o comando `touch` _nome-do-arquivo.extensao_.
+Hint: To create empty file you can use the command `touch` _name-of-the-folder.extension_
 
-1. Utilizando o terminal, aplique o comando de criação de diretórios que você aprendeu, crie um diretório chamado _unix_tests_ e navegue até ele.
+1. Using the terminal, aply the command to make a directory that you learned, make a folder called _unix-tests_ and enter it.
 
-2. Crie um arquivo de texto com o nome _trybe.txt_.
+2. Create a text file named _trybe.txt_.
 
-3. Crie uma cópia do arquivo _trybe.txt_ com nome _trybe_backup.txt_.
+3. Create a copy of the file _trybe.txt_ with the name _trybe-backup.txt_.
 
-4. Renomeie o arquivo _trybe.txt_.
+4. Rename the file _trybe.txt_
 
-5. Dentro de _unix_tests_, crie um novo diretório chamado _backup_.
+5. Inside _unix-tests_, create a new directory called _backup_.
 
-6. Mova o arquivo _trybe_backup.txt_ para o diretório _backup_.
+6. Move the file _trybe-backup.txt_ to the _backup_ directory.
 
-7. Dentro de _unix_tests_, crie um novo diretório chamado _backup2_.
+7. Inside _unix-tests_, create a new directory called _backup2_.
 
-8. Mova o arquivo _trybe_backup.txt_ da pasta _backup_ para a pasta _backup2_.
+8. Move the file _trybe-backup.txt_ from the _backup_ directory to the _backup2_ directory.
 
-9. Apague a pasta _backup_.
+9. Erase the _backup_ directory.
 
-10. Renomeie a pasta _backup2_ para _backup_.
+10. Rename the _backup2_ directory to _backup_.
 
-11. Veja qual o path completo do diretório atual e liste todos os arquivos dentro dele.
+11. See the path to the current directory and list all its content.
 
-12. Apague o diretório _backup_.
+12. Erase the _backup_ directory.
 
-13. Limpe o terminal.
+13. Clean the terminal.
 
-Para os exercícios 14 e 15, crie, de forma manual na parte gráfica do seu sistema operacional (através do mouse), um arquivo de texto com o conteúdo abaixo, chamado _skills.txt_:
+To the exercises 14 and 15, create a text file with the content below called _skills.txt_ (no need to use the terminal for this):
 
 Internet
 Unix
@@ -46,44 +46,44 @@ javaScript
 React
 SQL
 
-14. Mostre na tela as 5 primeiras skills do arquivo _skills.txt_.
+14. Show on the screen the first 5 skill in the file _skills.txt_.
 
-15. Mostre na tela as 4 últimas skills do arquivo _skills.txt_.
+15. Show on the screen the last 4 skills in the file _skills.txt_.
 
-16. Apague todos os arquivos que terminem em _.txt_.
+16. Erase all the files that end in _.txt_
 
 
-#### Parte II - Manipulação & Busca
+#### Part II - Manipulation & search
 
-1. Na pasta _unix_tests_, baixe um arquivo com os nomes de todos os países do mundo utilizando o comando `curl`:
+1. In _unix-tests_ directory, download a file with the name of all the countries in the world using the curl command below:
 
 `curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"`
 
-2. Mostre todo o conteúdo do arquivo _countries.txt_ na tela.
+2. Show all the content in the file _countries.txt_ on screen.
 
-3. Mostre o conteúdo de _countries.txt_, página por página, até encontrar a Zambia.
+3. Show the content in the _countries.txt_ file, page by page, until you finz Zambia.
 
-4. Mostre novamente o conteúdo de _countries.txt_ página por página, mas agora utilize um comando para buscar por Zambia.
+4. Show again the content in _countries.txt_ page by page, but now use the command to search for Zambia.
 
-5. Busque por Brazil no _countries.txt_.
+5. Search for Brazil in _countries.txt_.
 
-6. Busque novamente por brazil, mas agora utilizando o _lower case_.
+6. Search again for brazil, but now using _lower case_.
 
-7. Para os próximos exercícios, crie um novo arquivo chamado _phrases.txt_ e adicione algumas frases à sua escolha. Não precisa criar o arquivo pelo terminal.
+7. To the next exercises, create a new file called _phrases.txt_ and add a few phrases inside (no need to do this from the terminal).
 
-8. Busque pelas frases que não contenham a palavra fox.
+8. Search through the phrases that doesn't contain the word fox.
 
-9. Conte o número de palavras do arquivo _phrases.txt_.
+9. Count the number of words in the file _phrases.txt_.
 
-10. Conte o número de linhas do arquivo _phrases.txt_.
+10. Count the number of lines in the file _prases.txt_.
 
-11. Crie os arquivos _empty.tbt_ e _empty.pdf_.
+11. Create the files _empty.tbt_ and _empty.pdf_.
 
-12. Liste todos os arquivos do diretório _unix_tests_.
+12. List all _unix-tests_ contents.
 
-13. Liste todos os arquivos que terminem com _.txt_.
+13. List all the files that end with _.txt_
 
-14. Liste todos os arquivos que terminem com _.tbt ou .txt_.
+14. List all the files that end with _.txt_ or _.txt_.
 
-15. Acesse o manual do comando `ls`.
+15. Access the `ls` command manual.
 
