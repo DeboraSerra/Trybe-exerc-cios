@@ -6,7 +6,7 @@ function repeatingNumber(numbers) {
   let reps = {};
   
   for (let value of numbers) {
-    if (reps[value] === undefined) {
+    if (!reps[value]) { //!reps[value] is the same as reps[value] === undefined
       reps[value] = 1;
     } else {
       reps[value] += 1;
