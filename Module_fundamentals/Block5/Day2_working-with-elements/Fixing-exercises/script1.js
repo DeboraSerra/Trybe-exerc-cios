@@ -43,9 +43,9 @@ for (let i = 0; i < list.length; i += 1){
   parent.appendChild(createListItem);
 }
 
-let text = "I'm a newborn sibling to elementoOndeVoceEsta";
+let text = "I'm a <strong>newborn</strong> sibling to elementoOndeVoceEsta";
 let createTag = document.createElement('p');
-createTag.innerText = text;
+createTag.innerHTML = text;
 parent.appendChild(createTag);
 
 let elementWhereIAm = document.querySelector("#elementoOndeVoceEsta");
@@ -63,3 +63,25 @@ firstChildOfChild.appendChild(otherTag);
 document.querySelector("#primeiroFilhoDoFilho h4").className = "filhoDoPrimeiroFilhoDoFilho";
 
 console.log(document.querySelector('.filhoDoPrimeiroFilhoDoFilho').parentNode.parentElement.nextSibling.nextElementSibling.innerText += '. I\'m the third child');
+
+let father = document.querySelector("#pai");
+
+let firstChild = document.querySelector('#primeiroFilho');
+father.removeChild(firstChild);
+
+let secondChildOfChild = document.querySelector('#segundoEUltimoFilhoDoFilho');
+document.querySelector('#elementoOndeVoceEsta').removeChild(secondChildOfChild);
+
+
+let thirdKid = document.querySelector('#terceiroFilho');
+father.removeChild(thirdKid);
+
+let fourthKid = document.querySelector("#quartoEUltimoFilho");
+father.removeChild(fourthKid);
+
+let listOfItems = document.querySelectorAll('li');
+
+for (let i = 0; i < listOfItems.length; i += 1) {
+  father.removeChild(listOfItems[i]);
+}
+
