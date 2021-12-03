@@ -59,3 +59,7 @@ let otherText = "I'm a kid to primeiroFilhoDoFilho";
 let otherTag = document.createElement('h4');
 otherTag.innerText = otherText;
 firstChildOfChild.appendChild(otherTag);
+
+document.querySelector("#primeiroFilhoDoFilho h4").className = "filhoDoPrimeiroFilhoDoFilho";
+
+console.log(document.querySelector('.filhoDoPrimeiroFilhoDoFilho').parentNode.parentElement.nextSibling.nextElementSibling.innerText += '. I\'m the third child');
