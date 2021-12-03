@@ -11,12 +11,11 @@
   <script>
     const paragraph = document.getElementById("paragraph");
     paragraph.style.color = "red";
-    document.getElementById("page-title").innerText = "This is a test";
-    document.getElementById("second-paragraph").innerText = "This is also a test";
-    document.getElementById("subtitle").innerText = "Another test";
-    document.getElementsByClassName("iAmParagraph")[1].innerText = "I'm not a test subject!";
-    document.getElementsByTagName("h4")[0].style.color = "green";
-
+    document.querySelector("#page-title").innerText = "This is a test";
+    document.querySelector("#second-paragraph").innerText = "This is also a test";
+    document.querySelector("#subtitle").innetText = "Another test";
+    document.querySelectorAll(".iAmParagraph")[1].innerText = "I'm not a test subject!";
+    document.querySelector("h4").style.color = "blue";
 
   </script>
 </body>
