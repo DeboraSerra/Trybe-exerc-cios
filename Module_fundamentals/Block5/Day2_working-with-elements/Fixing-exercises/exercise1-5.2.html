@@ -9,6 +9,7 @@
 <body>
   <main id="paiDoPai">
     <section id="pai">
+      <ol></ol>
       <section id="primeiroFilho"></section>
       <section id="elementoOndeVoceEsta">
         <section id="primeiroFilhoDoFilho"></section>
@@ -19,15 +20,6 @@
       <section id="quartoEUltimoFilho"></section>
     </section>
   </main>
-  <script>
-    console.log(document.querySelector("#elementoOndeVoceEsta"));
-    console.log(document.querySelector("#elementoOndeVoceEsta").parentNode.style.color = "blue");
-    console.log(document.querySelector("#primeiroFilhoDoFilho").innerText = "Esse é o primeiro filho do filho.");
-    console.log(document.querySelector("#pai").firstChild.innerText = "Primeiro filho a partir de pai");
-    console.log(document.querySelector("#elementoOndeVoceEsta").previousSibling.innerText = "Primeiro filho a partir de elementoOndeVoceEsta");
-    console.log(document.querySelector("#elementoOndeVoceEsta").nextSibling.innerText = "Esse é o atenção");
-    console.log(document.querySelector("#elementoOndeVoceEsta").nextElementSibling.innerText = "Terceiro filho a partir de ElementoOndeVoceEsta");
-    console.log(document.querySelector("#pai").lastChild.previousSibling.innerText = "Terceiro filho a partir de pai");
-  </script>
+  <script src="script1.js"></script>
 </body>
 </html>
