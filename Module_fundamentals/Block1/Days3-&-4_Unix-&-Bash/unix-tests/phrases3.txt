@@ -1,3 +1,0 @@
-
-Esse é um arquivo teste utilizando o comando nano para criar e editar um arquivo .txt.
-
