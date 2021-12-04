@@ -4,9 +4,9 @@
 <body>
   <header>
     <h2 id="page-title">Título</h2>
-    <p id="paragraph">Dê uma cor para este parágrafo!</p>
+    <p id="paragraph" class="iAmParagraph">Dê uma cor para este parágrafo!</p>
     <h4 id="subtitle">Subtítulo</h4>
-    <p id="second-paragraph">Segundo parágrafo!</p>
+    <p id="second-paragraph" class="iAmParagraph">Segundo parágrafo!</p>
   </header>
   <script>
     const paragraph = document.getElementById("paragraph");
@@ -14,6 +14,10 @@
     document.getElementById("page-title").innerText = "This is a test";
     document.getElementById("second-paragraph").innerText = "This is also a test";
     document.getElementById("subtitle").innerText = "Another test";
+    document.getElementsByClassName("iAmParagraph")[1].innerText = "I'm not a test subject!";
+    document.getElementsByTagName("h4")[0].style.color = "green";
+
+
   </script>
 </body>
 
