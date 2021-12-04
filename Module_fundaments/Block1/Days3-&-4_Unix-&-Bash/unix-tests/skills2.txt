@@ -1,0 +1,9 @@
+
+Internet
+Unix
+Bash
+JavaScript
+SQL
+React
+Node
+Pithon
