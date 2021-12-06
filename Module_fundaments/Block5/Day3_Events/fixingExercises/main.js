@@ -19,17 +19,19 @@ function changeClass(event) {
     secondLi.classList.remove("tech");
     thirdLi.classList.remove("tech");
     firstLi.className = 'tech';
-    input.removeAttribute.value;
+    input.setAttribute("value", "");
     input.placeholder = 'Alterar a primeira tecnologia';
   } else if (event.target === secondLi) {
     firstLi.classList.remove("tech");
     thirdLi.classList.remove("tech");
     secondLi.className = 'tech';
+    input.setAttribute("value", "");
     input.placeholder = "Alterar a segunda tecnologia";
   } else if (event.target === thirdLi) {
     firstLi.classList.remove("tech");
     secondLi.classList.remove("tech");
     thirdLi.className = 'tech';
+    input.setAttribute("value", "");
     input.placeholder = "Alterar a terceira tecnologia";
   }
 }
@@ -39,11 +41,12 @@ function changeClass(event) {
 
 input.addEventListener("keyup", changeText);
 
-function changeText() {
-  let liChangeText = document.querySelector(".tech");
-  let text = input.value;
-  liChangeText.innerHTML = text;
-  text = null;
+function changeText(event) {
+  if (event.key === 'Enter') {
+    let liChangeText = document.querySelector(".tech");
+    let text = input.value;
+    liChangeText.innerHTML = text;
+  }
 }
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
