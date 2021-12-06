@@ -23,7 +23,7 @@ createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
 
-//Exercício 1
+//Exercise 1
 let daysParent = document.querySelector("#days");
 
 function createDays() {
@@ -48,9 +48,10 @@ for (let i = 0; i < daysList.length; i += 1) {
   }
 }
 
-//Exercício 2
+//Exercise 2
+let buttonsParent = document.querySelector(".buttons-container");
+
 function addHolidays(string) {
-  let buttonsParent = document.querySelector(".buttons-container");
   let holidayButton = document.createElement("button");
   holidayButton.innerHTML = string;
   holidayButton.setAttribute("id", "btn-holiday");
@@ -58,7 +59,7 @@ function addHolidays(string) {
 }
 addHolidays('Feriados');
 
-//Exercício 3
+//Exercise 3
 let holidayButton = document.querySelector("#btn-holiday");
 holidayButton.addEventListener("click", changeHolidayColor);
 
@@ -70,6 +71,15 @@ function changeHolidayColor() {
     holidays.style.backgroundColor = "rgb(238, 238, 238)";
   }
 }
+
+//Exercise 4
+function itsFriday(string) {
+  let fridayButton = document.createElement('button');
+  fridayButton.innerHTML = string;
+  buttonsParent.appendChild(fridayButton);
+}
+
+itsFriday('Sexta-feira');
 
 
 
