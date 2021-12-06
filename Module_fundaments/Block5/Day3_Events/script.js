@@ -158,3 +158,19 @@ function selectTask() {
     taskElement.className = 'task';
   }
 }
+
+//Exercise 10
+for (let i = 0; i < daysList.length; i += 1){
+  daysList[i].addEventListener('click', atributeTask);
+}
+
+function atributeTask(event) {
+  for (let i = 0; i < daysList.length; i += 1){
+    let taskSelected = document.querySelector('.selected').style.backgroundColor;
+    if (event.target.style.color !== taskSelected) {
+      event.target.style.color = taskSelected;
+    } else if (event.target.style.color === taskSelected) {
+      event.target.style.color = 'rgb(119, 119, 119';
+    }
+  }
+}
