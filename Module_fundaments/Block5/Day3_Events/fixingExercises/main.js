@@ -19,6 +19,7 @@ function changeClass(event) {
     secondLi.classList.remove("tech");
     thirdLi.classList.remove("tech");
     firstLi.className = 'tech';
+    input.removeAttribute.value;
     input.placeholder = 'Alterar a primeira tecnologia';
   } else if (event.target === secondLi) {
     firstLi.classList.remove("tech");
