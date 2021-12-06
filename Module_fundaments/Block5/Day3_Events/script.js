@@ -43,10 +43,18 @@ createDays();
 
 let daysList = document.querySelectorAll('#days li');
 for (let i = 0; i < daysList.length; i += 1) {
-  if (daysList[i].innerText === '25') {
-    daysList[i].className = 'holiday';
+  if (
+    (daysList[i].innerText === '4') ||
+    (daysList[i].innerText === '11') ||
+    (daysList[i].innerText === '18') ||
+    (daysList[i].innerText === '25')) {
+    daysList[i].className = 'friday';
+  }
+  if (daysList[i].innerText === "25") {
+     daysList[i].classList += " holiday";
   }
 }
+
 
 //Exercise 2
 let buttonsParent = document.querySelector(".buttons-container");
@@ -76,10 +84,32 @@ function changeHolidayColor() {
 function itsFriday(string) {
   let fridayButton = document.createElement('button');
   fridayButton.innerHTML = string;
+  fridayButton.setAttribute('id', 'btn-friday');
   buttonsParent.appendChild(fridayButton);
 }
 
 itsFriday('Sexta-feira');
 
+//Exercise 5
+let fridayBtn = document.querySelector('#btn-friday');
+fridayBtn.addEventListener("click", fridayDay);
 
+function fridayDay() {
+  let fridays = document.querySelectorAll('.friday');
+  for (let i = 0; i < fridays.length; i += 1){
+    if (fridays[i].innerHTML !== 'TGIF') {
+      fridays[i].innerHTML = 'TGIF';
+    } else if (fridays[i].innerHTML === 'TGIF') {
+      if (i === 0) {
+        fridays[i].innerHTML = '4';
+      } else if (i === 1) {
+        fridays[i].innerHTML = "11";
+      } else if (i === 2) {
+        fridays[i].innerHTML = "18";
+      } else if (i === 3) {
+        fridays[i].innerHTML = "25";
+      }
+    }
+  }
+}
 
