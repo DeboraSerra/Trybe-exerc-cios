@@ -133,5 +133,15 @@ function tasks(string) {
   let taskItem = document.createElement('span');
   taskItem.innerHTML = string;
   tasksParent.appendChild(taskItem);
+  
 }
 tasks('Study');
+
+
+//Exercise 8
+function taskLabel(color) {
+  let labelElement = document.createElement('div');
+  labelElement.style.backgroundColor = color;
+  tasksParent.appendChild(labelElement);
+}
+taskLabel('blue');
