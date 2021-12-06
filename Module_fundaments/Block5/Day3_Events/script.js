@@ -128,3 +128,10 @@ function dayZoomOut(event) {
 }
 
 //Exercise 7
+let tasksParent = document.querySelector('.my-tasks');
+function tasks(string) {
+  let taskItem = document.createElement('span');
+  taskItem.innerHTML = string;
+  tasksParent.appendChild(taskItem);
+}
+tasks('Study');
