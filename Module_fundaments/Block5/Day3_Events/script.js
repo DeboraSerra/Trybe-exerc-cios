@@ -142,6 +142,19 @@ tasks('Study');
 function taskLabel(color) {
   let labelElement = document.createElement('div');
   labelElement.style.backgroundColor = color;
+  labelElement.className = 'task';
   tasksParent.appendChild(labelElement);
 }
 taskLabel('blue');
+
+//Exercise 9
+let taskElement = document.querySelector('.task');
+taskElement.addEventListener('click', selectTask);
+
+function selectTask() {
+  if (taskElement.className !== 'task selected') {
+    taskElement.className = 'task selected';
+  } else if (taskElement.className === 'task selected') {
+    taskElement.className = 'task';
+  }
+}
