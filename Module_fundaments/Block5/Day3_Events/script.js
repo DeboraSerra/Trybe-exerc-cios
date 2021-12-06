@@ -113,3 +113,18 @@ function fridayDay() {
   }
 }
 
+//Exercise 6
+for (let i = 0; i < daysList.length; i += 1) {
+  daysList[i].addEventListener("mouseover", dayZoomIn);
+  daysList[i].addEventListener("mouseleave", dayZoomOut);
+}
+
+function dayZoomIn(event) {
+  event.target.style.fontSize = '40px';
+}
+
+function dayZoomOut(event) {
+  event.target.style.fontSize = "20px";
+}
+
+//Exercise 7
