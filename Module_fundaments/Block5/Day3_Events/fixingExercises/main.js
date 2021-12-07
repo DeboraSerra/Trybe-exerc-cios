@@ -5,36 +5,62 @@ const input = document.getElementById("input");
 const myWebpage = document.getElementById("my-spotrybefy");
 
 
+
 // 1. Copie esse arquivo e edite apenas ele;
 // 1.1. Antes de começar os exercícios, use o LiveServer para dar uma olhada em como está a página no navegador.
 // 1.2. Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
-firstLi.addEventListener('click', changeClass);
-secondLi.addEventListener('click', changeClass);
-thirdLi.addEventListener('click', changeClass);
-function changeClass(event) {
-  if (event.target === firstLi) {
-    secondLi.classList.remove("tech");
-    thirdLi.classList.remove("tech");
-    firstLi.className = 'tech';
-    input.setAttribute("value", "");
-    input.placeholder = 'Alterar a primeira tecnologia';
-  } else if (event.target === secondLi) {
-    firstLi.classList.remove("tech");
-    thirdLi.classList.remove("tech");
-    secondLi.className = 'tech';
-    input.setAttribute("value", "");
-    input.placeholder = "Alterar a segunda tecnologia";
-  } else if (event.target === thirdLi) {
-    firstLi.classList.remove("tech");
-    secondLi.classList.remove("tech");
-    thirdLi.className = 'tech';
-    input.setAttribute("value", "");
-    input.placeholder = "Alterar a terceira tecnologia";
-  }
+firstLi.addEventListener('click', changeFirstLiClass);
+secondLi.addEventListener('click', changeSecondLiClass);
+thirdLi.addEventListener('click', changeThirdLiClass);
+
+function changeFirstLiClass() {
+  secondLi.classList.remove("tech");
+  thirdLi.classList.remove("tech");
+  firstLi.className = "tech";
+  input.setAttribute("value", "");
+  input.placeholder = "Alterar a primeira tecnologia";
+  
 }
+
+function changeSecondLiClass() {
+  firstLi.classList.remove("tech");
+  thirdLi.classList.remove("tech");
+  secondLi.className = "tech";
+  input.setAttribute("value", "");
+  input.placeholder = "Alterar a segunda tecnologia";
+}
+
+function changeThirdLiClass() {
+  firstLi.classList.remove("tech");
+  secondLi.classList.remove("tech");
+  thirdLi.className = "tech";
+  input.setAttribute("value", "");
+  input.placeholder = "Alterar a terceira tecnologia";
+}
+// function changeClass(event) {
+//   if (event.target === firstLi) {
+//     secondLi.classList.remove("tech");
+//     thirdLi.classList.remove("tech");
+//     firstLi.className = 'tech';
+//     input.setAttribute("value", "");
+//     input.placeholder = 'Alterar a primeira tecnologia';
+//   } else if (event.target === secondLi) {
+//     firstLi.classList.remove("tech");
+//     thirdLi.classList.remove("tech");
+//     secondLi.className = 'tech';
+//     input.setAttribute("value", "");
+//     input.placeholder = "Alterar a segunda tecnologia";
+//   } else if (event.target === thirdLi) {
+//     firstLi.classList.remove("tech");
+//     secondLi.classList.remove("tech");
+//     thirdLi.className = 'tech';
+//     input.setAttribute("value", "");
+//     input.placeholder = "Alterar a terceira tecnologia";
+//   }
+// }
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
@@ -45,7 +71,7 @@ function changeText(event) {
   if (event.key === 'Enter') {
     let liChangeText = document.querySelector(".tech");
     let text = input.value;
-    liChangeText.innerHTML = text;
+    liChangeText.innerText = text;
   }
 }
 
@@ -54,13 +80,9 @@ function changeText(event) {
 // 4.1. Que tal redirecionar para seu portifólio?
 
 let myPage = myWebpage.addEventListener("dblclick", myPortfolio);
+
 function myPortfolio() {
-  let createAnchor = document.createElement('a');
-  createAnchor.title = myWebpage;
-  createAnchor.href = "https://deboraserra.github.io/portfolio-web.html";
-  createAnchor.target = "_blank";
-  document.body.firstElementChild.appendChild(createAnchor);
-  createAnchor.appendChild(myWebpage);
+  window.open("https://deboraserra.github.io/portfolio-web", '_blank');
 }
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
