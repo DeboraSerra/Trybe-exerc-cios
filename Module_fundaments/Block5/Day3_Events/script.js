@@ -35,6 +35,7 @@ function createDays() {
     let day = dezDaysList[i];
     let dayItemList = document.createElement('li');
     dayItemList.innerHTML = day;
+    dayItemList.className = 'day'
     daysParent.appendChild(dayItemList);
   }
   
@@ -48,9 +49,11 @@ for (let i = 0; i < daysList.length; i += 1) {
     (daysList[i].innerText === '11') ||
     (daysList[i].innerText === '18') ||
     (daysList[i].innerText === '25')) {
-    daysList[i].className = 'friday';
+    daysList[i].classList += ' friday';
   }
-  if (daysList[i].innerText === "25") {
+  if ((daysList[i].innerText === "25") ||
+    (daysList[i].innerText === '24') ||
+    (daysList[i].innerText === '31')) {
      daysList[i].classList += " holiday";
   }
 }
@@ -72,11 +75,13 @@ let holidayButton = document.querySelector("#btn-holiday");
 holidayButton.addEventListener("click", changeHolidayColor);
 
 function changeHolidayColor() {
-  let holidays = document.querySelector('.holiday');
-  if (holidays.style.backgroundColor !== 'green') {
-    holidays.style.backgroundColor = 'green';
-  } else if (holidays.style.backgroundColor === 'green') {
-    holidays.style.backgroundColor = "rgb(238, 238, 238)";
+  let holidays = document.querySelectorAll('.holiday');
+  for (let i = 0; i < holidays.length; i += 1) {
+    if (holidays[i].style.backgroundColor !== 'green') {
+      holidays[i].style.backgroundColor = 'green';
+    } else if (holidays[i].style.backgroundColor === 'green') {
+      holidays[i].style.backgroundColor = "rgb(238, 238, 238)";
+    }
   }
 }
 
@@ -189,23 +194,51 @@ function newTask(event) {
   if (!input.value) {
     alert('Nenhum compromisso adocionado!')
   } else if (event.key === 'Enter') {
-    let myNewTask = document.createElement("li");
-    myNewTask.innerHTML = input.value;
-    tasksList.appendChild(myNewTask);
-    input.value = '';
+    addTaskToSessionStorage();
   } 
-    
+  
 }
 
 function newTask2(event) {
   input.setAttribute("value", '');
   console.log(event)
-  if (!input.value && (event.key === 'Enter' || event.target === btnAdd)) {
+  if (!input.value) {
     alert("Nenhum compromisso adicionado!");
-  } else if (event.key === 'Enter' || event.target === btnAdd) {
-    let myNewTask = document.createElement("li");
-    myNewTask.innerHTML = input.value;
-    tasksList.appendChild(myNewTask);
-    input.value = '';
+  } else {
+    addTaskToSessionStorage();
   }
+}
+window.onload = firstInsertTaskInDOM();
+
+function firstInsertTaskInDOM() {
+  const myTaskList = JSON.parse(sessionStorage.getItem("tasks"));
+  for (let i = 0; i < myTaskList.length; i += 1){
+    const taskText = myTaskList[i];
+    const myTask = document.createElement("li");
+    myTask.innerText = taskText;
+    tasksList.appendChild(myTask);
+  }  
+}
+
+function addTaskToSessionStorage() {
+  if (sessionStorage.getItem("tasks") === null) {
+    sessionStorage.setItem("tasks", JSON.stringify([]));
+  }
+  const oldList = JSON.parse(sessionStorage.getItem("tasks"));
+  console.log(oldList);
+  const task = input.value;
+  oldList.push(task);
+  sessionStorage.setItem("tasks", JSON.stringify(oldList));
+  insertTaskInDOM();
+  input.value = '';
+}
+
+function insertTaskInDOM() {
+  const myTaskList = JSON.parse(sessionStorage.getItem("tasks"));
+  const listLength = myTaskList.length - 1;
+  const taskText = myTaskList[listLength];
+  const myTask = document.createElement("li");
+  myTask.innerText = taskText;
+  tasksList.appendChild(myTask);
+  
 }

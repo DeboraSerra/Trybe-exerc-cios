@@ -20,7 +20,6 @@ function changeFirstLiClass() {
   secondLi.classList.remove("tech");
   thirdLi.classList.remove("tech");
   firstLi.className = "tech";
-  input.setAttribute("value", "");
   input.placeholder = "Alterar a primeira tecnologia";
   
 }
@@ -29,7 +28,6 @@ function changeSecondLiClass() {
   firstLi.classList.remove("tech");
   thirdLi.classList.remove("tech");
   secondLi.className = "tech";
-  input.setAttribute("value", "");
   input.placeholder = "Alterar a segunda tecnologia";
 }
 
@@ -37,40 +35,19 @@ function changeThirdLiClass() {
   firstLi.classList.remove("tech");
   secondLi.classList.remove("tech");
   thirdLi.className = "tech";
-  input.setAttribute("value", "");
   input.placeholder = "Alterar a terceira tecnologia";
 }
-// function changeClass(event) {
-//   if (event.target === firstLi) {
-//     secondLi.classList.remove("tech");
-//     thirdLi.classList.remove("tech");
-//     firstLi.className = 'tech';
-//     input.setAttribute("value", "");
-//     input.placeholder = 'Alterar a primeira tecnologia';
-//   } else if (event.target === secondLi) {
-//     firstLi.classList.remove("tech");
-//     thirdLi.classList.remove("tech");
-//     secondLi.className = 'tech';
-//     input.setAttribute("value", "");
-//     input.placeholder = "Alterar a segunda tecnologia";
-//   } else if (event.target === thirdLi) {
-//     firstLi.classList.remove("tech");
-//     secondLi.classList.remove("tech");
-//     thirdLi.className = 'tech';
-//     input.setAttribute("value", "");
-//     input.placeholder = "Alterar a terceira tecnologia";
-//   }
-// }
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
-input.addEventListener("keyup", changeText);
+
 
 function changeText(event) {
+  input.addEventListener("keyup", changeText);
+  let liChangeText = document.querySelector(".tech");
+  let text = input.value;
   if (event.key === 'Enter') {
-    let liChangeText = document.querySelector(".tech");
-    let text = input.value;
     liChangeText.innerText = text;
   }
 }
@@ -107,7 +84,10 @@ function resetText(event) {
 }
 
 firstLi.addEventListener("dblclick", resetText);
+secondLi.addEventListener('dblclick', resetText);
+thirdLi.addEventListener("dblclick", resetText);
 
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
 // event.target na nossa função retornará o objeto 'firstLi'.
+
