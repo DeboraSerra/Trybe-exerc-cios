@@ -129,17 +129,15 @@ function fairyMode() {
   localStorage.setItem("Mode", "fairyMode");
 }
 
-function initialRenderization(){
-  const screenMode = localStorage.getItem('Mode');
-  if (screenMode === 'darkMode') {
-    darkMode();
-  } else if (screenMode === 'lightMode') {
-    lightMode();
-  } else if (screenMode === 'fairyMode') {
-    fairyMode();
-  }
-}
+
 
 window.onload = function(){
-  initialRenderization();
+  const screenMode = localStorage.getItem("Mode");
+  if (screenMode === "darkMode") {
+    darkMode();
+  } else if (screenMode === "lightMode") {
+    lightMode();
+  } else if (screenMode === "fairyMode") {
+    fairyMode();
+  }
 }

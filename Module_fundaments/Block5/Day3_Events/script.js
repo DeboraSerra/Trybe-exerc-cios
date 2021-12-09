@@ -177,10 +177,11 @@ function atributeTask(event) {
     if (event.target.style.color !== taskSelected) {
       event.target.style.color = taskSelected;
     } else if (event.target.style.color === taskSelected) {
-      event.target.style.color = 'rgb(119, 119, 119';
+      event.target.style.color = 'rgb(119, 119, 119)';
     }
   }
 }
+
 
 //Bonus Exercise
 let input = document.querySelector('#task-input');
@@ -192,7 +193,7 @@ btnAdd.addEventListener("click", newTask2);
 function newTask(event) {
   input.setAttribute('value', '');
   if (!input.value) {
-    alert('Nenhum compromisso adocionado!')
+    alert('Nenhum compromisso adicionado!')
   } else if (event.key === 'Enter') {
     addTaskToSessionStorage();
   } 
