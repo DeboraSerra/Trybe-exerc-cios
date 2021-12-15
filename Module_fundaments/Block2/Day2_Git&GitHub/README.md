@@ -1,27 +1,27 @@
-# Dia 2-2 - Git & GitHub - Entendendo os comandos
+# Day 2-2 - Git & GitHub - Uderstanding the commands
 
-Nesse dia foi ensinado os comandos mais importates para trabalhar com o Git e o GitHub, como `git pull`, `git push`, `git fetch`, entre outros.
+On this day we were taught the most important commands to work with Git and GitHub, like `git pull`, `git push`, `git fetch`, and others.
 
-O exercício foi realizado de acordo com o especificado abaixo.
+The exercise were made accordingly with the specified below.
 
-## Agora a prática
+## Now the practice
 
-⚠️ Para fazer os exercícios a seguir, você deve utilizar o projeto com o texto no arquivo _.txt_, localizado dentro do diretório do dia anterior, crie uma cópia para usar no dia de hoje.
+⚠️ To make the exercises below, you must use the project with the text on the _.txt_ file, located in the directory from the day before, create a copy to use today.
 
-Dessa vez, cada um deve fazer os exercícios em seu computador, ok? Vamos lá! 😋
+This time, each one must do the exercises in your own computer, ok? Let's go! 😋
 
-1. Navegue até a raiz do projeto com o arquivo _.txt_;
+1. Go to the root of the project with the _.txt_ file;
 
-2. Verifique se não existe nada sem _"commitar"_ utilizando `git status`:
+2. Check if there isn't any file without _commit_ using `git status`:
 
-  * Caso exista algo, verifique se é necessário e faça o `commit`, ou remova-o.
+  * If there is something, check if it is necessary and make the `commit`, or remove it.
 
-3. Crie uma nova branch com o nome _trybe-skills-changes_ e faça checkout nela;
+3. Create a new branch with the name _trybe-skills-changes_ and do the checkout to it;
 
-4. No arquivo _.txt_, ao final da lista de habilidades, adicione mais duas habilidades que serão desenvolvidas na Trybe:
-  * Exemplo:
+4. On the _.txt_ file, at the end of the skills list, add two more skills that will be developed on Trybe:
+  * Exemple:
 
-	>O que eu vou aprender na Trybe:
+	>O que eu vou aprender na Trybe (What will I learn on Trybe):
 
 	> - Unix
 	> - Bash
@@ -29,52 +29,52 @@ Dessa vez, cada um deve fazer os exercícios em seu computador, ok? Vamos lá! �
 	> - HTML
 	> - CSS
 
-  * Faça um `git add nome-do-arquivo.extensao`;
+  * Do a `git add name-of-the-file.extention`;
 
-  * Você pode adicionar todos os arquivos que você modificou usando `git add .`, mas evite isso em commits com muitos arquivos para não adicionar nenhuma alteração por engano;
+  * You can add all the files you modified using `git add .`, but avoid it in commits with a lot of files to prevent you from adding any modification by mistake;
 
-  * Agora um `git commit -m "Mensagem que você gostaria"`;
+  * Now do a `git commit -m "Message you want"`;
 
-  * Uma boa prática é sempre resumir o que o seu commit está alterando, por exemplo, `git commit -m "Adiciona nova skill"`;
+  * A good practice is always sum up what your commit is modifying, for exemple, `git commit -m "Add a new skill"`;
 
-  * Evite juntar muitas modificações em um único commit. Assim, caso haja algum erro no código, ficará mais fácil visualizar em qual alteração ele surgiu;
+  * Avoid joining to many modifications in one commit. That way, in case there is any mistake on your code, it will be easier to see in what modification it occurred;
 
-  * E por último um `git push -u origin trybe-skills-changes`;
+  * And last use a`git push -u origin trybe-skills-changes`;
 
-5. Abra um _Pull Request_ com uma descrição detalhada:
+5. Open a _Pull Request_ with a detailed description:
 
-  * Dê contexto para o que você está fazendo, passe links ou cite especificações que forem relevantes. Ex: "Trabalho feito para a semana 1 do curso de Software Developer da Trybe. Aqui, o desafio foi... E para resolver o problema fizemos... E o resultado foi..." ;
+  * Give it context to what you are doing, use links or mention specifications that are important.Exemple: "Work made for week 1 on the course Software Developer of Trybe. Here, the challange was... And to fix the problem we did... and the result was..." ;
 
-  * O merge deve ser feito apenas quando chegar no exercício 10.
+  * The merge must be made only when you reach exercise 10.
 
-6. Retorne para a branch principal, _master_, com o comando: `git checkout master`;
+6. Return to the _main_ branch with the command: `git checkout main`;
 
-7. Verifique que você está na branch _master_, com o comando: `git branch` (esta branch deve estar com o formato original, sem as habilidades recém adicionadas);
+7. Check if you are on the _main_ branch using the command: `git branch` (This branch must be with its original format, without the new skills);
 
-8. Crie uma nova branch _trybe-skills-updates_ a partir da master e faça checkout nela;
+8. Create a new branch _trybe-skills-updates_ from the main and move to it;
 
-9. No mesmo arquivo _.txt_ que você modificou no _passo 4_, também ao final da sua lista de habilidades, adicione mais um aprendizado que você terá nos próximos blocos:
+9. On the same _.txt_ file that you modified on _step 4_, also at the end of your skills' listm add one more skill you will learn on other blocks:
 
-  * Atenção! Aqui o arquivo não terá as alterações feitas anteriormente na outra branch 😉;
+  * Atention! Here the file won't have the modifications made before on the other branch 😉;
 
-  * Faça um `git add nome-do-arquivo.extensao`;
+  * Do a `git add name-of-the-file.extention`;
 
-  * Agora um `git commit -m "Mensagem que você gostaria"`;
+  * Now a `git commit -m "Message you want"`;
 
-  * e por último um `git push -u origin trybe-skills-updates`;
+  * And for last a `git push -u origin trybe-skills-updates`;
 
-  * Após o primeiro "push" da sua branch, você pode usar apenas o comando `git push`;
+  * After the first "push" on your branch, you can use only the command `git push`;
 
-  * Abra um Pull Request com uma descrição amigável:
+  * Open a Pull Request with a friendly description:
 
-    * O merge deve ser feito apenas quando chegar no exercício 10;
+    * The merge must be done onle on exercise 10;
 
-10. Agora, faça o _merge_ das branches _trybe-skills-changes_ e _trybe-skills-update_s na branch _master_, através do _Pull Request_:
+10. Now, do the _merge_ of the branches _trybe-skills-changes_ e _trybe-skills-updates_ on the _main_ branch, through the _Pull Request_:
 
-  * Primeiro, vá até a página do primeiro _Pull Request_ (branch _trybe-skills-changes_) e faça o merge clicando no botão verde **"Merge pull request"**;
+  * First, go to the page from the first _Pull Request_ (branch _trybe-skills-changes_) and do the merge clicking on the green button **"Merge pull request"**;
 
-  * Agora, vá até página do outro _Pull Request_ (branch _trybe-skills-updates_) e tente fazer o merge clicando no mesmo botão. Reparou que ele está bloqueado? Isso acontece porque esse Pull Request está tentando alterar a mesma linha de código com um conteúdo diferente, e o Git não consegue determinar sozinho qual das duas linhas é a correta;
+  * Now, go to the page of the other _Pull Request_ (branch _trybe-skills-updates_) And try  to merge clicking on the same button. Did you notice that it is blocked? This happens because this Pull Request is trying to alter the same line of code with a different contentm and the Git can't determine alone witch of the branches is the correct one;
 
-  * Você terá que resolver esse conflito antes de "mergear" o _Pull Request_. Clique no botão **"Resolve conflicts"**, escolha uma das duas versões do texto (lembre-se de apagar as linhas com <<<<<<< e >>>>>>>, elas são criadas apenas para dar uma identificação mais visual ao problema). Depois clique em **"Mark as resolved"** e, em seguida, em **"Commit merge"**;
+  * You have to fix this conflict before doing the merge of the _Pull Request_. Click on the button **"Resolve conflicts"**, pick one of the two versions of the text (remember to delete the lines with <<<<<<< and >>>>>>>, they are created just to give a more visual identification of the problem). After that click on **"Mark as resolved"** and, latter, on **"Commit merge"**;
 
-  * Agora você deve conseguir "mergear" seu _Pull Request_ normalmente. 😎
+  * Now you must be able to merge your _Pull Request_ normally. 😎
