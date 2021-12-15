@@ -42,10 +42,10 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 5-3: _JavaScript - Events_
 - [x] 5-4: _JavaScript - Web Storage_
 - [x] 5-5: _[Project - Pixel art](https://github.com/DeboraSerra/Trybe-exercicios/tree/Block5/Module_fundaments/Block5/Project-pixel-art)_
-- [ ] 5-6: _[Project - To do List]()_
-- [ ] 5-7: _[Project - Meme Generator]()_
-- [ ] 5-7: _[Project - Guess the color]()_
-- [ ] 5-7: _[Project - Mistery card]()_
+- [x] 5-6: _[Project - To do List](https://github.com/DeboraSerra/Trybe-exercicios/tree/main/Module_fundaments/Block5/Project-to-do-list)_
+- [x] 5-7: _[Project - Meme Generator](https://github.com/DeboraSerra/Trybe-exercicios/tree/main/Module_fundaments/Block5/Project-meme-generator)_
+- [x] 5-7: _[Project - Guess the color](https://github.com/DeboraSerra/Trybe-exercicios/tree/main/Module_fundaments/Block5/Project-color-guess)_
+- [x] 5-7: _[Project - Mistery card](https://github.com/DeboraSerra/Trybe-exercicios/tree/main/Module_fundaments/Block5/Project-mystery-letter)_
 
 ##### Block 6: HTML & CSS advanced
 
