@@ -1,24 +1,24 @@
-# Dia 3-2 - HTML & CSS - Estruturas de página
+# Day 3-1 - HTML & CSS - Page structure
 
-#### HTML - Primeiras tags
+#### HTML - First tags
 
-O arquivo HTML_Primeiras-tags foi produzido de acordo com o seguinte exercício proposto:
+The file HTML_Primeiras-tags was produced accondingly with the following proposed exercise:
 
-Para fixar
+Fixing exercise:
 
-1 - Crie uma lista das pessoas que você já conheceu na Trybe.
-2 - Adicione uma imagem que venha de uma URL externa.
-3 - Adicione uma imagem que está no seu computador, local
+1 - Create a list of people you already met on Trybe.
+2 - Add an image that comes from an external URL.
+3 - Add an image that is on your computer, local.
 
-#### HTML - Links externos e internos
+#### HTML - External and internal links
 
-O arquivo HTML_Links-ext-e-int foi produzido de acordo com o exercício proposto abaixo:
+The file HTML_Links-ext-e-int was produced accordingly with the proposed exercise below:
 
-Para fixar:
+Fixing exercise:
 
-Utilizando o arquivo anterior:
+Using the previous file:
 
-1 - Crie um parágrafo para cada pessoa da sua lista.
-2 - Crie um link entre a sua lista e os parágrafos de pessoas.
-3 - Crie um link para a página do Google.
+1 - Create a paragraph to each of the people from your list.
+2 - Create a link between your list and the paragraphs.
+3 - Create a link to the Google page.
 
