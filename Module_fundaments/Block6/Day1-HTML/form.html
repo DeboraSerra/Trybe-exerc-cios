@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="" method="get">
+    <fieldset>
+      <legend>Personal information:</legend>
+      <label for="fullName">Full name:</label>
+      <input type="text" name="name" id="fullName" required max="40">
+      <br>
+      <label for="e-mail">E-mail:</label>
+      <input type="email" name="email" id="e-mail" required max="50">
+      <br>
+      <label for="cpf">Social security number:</label>
+      <input type="text" name="social" id="cpf" required max="11">
+      <br>
+      <label for="adress">Adress:</label>
+      <input type="text" name="adress" id="adress" required max="200">
+      <br>
+      <label for="city">City:</label>
+      <input type="text" name="city" id="city" required max="28">
+      <br>
+      <label for="state">State:</label>
+      <select name="state" id="state"></select>
+      <br>
+      <label for="house"><input type="radio" name="housing-type" id="house" required value="House">House</label>
+      <label for="apt"><input type="radio" name="housing-type" id="apt" required value="Apartment">Apartment</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Previous jobs:</legend>
+      <label for="presentation">Introduction to your resume:</label>
+      <textarea name="resume-presentation" id="presentation" cols="30" rows="10" required maxlength="1000"></textarea>
+      <br>
+      <label for="job1">Position:</label>
+      <input type="text" name="job1" id="job1" required max="40">
+      <br>
+      <label for="job1-description">Job desciption:</label>
+      <input type="text" name="job1" id="job1-description">
+      <br>
+      <label for="start-date">Starting day:</label>
+      <input type="text" name="job1-start-date" id="start-date" required placeholder="dd/mm/aaaa">
+    </fieldset>
+
+    <button type="submit" id="submit-button">Enviar</button>
+    <button type="reset" id="clear-button">Clear All</button>
+  </form>
+
+  <div id="my-resume"></div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
