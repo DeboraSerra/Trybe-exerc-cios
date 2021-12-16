@@ -1,62 +1,74 @@
 # Day 4-1 - JavaScript - First steps
 
-Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b , definidas no começo com os valores que serão operados. Faça programas para:
-Adição (a + b)
-Subtração (a - b)
-Multiplicação (a * b)
-Divisão (a / b)
-Módulo (a % b)
-*Dica: Neste link você encontra mais detalhes sobre operadores matemáticos 😉
-Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
-Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
-Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
-Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
-Para os ângulos serem de um triângulo válido, a soma dos três devem ser 180 graus.
-Um ângulo será considerado inválido se não tiver um valor positivo.
-Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
-Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
-Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas (lower case) .
-Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
-Exemplo: bishop (bispo) -> diagonals (diagonais)
-Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
-Porcentagem >= 90 -> A
-Porcentagem >= 80 -> B
-Porcentagem >= 70 -> C
-Porcentagem >= 60 -> D
-Porcentagem >= 50 -> E
-Porcentagem < 50 -> F
-O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
-Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .
-Bonus: use somente um if .
-Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .
-Bonus: use somente um if .
-Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
-Atente que, sobre o custo do produto, incide um imposto de 20%.
-Seu programa também deve emitir uma mensagem de erro e encerrar caso algum dos seus valores de entrada seja menor que zero.
-O lucro de um produto é o resultado da subtração do valor de venda pelo custo do mesmo, sendo que o imposto de 20% também faz parte do valor de custo.
-valorCustoTotal = valorCusto + impostoSobreOCusto
-lucro = valorVenda - valorCustoTotal (lucro de um produto)
-Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
-A notação para um salário de R$1500,10, por exemplo, deve ser 1500.10. Para as faixas de impostos, use as seguintes referências:
-INSS (Instituto Nacional do Seguro Social)
-Salário bruto até R$ 1.556,94: alíquota de 8%
-Salário bruto de R$ 1.556,95 a R$ 2.594,92: alíquota de 9%
-Salário bruto de R$ 2.594,93 a R$ 5.189,82: alíquota de 11%
-Salário bruto acima de R$ 5.189,82: alíquota máxima de R$ 570,88
-IR (Imposto de Renda)
-Até R$ 1.903,98: isento de imposto de renda
-De R$ 1.903,99 a 2.826,65: alíquota de 7,5% e parcela de R$ 142,80 a deduzir do imposto
-De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% e parcela de R$ 354,80 a deduzir do imposto
-De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
-Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto.
-Exemplo : Uma pessoa possui o salário bruto de R$ 3.000,00. O cálculo será:
-O salário bruto está entre R$ 2.594,93 e R$ 5.189,82, então sua alíquota para INSS é de 11%. O INSS será 11% de R$ 3.000, ou seja, R$ 330,00.
-Para descobrir o salário-base, subtraia do salário bruto a alíquota do INSS: R$ 3.000,00 - R$ 330,00 = R$ 2.670,00.
-Para pegar o valor do IR, temos um salário (já deduzido o INSS) entre R$ 1.903,99 e 2.826,65, sendo a alíquota, então, de 7.5%, com parcela de R$ 142,80 a deduzir do imposto. Assim, temos:
-R$ 2.670,00: salário com INSS já deduzido;
-7.5%: alíquota de imposto de renda;
-R$ 142,80 parcela a se deduzir do imposto.
-Fazendo a conta, temos: (7,5% de R$ 2.670,00) - R$ 142,80 = R$ 57,45
-O último cálculo para conseguir o salário líquido é R$ 2.670,00 - R$ 57,45 (salário-base - valor IR) = R$ 2.612,55.
-Resultado: R$ 2.612,55.
-Dica: que tal identificar as alíquotas com variáveis de nomes explicativos?
+1 - Make five programs, one for each basic arithmetic operation. Your program must have two constants, _a_ and _b_, defined on the beginning with the operating values. Do programs to:
+
+  * Sum (a + b)
+  * Subtraction (a - b)
+  * Multiplication (a * b)
+  * Division (a / b)
+  * Module (a % b)
+
+2 - Make a program that return the biggest of two numbers. Define in the beginning of the program two constants with the value that will be compared.
+
+3 - Make a program that return the bigger of three numbers. Define in the beginning of the program three constants with the value that will be compared.
+
+4 - Make a program that, given a number defined in a constat, return 'positive' if the value is positive, 'negative' if it's negative and 'zero' if neither cases happen.
+
+5 - Make a program that define three constants with the value of three internal angles of a triangle. Return 'true' if they represent the angles of a triangle and 'false', otherwise. If any of the angles is invalid the program must return an error message.
+
+> So the angles of the triangle are valid, their sum must be equal to 180 degrees.
+> An angle will be considered invalid if it doesn't have a positive value.
+
+6 - Write a program that receives the name of a chess piece and return its movement.
+
+  > As a challenge, make the program work if it receives the name of the piece either with upper or lowercase, without increasing the number of conditionals.
+  > If the name of the piece is invalid, the program should return a message of error.
+  > Exemple: bishop -> diagonals;
+
+7 - Write a program that turns a percentage score (from 0 from 100) in letter concepts from A to F. Follow this rules:
+
+> percentage >= 90 -> A
+> Percentage >= 80 -> B
+> Percentage >= 70 -> C
+> Percentage >= 60 -> D
+> Percentage >= 50 -> E
+> Percentage < 50 -> F
+
+> The program must return an error message and break if the score is less than 0 or bigger than 100.
+
+8 - Write a program that define three numbers in constants and return 'true' if at least one of them is _even_. Otherwise, it returns 'false'.
+
+9 - Write a program that define three numbers in constants and return 'true' if at least one of them is _odd_. Otherwise, it returns 'false'.
+  > Bonus: use only one `if`.
+
+10 - Write a program that start with two values in two different constants: the cost of a product and its sale price. Calculate the profit (value of the sale minus the cost of the product) the company will have after selling one thousand of these products.
+> There is 20% taxes over the cost of the product.
+> Your program must also show an error message and break if any of your entry values are smaller than zero.
+> The profit of a product is the result of the subtraction of the sale value and its cost. and the 20% tax is also a part of the cost. (totalCost = cost + tax / profit = salePrice - totalCost)
+
+11 - A person that works with signed licence in Brazil have deduced from their salary a pension tax (INSS) and an income tax (IR).
+Make a program that, given a gross salary, calculate the net salary to be received.
+The notation to a R$1500,10 salary, for exemple, must be 1500.10. To the tax ranges, use the following references:
+> INSS (Instituto Nacional do Seguro Social)
+> Gross salary of less than R$ 1.556,94: aliquot of 8%
+> Gross salary from R$ 1.556,95 to R$ 2.594,92: aliquot of 9%
+> Gross salary from R$ 2.594,93 to R$ 5.189,82: aliquot of 11%
+> Gross salary above R$ 5.189,82: maximum aliquot of R$ 570,88
+
+> IR (Imposto de Renda)
+> Less than R$ 1.903,98: free from income tax
+> From R$ 1.903,99 to 2.826,65: aliquot of 7,5% and portion of R$ 142,80 to be deduced from the tax
+> From R$ 2.826,66 to R$ 3.751,05: aliquot of 15% and portion of R$ 354,80 to be deduced from the tax
+> From R$ 3.751,06 to R$ 4.664,68: aliquot of 22,5% and portion of R$ 636,13 to be deduced from the tax
+> Above R$ 4.664,68: aliquoti of 27,5% and portion of R$ 869,36 to be deduced from the tax.
+
+Exemple: A person that receive a gross salary of R$ 3.000,00. The calculations will be:
+The gross salary is between R$ 2.594,93 and R$ 5.189,82, so the aliquot to the INSS is 11%. The INSS will be 11% of R$ 3.000, which is, R$ 330,00.
+To discover the base-salary, subtract INSS aliquot from the gross salary: R$ 3.000,00 - R$ 330,00 = R$ 2.670,00.
+To get the IR value, we use the salary (already with INSS deduced) between R$ 1.903,99 and 2.826,65, which means aliquot of 7.5%, with a portion of R$ 142,80 to be deduced of the tax. So then we have:
+R$ 2.670,00: salary with INSS deduced;
+7.5%: IR aliquot;
+R$ 142,80 portion to be deduced from the tax.
+Doing the math, we have: (7,5% of R$ 2.670,00) - R$ 142,80 = R$ 57,45
+The last calculation to get the net salary is R$ 2.670,00 - R$ 57,45 (base-salary - IR) = R$ 2.612,55.
+Result: R$ 2.612,55.
