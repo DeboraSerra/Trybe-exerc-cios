@@ -1,22 +1,29 @@
 # Day 4-2 - JavaScript - Array & loop for
 
-profunde seus conhecimentos
-Leia atentamente os enunciados e faça o que se pede! Iremos utilizar esse array para realizar os exercícios do 1 ao 7:
-Copiar
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-Nesse primeiro exercício, percorra o array imprimindo todos os valores nele contidos com a função console.log() ;
-Para o segundo exercício, some todos os valores contidos no array e imprima o resultado;
-Para o terceiro exercício, calcule e imprima a média aritmética dos valores contidos no array;
-A média aritmética é o resultado da soma de todos os elementos divido pelo número total de elementos.
-Com o mesmo código do exercício anterior, caso o valor final seja maior que 20, imprima a mensagem: "valor maior que 20". Caso não seja, imprima a mensagem: "valor menor ou igual a 20";
-Utilizando for , descubra qual o maior valor contido no array e imprima-o;
-Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
-Utilizando for , descubra qual o menor valor contido no array e imprima-o;
-Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado;
-Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 .
+1 - On the first exercise, go through the array and print all the values in it with `console.log()`;
+
+2 - On the second exercise, sum all the values on the array and print the result;
+
+3 - On the third exercise, calculate and print the arithmetic average of the array values;
+  > The arithmetic average is the result of the sum of all the elements divided to total number of elements.
+
+4 - With the same code of the previous exercise, in case the result is bigger then 20 print the message: "valor maior que 20". In case it isn't, prit the message: "valor menor ou igual a 20";
+
+5 - Using `for`, find which is the biggest value in the array and print it;
+
+6 - Find how many _odd_ values there are in the array and print the result. In case there isn't any, print the message: "nenhum valor ímpar encontrado";
+
+7 - Using `for`, find which is the smaller value in the array and print it;
+
+8 - Using `for`, create an array that goes from 1 to 25 and print the result;
+
+9 - Using the array created on exercise 8m print the result of each element in the arry divided by 2.
 
 #### Bonus exercises
 
-Ordene o array numbers em ordem crescente e imprima seus valores;
-Ordene o array numbers em ordem decrescente e imprima seus valores;
-Agora crie um novo array a partir do array numbers , sem perdê-lo. Cada valor do novo array deverá ser igual ao valor correspondente no array numbers multiplicado pelo seguinte. Por exemplo: o primeiro valor do novo array deverá ser 45, pois é a multiplicação de 5 (primeiro valor) e 9 (valor seguinte). Já o segundo valor do novo array deverá ser 27, pois é a multiplicação de 9 (segundo valor) e 3 (valor seguinte), e assim por diante. Caso não haja próximo valor, a multiplicação deverá ser feita por 2. Faça isso utilizando o for e o método push . O resultado deve ser o array abaixo:
+1 - Order the 'numbers' array in crescent order and print the values;
+
+2 - Order the 'numbers' array in decreasing order and print the values;
+
+3 - Now createa new array from the 'numbers' array, without losing it. Each value in the new array must equal to the its matching in 'numbers' array multiplied by the next one. For exemple: The first value must be 45, because it's the 5 (first value) multiplied by 9 (the next value).
+In case there isn't a next value, the multiplication must be made by 2.

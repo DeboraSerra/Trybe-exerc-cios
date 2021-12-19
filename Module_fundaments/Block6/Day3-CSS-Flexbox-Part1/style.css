@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+#header {
+  font-size: 0.6em;
+  background-color: rgb(61, 61, 61);
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#header a {
+  color: white;
+}
+
+#intro-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-div {
+  background-color: rgb(187, 185, 183);
+  margin: 5px;
+  border-radius: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#gallery-section {
+  margin: auto;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  margin: 20px auto;
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  margin: 10px;
+}

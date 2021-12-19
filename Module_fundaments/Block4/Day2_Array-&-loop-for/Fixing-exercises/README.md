@@ -1,35 +1,16 @@
 # Day 4-2 - Fixing exercises - Array & loop for
 
 #### Arrays
+1 - Get the value "Serviços" from the 'menu' array.
 
-Exercício 1
-Obtenha o valor "Serviços" do array menu :
-Copiar
-let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
-let menuServices = ;
+2 - Get the index from the value "Portfólio" from the 'menu' array.
 
-console.log(menuServices);
-Exercício 2
-Procure o índice do valor "Portfólio" do array menu :
-Copiar
-let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
-let indexOfPortfolio = ;
-
-console.log(indexOfPortfolio);
-Exercício 3
-Adicione o valor "Contato" no final do array menu :
-Copiar
-let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
-
-console.log(menu);
+3 - Add the value "Contato" on the end of the 'menu' array:
 
 #### For
 
-Exercício 1
-Utilize o for para imprimir os elementos da lista groceryList com o console.log() 
+1 - Use the `for` to print the elements from list 'groceryList' using `console.log()`.
 
 #### For/of
 
-Exercício 1
-Utilize o for/of para imprimir os elementos da lista names com o console.log() :
-
+1 - Use `for/of` to print the elements from list 'names' using `console.log()`.

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <style>
+    * {
+      text-align: center;
+    }
+    form {
+      margin: 50px 100px;
+    }
+    button {
+      margin: 30px 15px;
+    }
+  </style>
+</head>
+<body>
+  <form action="" method="get" id="form">
+    <fieldset>
+      <legend class="label is-large ">Personal information:</legend>
+      <section class="field is-horizontal">
+        <section class="field-label is-normal">
+          <label class="label" for="fullName">Full name:</label>
+        </section>
+        <section class="field-body">
+          <section class="field">
+            <section class="control">
+              <input class="input is-expanded is-normal is-primary" type="text" name="name" id="fullName" required max="40">
+            </section>
+          </section>
+        </section>
+        <section class="field-label is-normal">
+          <label class="label" for="e-mail">E-mail:</label>
+        </section>
+        <section class="field-body">
+          <section class="field">
+            <section class="control">
+              <input class="input is-expanded is-normal is-primary" type="email" name="email" id="e-mail" required max="50">
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <section class="field is-horizontal">
+        <section class="field-label">
+          <label class="label" for="cpf">Social security number:</label>
+        </section>
+        <section class="field-body">
+          <section class="field">
+            <section class="control">
+              <input class="input is-expanded is-normal is-primary" type="text" name="social" id="cpf" required max="11">
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <section class="field is-horizontal">
+        <section class="field-label">
+          <label class="label" for="adress">Adress:</label>
+        </section>
+        <section class="field-body">
+          <section class="field">
+            <section class="control">
+              <section class="field">
+                <input class="input is-expanded is-normal is-primary" type="text" name="adress" id="adress" required max="200">
+              </section>
+            </section>
+          </section>
+        </section>
+        
+        <section class="field-label">
+          <label class="label" for="city">City:</label>
+        </section>
+        <section class="field-body">
+          <section class="field">
+            <section class="control">
+              <input class="input is-expanded is-normal is-primary" type="text" name="city" id="city" required max="28">
+            </section>
+          </section>
+        </section>
+      
+        <section class="field-label">
+          <label class="label" for="state">State:</label>
+        </section>
+        <section class="field-body">
+          <section class="field">
+            <section class="select is-primary is-normal">
+              <select name="state" id="state"></select>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <section class="field is-horizontal">
+        <label class="label radio" for="house">
+          <input type="radio" name="housing-type" id="house" required value="House">House
+        </label>
+        <label class="label radio" for="apt">
+          <input type="radio" name="housing-type" id="apt" required value="Apartment">Apartment
+        </label>
+      </section>
+
+    </fieldset>
+
+    <fieldset>
+      <legend class="label is-large">Previous jobs:</legend>
+
+      <section class="field is-horizontal">
+        <section class="field-label">
+          <label class="label" for="presentation">Introduction to your resume:</label>
+        </section>
+        <section class="field-body">
+          <section class="field">
+            <section class="control">
+              <textarea class="textarea is-primary is-small has-fixed-size" name="resume-presentation" id="presentation" cols="30"
+                rows="10" required maxlength="1000"></textarea>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <section class="field is-horizontal">
+        <section class="field-label">
+          <label class="label" for="job1">Position:</label>
+        </section>
+        <section class="field-body">
+          <section class="field">
+            <section class="control">
+              <input class="input is-expanded is-normal is-primary" type="text" name="job1" id="job1" required max="40">
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <section class="field is-horizontal">
+        <section class="field-label">
+          <label class="label" for="job1-description">Job desciption:</label>
+        </section>
+        <section class="field-body">
+          <section class="field">
+            <section class="control">
+              <input class="input is-expanded is-normal is-primary" type="text" name="job1" id="job1-description">
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <section class="field is-horizontal">
+        <section class="field-label">
+          <label class="label" for="start-date">Starting day:</label>
+        </section>
+        <section class="field-body">
+          <section class="field">
+            <section class="control">
+              <input class="input is-normal is-primary" type="text" name="job1-start-date" id="start-date" required
+                placeholder="dd/mm/aaaa" autocomplete="off">
+            </section>
+          </section>
+        </section>
+      </section>
+
+    </fieldset>
+
+    <section class="field">
+      <section class="control">
+        <button class="button is-primary" type="submit" id="submit-button">Enviar</button>
+        <button class="button is-primary" type="reset" id="clear-button">Clear All</button>
+      </section>
+    </section>
+  </form>
+
+  <div class="content is-large" id="my-resume"></div>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

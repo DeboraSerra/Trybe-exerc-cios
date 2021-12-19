@@ -1,0 +1,522 @@
+body {
+  font-family: 'Bubbler One', sans-serif;
+  color: rgb(46, 40, 42);
+  font-size: 27px;
+  margin: 20px;
+  background-color: rgba(46, 40, 42, 0.3);
+  background-image: url(./images/sand.jpg);
+}
+
+h1 {
+  font-size: 1em;
+}
+
+.nav-bar {
+  background-color: rgb(15, 163, 177);
+  text-align: center;
+  border-bottom: 1px solid rgb(72, 67, 73);
+}
+
+header {
+  padding-top: 5px;
+}
+
+nav {
+  font-size: 1em;
+  background-color: rgb(15, 163, 177);
+}
+
+nav ul li {
+  list-style: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+nav ul li:hover {
+  background-color: rgb(46, 40, 42);
+  color: rgb(234, 82, 111);
+}
+
+main {
+  margin-top: 150px;
+}
+
+article {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(135, 207, 158, 0.644);
+  width: 90%;
+  margin: auto;
+}
+
+aside {
+  background-color: rgb(82, 26, 36);
+  color: white;
+  text-align: center;
+  height: 300px;
+}
+
+aside a {
+  display: none;
+}
+
+iframe {
+  width: 95%;
+  max-width: 260px;
+}
+
+#headerBlock {
+  font-size: 1.5em;
+  margin-top: 10px;
+ }
+
+a {
+  color: rgb(234, 82, 111);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section {
+  text-align: justify;
+}
+
+img {
+  border-radius: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;
+  background-color: rgb(234, 82, 111);
+}
+
+#imgBlock {
+  text-align: center;
+}
+
+#photoTwo, #photoThree {
+  display: inline-block;
+}
+
+#photoFour {
+  float: right;
+  top: 0;
+  background-color: rgba(234, 82, 110, 0);
+}
+
+#photoSeven {
+  border-radius: 0;
+}
+
+.crossed {
+  text-decoration: line-through;
+}
+
+#nerdTime {
+  font-weight: bold;
+}
+
+table {
+  text-align: center;
+}
+
+table caption {
+  font-weight: bolder;
+  color: rgb(82, 26, 36);
+}
+
+table td {
+  border: 1px solid rgb(126, 192, 147);
+}
+
+table td:first-of-type {
+ text-transform: uppercase;
+}
+
+#headerOne, #headerTwo, #headerThree, #headerFour {
+  text-align: end;
+  background-color: rgba(15, 136, 177, 0.623);
+  border-top: 1px solid rgb(72, 67, 73);
+  border-bottom: 1px solid rgb(72, 67, 73);
+}
+
+footer {
+  color: wheat;
+  background-color: rgba(72, 67, 73, 0.678);
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+  font-family: 'Bubbler One', sans-serif;
+  color: rgb(46, 40, 42);
+  font-size: 30px;
+  margin: 20px;
+  background-color: rgba(46, 40, 42, 0.3);
+  background-image: url(./images/sand.jpg);
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  .nav-bar {
+    background-color: rgb(15, 163, 177);
+    text-align: center;
+    border-bottom: 1px solid rgb(72, 67, 73);
+  }
+
+  header {
+    padding-top: 5px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  nav {
+    font-size: 1em;
+    background-color: rgb(15, 163, 177);
+  }
+
+  nav ul li {
+    list-style: none;
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+
+  nav ul li:hover {
+    background-color: rgb(46, 40, 42);
+    color: rgb(234, 82, 111);
+  }
+
+  main {
+    margin-top: 150px;
+  }
+
+  article {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+
+  aside {
+    display: none;
+  }
+
+  a {
+    color: rgb(234, 82, 111);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  section {
+    text-align: justify;
+  }
+
+  img {
+    border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    background-color: rgb(234, 82, 111);
+  }
+
+  #photoTwo, #photoThree {
+    display: inline-block;
+  }
+
+  #photoFour {
+    float: right;
+    top: 0;
+    background-color: rgba(234, 82, 110, 0);
+  }
+
+  #photoSeven {
+    border-radius: 0;
+  }
+
+  .crossed {
+    text-decoration: line-through;
+  }
+
+  #nerdTime {
+    font-weight: bold;
+  }
+
+  table {
+    text-align: center;
+  }
+
+  table caption {
+    font-weight: bolder;
+    color: rgb(82, 26, 36);
+  }
+
+  table td {
+    border: 1px solid rgb(126, 192, 147);
+  }
+
+  table td:first-of-type {
+  text-transform: uppercase;
+  }
+
+  #headerOne, #headerTwo, #headerThree, #headerFour {
+    text-align: end;
+    background-color: rgba(15, 136, 177, 0.623);
+    border-top: 1px solid rgb(72, 67, 73);
+    border-bottom: 1px solid rgb(72, 67, 73);
+  }
+
+  footer {
+    color: wheat;
+    background-color: rgba(72, 67, 73, 0.678);
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+  font-family: 'Bubbler One', sans-serif;
+  color: rgb(46, 40, 42);
+  font-size: 30px;
+  margin: 20px;
+  background-color: rgba(46, 40, 42, 0.3);
+  background-image: url(./images/sand.jpg);
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  .nav-bar {
+    background-color: rgb(15, 163, 177);
+    text-align: center;
+    border-bottom: 1px solid rgb(72, 67, 73);
+  }
+
+  header {
+    padding-top: 5px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  nav {
+    font-size: 1em;
+    background-color: rgb(15, 163, 177);
+  }
+
+  nav ul li {
+    list-style: none;
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+
+  nav ul li:hover {
+    background-color: rgb(46, 40, 42);
+    color: rgb(234, 82, 111);
+  }
+
+  main {
+    margin-top: 150px;
+  }
+
+  article {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+
+  aside {
+  background-color: rgb(82, 26, 36);
+  color: white;
+  text-align: center;
+  height: 150px;
+  }
+
+  iframe {
+    display: none;
+  }
+
+  aside a {
+    display: block;
+    color: rgb(15, 163, 177);
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  #headerBlock {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+
+  a {
+    color: rgb(234, 82, 111);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  section {
+    text-align: justify;
+  }
+
+  img {
+    border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    background-color: rgb(234, 82, 111);
+  }
+
+  #photoTwo, #photoThree {
+    display: inline-block;
+  }
+
+  #photoFour {
+    float: right;
+    top: 0;
+    background-color: rgba(234, 82, 110, 0);
+  }
+
+  #photoSeven {
+    border-radius: 0;
+  }
+
+  .crossed {
+    text-decoration: line-through;
+  }
+
+  #nerdTime {
+    font-weight: bold;
+  }
+
+  table {
+    text-align: center;
+  }
+
+  table caption {
+    font-weight: bolder;
+    color: rgb(82, 26, 36);
+  }
+
+  table td {
+    border: 1px solid rgb(126, 192, 147);
+  }
+
+  table td:first-of-type {
+  text-transform: uppercase;
+  }
+
+  #headerOne, #headerTwo, #headerThree, #headerFour {
+    text-align: end;
+    background-color: rgba(15, 136, 177, 0.623);
+    border-top: 1px solid rgb(72, 67, 73);
+    border-bottom: 1px solid rgb(72, 67, 73);
+  }
+
+  footer {
+    color: wheat;
+    background-color: rgba(72, 67, 73, 0.678);
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}
+
+@media print {
+  body {
+  font-family: sans-serif;
+  color: rgb(46, 40, 42);
+  font-size: 100px;
+  margin: 50px;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  header {
+    padding-top: 5px;
+  }
+
+  main {
+    margin: auto;
+    margin-top: 30px;
+    width: 1500px;
+    font-size: 23px;
+  }
+
+  article {
+    display: block;
+  }
+
+  aside {
+  display: none;
+  }
+
+  a {
+    color: rgb(234, 82, 111);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  section {
+    text-align: justify;
+  }
+
+  img {
+    display: none;
+  }
+
+   #photoTwo, #photoThree {
+    display: none;
+  }
+
+  .crossed {
+    display: none;
+  }
+
+  #nerdTime {
+    font-weight: bold;
+  }
+
+  table {
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid black;
+  }
+
+  table caption {
+    font-weight: bolder;
+    color: rgb(46, 40, 42);
+  }
+
+  table td {
+    border: 1px solid black;
+  }
+
+  table td:first-of-type {
+  text-transform: uppercase;
+  }
+
+  #headerOne, #headerTwo, #headerThree, #headerFour {
+    text-align: end;
+    background-color: rgba(15, 136, 177, 0.623);
+    border-top: 1px solid rgb(72, 67, 73);
+    border-bottom: 1px solid rgb(72, 67, 73);
+  }
+
+  footer {
+    color: rgb(46, 40, 42);
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}
