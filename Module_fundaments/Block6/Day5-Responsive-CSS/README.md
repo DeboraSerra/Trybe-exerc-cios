@@ -55,3 +55,12 @@ O elemento com id header deve ser fixo, de forma que ele fique aparecendo sempre
 240x320: tela pequena
 
 360x640 tela de smartphone
+
+#### Bônus (opcional)
+
+Agora que você já está fera em criar layouts específicos para diferentes tamanhos de tela utilizando a abordagem mobile first , que tal voltar à pagina que você criou na aula de HTML Semântico sobre o camarão louva deus e criar um layout bem bacana para ela ser acessada a partir de telas menores? 🦐🦗🥊
+Sugestão:
+Crie um layout específico para telas pequenas (smartphones) ; 📱
+Crie um layout específico para telas médias (tablets) ; 📱
+Crie um layout específico para impressão (impressoras, salvar como PDF, etc) . 🖨
+Dica: o Bootstrap não tem uma classe específica para o tipo de media print . Você deve definir a media query no seu arquivo CSS e estilizar conforme achar melhor! 😉
