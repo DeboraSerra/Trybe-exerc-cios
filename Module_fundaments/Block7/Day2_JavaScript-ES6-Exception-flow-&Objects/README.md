@@ -1,0 +1,1 @@
+# Day 7.2 - JavaScript ES6 - Exception flow and objects
