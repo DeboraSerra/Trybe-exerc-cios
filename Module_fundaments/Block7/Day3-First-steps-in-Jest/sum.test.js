@@ -1,16 +1,16 @@
 const sum = require('./sum');
 
-describe('Requisito 1', () => {
-  test('Soma 4 e 5', () => {
+describe('Requirement 1', () => {
+  test('Sum 4 and 5', () => {
     expect(sum(4, 5)).toEqual(9);
   });
-  test('Soma 0 e 0', () => {
+  test('Sum 0 and 0', () => {
     expect(sum(0, 0)).toEqual(0);
   })
-  test('Lança um erro', () => {
+  test('Throw an error', () => {
     expect(() => {sum(4, '5')}).toThrow();
   })
-  test('Testa a mensagem de erro', () => {
+  test('Test the error message', () => {
     expect(() => {sum(4, '5')}).toThrowError(new Error('parameters must be numbers'));
   })
 })
