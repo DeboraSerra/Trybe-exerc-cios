@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trybe Hotel</title>
+  <link rel="stylesheet" href="hotelTrybe.css">
+</head>
+<body>
+  <main>
+    <header class="header-trybe">
+      <img src="https://remotar.com.br/wp-content/uploads/2020/10/Trybe-200x200.jpg" alt="Trybe's logo">
+      <h1>Trybe Hotel</h1>
+    </header>
+    <form action="" method="get">
+      <h1>Book your room!</h1>
+      <section class="hotel-form">
+
+        <label for="check-in">
+          Check-in
+          <input type="date" name="check-in-date" id="check-in" class="inputCheckIn">
+        </label>
+
+        <label for="check-out">
+          Check-out
+          <input type="date" name="check-out-date" id="check-out" class="inputCheckOut">
+        </label>
+
+      </section>
+
+      <section class="hotel-form">
+
+        <input type="radio" name="bedroom-type" id="common" class="bedroom" value="Common">
+        <label for="common">Common</label>
+
+        <input type="radio" name="bedroom-type" id="club" class="bedroom" value="Club">
+        <label for="club">Club</label>
+
+        <input type="radio" name="bedroom-type" id="lux" class="bedroom" value="Delux">
+        <label for="lux">Delux</label>
+      </section>
+
+      <section class="hotel-form">
+        <label for="people">People:</label>
+        <select name="numPeople" id="people" class="nPeople">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </section>
+
+      <section class="hotel-form">
+        <textarea name="obs" id="obs-text" class="obs" cols="30" rows="10" placeholder="Requests"></textarea>
+      </section>
+      <button class="submit-btn" type="submit">Send</button>
+
+      <section class="list-section">
+        <h3>Reservation list:</h3>
+        <ol>
+
+        </ol>
+        <button type="reset" class="clear-btn">Clear</button>
+      </section>
+    </form>
+  </main>
+
+  <script src="hotelTrybe.js"></script>
+</body>
+</html>
