@@ -16,12 +16,8 @@ const people = [
   { name: "Bruna", age: 19 },
 ];
 
-const peoplesAge = [];
-const ageArray = people.forEach((item) => peoplesAge.push(item.age));
-
 const verifyAges = (arr, minimumAge) => {
-  // return Object.values(arr.age).every((age) => age >= 18)
-  return arr.every((item) => item >= minimumAge);
+  return arr.every((item) => item.age >= minimumAge);
 };
 
-console.log(verifyAges(peoplesAge, 18));
+console.log(verifyAges(people, 18));

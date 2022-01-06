@@ -29,12 +29,8 @@ const musicas = [
 ];
 
 function findMusic(id) {
-  return id === '31031685'
+  // Adicione seu código aqui
+ return musicas.find((item) => item.id);
 }
-const musicId = [];
-
-musicas.forEach((item) => musicId.push(item.id));
-
-console.log(musicId.find(findMusic));
 
 console.log(findMusic("31031685"));

@@ -96,7 +96,7 @@
         </section>
       </section>
 
-      <section class="field is-horizontal">
+      <section class="field is-horizontal" id="housing-type-group">
         <label class="label radio" for="house">
           <input type="radio" name="housing-type" id="house" required value="House">House
         </label>
@@ -175,8 +175,12 @@
   </form>
 
   <div class="content is-large" id="my-resume"></div>
+
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script>
+    const validation = new window.JustValidate("form");
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -254,6 +254,8 @@ function validateJob(validation) {
 
 function validatePersonalInfo(event) {
   event.preventDefault();
+  const resume = document.querySelector("#my-resume");
+  resume.innerHTML = "";
   let validation = true;
   if (validateName() === false) {
     validation = false;
@@ -283,14 +285,8 @@ function submitForm() {
 submitButton.addEventListener('click', validatePersonalInfo);
 
 function clearAll() {
-  const paragraphs = document.querySelectorAll('p');
-  for (let i = 0; i < paragraphs.length; i += 1) {
-    resume.removeChild(paragraphs[i]);
-  }
-  const header = document.querySelector('h1');
-  resume.removeChild(header);
-  const secHeader = document.querySelector('h2');
-  resume.removeChild(secHeader);
+  const resume = document.querySelector("#my-resume");
+  resume.innerHTML = "";
 }
 
 clearButton.addEventListener('click', clearAll)

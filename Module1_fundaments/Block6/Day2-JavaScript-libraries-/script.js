@@ -1,12 +1,102 @@
+// const { default: JustValidate } = require("./node_modules/just-validate");
+
 const state = document.querySelector('#state');
 const startDate = document.querySelector('#start-date');
 const submitButton = document.querySelector('#submit-button');
 const resume = document.querySelector('#my-resume');
 const clearButton = document.querySelector('#clear-button');
 
-const states = ['Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará', 'Espírito Santo', 'Goiás', 'Maranhão', 'Mato Grosso', 'Mato Grosso do Sul', 'Minas Gerais', 'Pará', 'Paraíba', 'Paraíba', 'Paraná', 'Pernambuco', 'Piauí', 'Rio de Janeiro', 'Rio Grande do Norte', 'Rio Grande do Sul', 'Rondônia', 'Roraima', 'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocntins', 'Distrito Federal'];
+const states = ['','Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará', 'Espírito Santo', 'Goiás', 'Maranhão', 'Mato Grosso', 'Mato Grosso do Sul', 'Minas Gerais', 'Pará', 'Paraíba', 'Paraíba', 'Paraná', 'Pernambuco', 'Piauí', 'Rio de Janeiro', 'Rio Grande do Norte', 'Rio Grande do Sul', 'Rondônia', 'Roraima', 'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocntins', 'Distrito Federal'];
 
-const values = ['ac', 'al', 'ap', 'am', 'ba', 'ce', 'es', 'go', 'ma', 'mt', 'ms', 'mg', 'pa', 'pb', 'pr', 'pe', 'pi', 'rj', 'rn', 'rs', 'ro', 'rr', 'sc', 'sp', 'se', 'to', 'df'];
+const values = ['','ac', 'al', 'ap', 'am', 'ba', 'ce', 'es', 'go', 'ma', 'mt', 'ms', 'mg', 'pa', 'pb', 'pr', 'pe', 'pi', 'rj', 'rn', 'rs', 'ro', 'rr', 'sc', 'sp', 'se', 'to', 'df'];
+
+const formValidation = new JustValidate("form");
+
+formValidation
+  .addField("#fullName", [
+    {
+      rule: "maxLength",
+      value: 40,
+    },
+    {
+      rule: "required",
+      errorMessage: "Name is required",
+    },
+  ])
+  .addField("#e-mail", [
+    {
+      rule: "maxLength",
+      value: 50,
+    },
+    {
+      rule: "required",
+      errorMessage: "E-mail is required",
+    },
+  ])
+  .addField("#cpf", [
+    {
+      rule: "maxLength",
+      value: 11,
+    },
+    {
+      rule: "required",
+    },
+  ])
+  .addField("#adress", [
+    {
+      rule: "maxLength",
+      value: 200,
+    },
+    {
+      rule: "required",
+    },
+  ])
+  .addField("#city", [
+    {
+      rule: "maxLength",
+      value: 28,
+    },
+    {
+      rule: "required",
+    },
+  ])
+  .addField("#state", [
+    {
+      rule: "required",
+    },
+  ])
+  .addRequiredGroup("#housing-type-group")
+  .addField("#presentation", [
+    {
+      validator: (value) => {
+        return value[0] === "!";
+      },
+    },
+  ])
+  .addField("#job1", [
+    {
+      rule: "maxLength",
+      value: 40,
+    },
+    {
+      rule: "required",
+    },
+  ])
+  .addField("#job1-description", [
+    {
+      rule: "maxLength",
+      value: 500,
+    },
+    {
+      rule: "required",
+    },
+  ])
+  .addField("#start-date", [
+    {
+      rule: "required",
+    },
+  ]);
+  
 
 function createStateOptions() {
   for (let i = 0; i < states.length; i += 1) {
@@ -20,6 +110,8 @@ function createStateOptions() {
 }
 
 createStateOptions();
+
+
 
 function createHeader() {
   let text = 'Personal information:'
@@ -65,7 +157,16 @@ function createPersonalInfo() {
   adressParagraph();
 }
 
-const picker = new Pikaday({ field: document.getElementById("start-date") });
+const picker = new Pikaday({
+  field: document.getElementById("start-date"),
+  format: 'D/M/YYYY',
+  toString(date, format) {
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+  }
+});
 
 function createIntro() {
   let intro = document.querySelector('#presentation').value;
@@ -108,49 +209,28 @@ function createPreviousJob() {
   createStartingDate();
 }
 
-function submitForm(event) {
-  event.preventDefault();
+function submitForm() {
+  const resume = document.querySelector('#my-resume');
+  resume.innerHTML = '';
   createHeader();
   createPersonalInfo();
   createSecHeader();
   createPreviousJob();
 }
 
-submitButton.addEventListener('click', submitForm);
+
+function validate(e) {
+  e.preventDefault();
+
+  
+  submitForm();
+}
+
+submitButton.addEventListener('click', validate);
 
 function clearAll() {
-  const paragraphs = document.querySelectorAll('p');
-  for (let i = 0; i < paragraphs.length; i += 1) {
-    resume.removeChild(paragraphs[i]);
-  }
-  const header = document.querySelector('h1');
-  resume.removeChild(header);
-  const secHeader = document.querySelector('h2');
-  resume.removeChild(secHeader);
+  const resume = document.querySelector('#my-resume');
+  resume.innerHTML = '';
 }
 
 clearButton.addEventListener('click', clearAll)
-
-const validate = new window.JustValidate("#form");
-
-validate.addField('#fullName', [
-  {
-    rule: 'maxLength',
-    value: 40,
-  },
-  {
-    rule: 'required',
-    errorMessage: 'Name is required',
-  }
-]);
-
-validate.addField('#e-mail', [
-  {
-    rule: 'required',
-    errorMessage: 'E-mail is required',
-  },
-  {
-    rule: 'email',
-    errorMessage: 'E-mail is invalid',
-  }
-])
