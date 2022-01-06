@@ -8,6 +8,7 @@ const states = ['Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará', 'Esp
 
 const values = ['ac', 'al', 'ap', 'am', 'ba', 'ce', 'es', 'go', 'ma', 'mt', 'ms', 'mg', 'pa', 'pb', 'pr', 'pe', 'pi', 'rj', 'rn', 'rs', 'ro', 'rr', 'sc', 'sp', 'se', 'to', 'df'];
 
+
 function createStateOptions() {
   for (let i = 0; i < states.length; i += 1) {
     let createOption = document.createElement('option');
@@ -70,12 +71,19 @@ function checkDate() {
   let day = date[0] + date[1];
   let month = date[3] + date[4];
   let year = date[6] + date[7] + date[8] + date[9];
+  if (!date) {
+    alert('Date is required')
+    return false;
+  }
   if (parseInt(day) <= 0 || parseInt(day) > 31) {
     alert('Invalid date');
+    return false
   } else if (parseInt(month) <= 0 || parseInt(month) > 12) {
     alert("Invalid date");
+    return false;
   } else if (parseInt(year) <= 0) {
     alert("Invalid date");
+    return false;
   } else {
     return `${parseInt(day)}/${parseInt(month)}/${parseInt(year)}`;
   }
@@ -122,15 +130,157 @@ function createPreviousJob() {
   createStartingDate();
 }
 
-function submitForm(event) {
+const validateName = () => {
+  const name = document.querySelector("#fullName");
+  if (!name.value) {
+    alert("Name is required");
+    return false;
+  }
+  if (name.value.length > 40) {
+    alert("Max of 40 characters");
+    return false;
+  }
+  return true;
+};
+
+function validateEmail() {
+  const email = document.querySelector('#e-mail');
+  if (!email.value) {
+    alert('E-mail is required');
+    return false;
+  }
+  if (email.value.length > 50) {
+    alert('Max 50 characters');
+    return false;
+  }
+  return true;
+}
+
+function validateSocial() {
+  const socialSecurityNumber = document.querySelector('#cpf');
+  if (!socialSecurityNumber.value) {
+    alert('Social Security Number is required');
+    return false;
+  }
+  if (socialSecurityNumber.value.length < 11 || socialSecurityNumber.value.length > 11) {
+    alert('invalid number');
+    return false;
+  }
+  return true;
+}
+
+function validateAdress() {
+  const adress = document.querySelector('#adress');
+  if (!adress.value) {
+    alert('Adress is required');
+    return false;
+  }
+  if (adress.value.length > 200) {
+    alert('Max 200 characters');
+    return false;
+  }
+}
+
+function validateCity() {
+  const city = document.querySelector('#city');
+  if (!city.value) {
+    alert('City is required');
+    return false;
+  }
+  if (city.value.length > 28) {
+    alert('Max 28 characters');
+    return false;
+  }
+  return true;
+}
+
+function validateResume() {
+  const resume = document.querySelector('#presentation');
+  if (!resume.value) {
+    alert('Introduction to your resume is required');
+    return false;
+  }
+  if (resume.value.length > 1000) {
+    alert('Max 1000 characters');
+    return false;
+  }
+  return true;
+}
+
+function validatePosition() {
+  const position = document.querySelector('#job1');
+  if (!position.value) {
+    alert("Position is required");
+    return false;
+  }
+  if (position.value.length > 40) {
+    alert('Max 40 characters');
+    return false;
+  }
+  return true;
+}
+
+function validateDescription() {
+  const description = document.querySelector('#job1-description');
+  if (!description.value) {
+    alert("Job description is required");
+    return false;
+  }
+  if (description.value.length > 500) {
+    alert("Max 500 characters");
+    return false;
+  }
+  return true;
+}
+
+function validateJob(validation) {
+  let valid = validation;
+  if (validateResume() === false) {
+    valid = false;
+  }
+  if (validatePosition() === false) {
+    valid = false;
+  }
+  if (validateDescription() === false) {
+    valid = false;
+  }
+  if (checkDate() === false) {
+    valid = false;
+  }
+  if (valid === true) {
+    submitForm();
+  }
+}
+
+function validatePersonalInfo(event) {
   event.preventDefault();
+  let validation = true;
+  if (validateName() === false) {
+    validation = false;
+  }
+  if (validateEmail() === false) {
+    validation = false;
+  }
+  if (validateSocial() === false) {
+    validation = false;
+  }
+  if (validateAdress() === false) {
+    validation = false;
+  }
+  if (validateCity() === false) {
+    validation = false
+  }
+  validateJob(validation);
+}
+
+function submitForm() {
   createHeader();
   createPersonalInfo();
   createSecHeader();
   createPreviousJob();
 }
 
-submitButton.addEventListener('click', submitForm);
+submitButton.addEventListener('click', validatePersonalInfo);
 
 function clearAll() {
   const paragraphs = document.querySelectorAll('p');
