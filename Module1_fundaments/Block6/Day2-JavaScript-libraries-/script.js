@@ -1,5 +1,3 @@
-// const { default: JustValidate } = require("./node_modules/just-validate");
-
 const state = document.querySelector('#state');
 const startDate = document.querySelector('#start-date');
 const submitButton = document.querySelector('#submit-button');
@@ -10,9 +8,9 @@ const states = ['','Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará', '
 
 const values = ['','ac', 'al', 'ap', 'am', 'ba', 'ce', 'es', 'go', 'ma', 'mt', 'ms', 'mg', 'pa', 'pb', 'pr', 'pe', 'pi', 'rj', 'rn', 'rs', 'ro', 'rr', 'sc', 'sp', 'se', 'to', 'df'];
 
-const formValidation = new JustValidate("form");
+const validation = new window.JustValidate("#form");
 
-formValidation
+validation
   .addField("#fullName", [
     {
       rule: "maxLength",
@@ -69,7 +67,7 @@ formValidation
   .addField("#presentation", [
     {
       validator: (value) => {
-        return value[0] === "!";
+        return typeof value === 'string';
       },
     },
   ])
@@ -95,7 +93,10 @@ formValidation
     {
       rule: "required",
     },
-  ]);
+  ])
+  .onSuccess((event) => {
+    console.log("Validation passes and form submitted", event);
+  }); 
   
 
 function createStateOptions() {
@@ -220,9 +221,6 @@ function submitForm() {
 
 
 function validate(e) {
-  e.preventDefault();
-
-  
   submitForm();
 }
 

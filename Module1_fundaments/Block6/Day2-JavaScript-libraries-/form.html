@@ -30,7 +30,7 @@
         <section class="field-body">
           <section class="field">
             <section class="control">
-              <input class="input is-expanded is-normal is-primary" type="text" name="name" id="fullName" required max="40">
+              <input class="input is-expanded is-normal is-primary form__input" type="text" name="name" id="fullName" required max="40">
             </section>
           </section>
         </section>
@@ -40,7 +40,7 @@
         <section class="field-body">
           <section class="field">
             <section class="control">
-              <input class="input is-expanded is-normal is-primary" type="email" name="email" id="e-mail" required max="50">
+              <input class="input is-expanded is-normal is-primary form__input" type="email" name="email" id="e-mail" required max="50">
             </section>
           </section>
         </section>
@@ -53,7 +53,7 @@
         <section class="field-body">
           <section class="field">
             <section class="control">
-              <input class="input is-expanded is-normal is-primary" type="text" name="social" id="cpf" required max="11">
+              <input class="input is-expanded is-normal is-primary form__input" type="text" name="social" id="cpf" required max="11">
             </section>
           </section>
         </section>
@@ -67,7 +67,7 @@
           <section class="field">
             <section class="control">
               <section class="field">
-                <input class="input is-expanded is-normal is-primary" type="text" name="adress" id="adress" required max="200">
+                <input class="input is-expanded is-normal is-primary form__input" type="text" name="adress" id="adress" required max="200">
               </section>
             </section>
           </section>
@@ -79,7 +79,7 @@
         <section class="field-body">
           <section class="field">
             <section class="control">
-              <input class="input is-expanded is-normal is-primary" type="text" name="city" id="city" required max="28">
+              <input class="input is-expanded is-normal is-primary form__input" type="text" name="city" id="city" required max="28">
             </section>
           </section>
         </section>
@@ -90,18 +90,18 @@
         <section class="field-body">
           <section class="field">
             <section class="select is-primary is-normal">
-              <select name="state" id="state"></select>
+              <select name="state form__select" id="state"></select>
             </section>
           </section>
         </section>
       </section>
 
-      <section class="field is-horizontal" id="housing-type-group">
+      <section class="field is-horizontal form__input" id="housing-type-group">
         <label class="label radio" for="house">
-          <input type="radio" name="housing-type" id="house" required value="House">House
+          <input type="radio" name="housing-type" id="house" class="form-check-input" required value="House">House
         </label>
         <label class="label radio" for="apt">
-          <input type="radio" name="housing-type" id="apt" required value="Apartment">Apartment
+          <input type="radio" name="housing-type" id="apt" class="form-check-input" required value="Apartment">Apartment
         </label>
       </section>
 
@@ -117,7 +117,7 @@
         <section class="field-body">
           <section class="field">
             <section class="control">
-              <textarea class="textarea is-primary is-small has-fixed-size" name="resume-presentation" id="presentation" cols="30"
+              <textarea class="textarea is-primary is-small has-fixed-size form__textarea" name="resume-presentation" id="presentation" cols="30"
                 rows="10" required maxlength="1000"></textarea>
             </section>
           </section>
@@ -131,7 +131,7 @@
         <section class="field-body">
           <section class="field">
             <section class="control">
-              <input class="input is-expanded is-normal is-primary" type="text" name="job1" id="job1" required max="40">
+              <input class="input is-expanded is-normal is-primary form__input" type="text" name="job1" id="job1" required max="40">
             </section>
           </section>
         </section>
@@ -144,7 +144,7 @@
         <section class="field-body">
           <section class="field">
             <section class="control">
-              <input class="input is-expanded is-normal is-primary" type="text" name="job1" id="job1-description">
+              <input class="input is-expanded is-normal is-primary form__input" type="text" name="job1" id="job1-description">
             </section>
           </section>
         </section>
@@ -178,9 +178,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-  <script>
-    const validation = new window.JustValidate("form");
-  </script>
+  
   <script src="script.js"></script>
 </body>
 </html>
