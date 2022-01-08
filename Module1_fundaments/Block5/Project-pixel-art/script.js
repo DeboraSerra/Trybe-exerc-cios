@@ -1,9 +1,6 @@
 const colors = document.querySelectorAll('.color');
 const resetButton = document.querySelector('#clear-board');
-const firstColor = document.querySelectorAll('.color')[0];
-const secondColor = document.querySelectorAll('.color')[1];
-const thirdColor = document.querySelectorAll('.color')[2];
-const fourthColor = document.querySelectorAll('.color')[3];
+const firstColor = document.querySelectorAll('.color');
 const board = document.querySelector('#pixel-board');
 const input = document.querySelector('input');
 const buttonInput = document.querySelector('#generate-board');
@@ -13,10 +10,11 @@ function randomNumber() {
   return number;
 }
 
-firstColor.style.backgroundColor = 'black';
-secondColor.style.backgroundColor = `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
-thirdColor.style.backgroundColor = `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
-fourthColor.style.backgroundColor = `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
+firstColor.forEach((color, i) =>
+  i === 0
+    ? (color.style.backgroundColor = "black")
+    : (color.style.backgroundColor = `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`)
+);
 
 function colorPixel(e) {
   const myColor = document.querySelector('.selected').style.backgroundColor;
