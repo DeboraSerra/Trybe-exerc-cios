@@ -4,9 +4,100 @@ const submitButton = document.querySelector('#submit-button');
 const resume = document.querySelector('#my-resume');
 const clearButton = document.querySelector('#clear-button');
 
-const states = ['Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará', 'Espírito Santo', 'Goiás', 'Maranhão', 'Mato Grosso', 'Mato Grosso do Sul', 'Minas Gerais', 'Pará', 'Paraíba', 'Paraíba', 'Paraná', 'Pernambuco', 'Piauí', 'Rio de Janeiro', 'Rio Grande do Norte', 'Rio Grande do Sul', 'Rondônia', 'Roraima', 'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocntins', 'Distrito Federal'];
+const states = ['','Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará', 'Espírito Santo', 'Goiás', 'Maranhão', 'Mato Grosso', 'Mato Grosso do Sul', 'Minas Gerais', 'Pará', 'Paraíba', 'Paraíba', 'Paraná', 'Pernambuco', 'Piauí', 'Rio de Janeiro', 'Rio Grande do Norte', 'Rio Grande do Sul', 'Rondônia', 'Roraima', 'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocntins', 'Distrito Federal'];
 
-const values = ['ac', 'al', 'ap', 'am', 'ba', 'ce', 'es', 'go', 'ma', 'mt', 'ms', 'mg', 'pa', 'pb', 'pr', 'pe', 'pi', 'rj', 'rn', 'rs', 'ro', 'rr', 'sc', 'sp', 'se', 'to', 'df'];
+const values = ['','ac', 'al', 'ap', 'am', 'ba', 'ce', 'es', 'go', 'ma', 'mt', 'ms', 'mg', 'pa', 'pb', 'pr', 'pe', 'pi', 'rj', 'rn', 'rs', 'ro', 'rr', 'sc', 'sp', 'se', 'to', 'df'];
+
+const validation = new window.JustValidate("#form");
+
+validation
+  .addField("#fullName", [
+    {
+      rule: "maxLength",
+      value: 40,
+    },
+    {
+      rule: "required",
+      errorMessage: "Name is required",
+    },
+  ])
+  .addField("#e-mail", [
+    {
+      rule: "maxLength",
+      value: 50,
+    },
+    {
+      rule: "required",
+      errorMessage: "E-mail is required",
+    },
+  ])
+  .addField("#cpf", [
+    {
+      rule: "maxLength",
+      value: 11,
+    },
+    {
+      rule: "required",
+    },
+  ])
+  .addField("#adress", [
+    {
+      rule: "maxLength",
+      value: 200,
+    },
+    {
+      rule: "required",
+    },
+  ])
+  .addField("#city", [
+    {
+      rule: "maxLength",
+      value: 28,
+    },
+    {
+      rule: "required",
+    },
+  ])
+  .addField("#state", [
+    {
+      rule: "required",
+    },
+  ])
+  .addRequiredGroup("#housing-type-group")
+  .addField("#presentation", [
+    {
+      validator: (value) => {
+        return typeof value === 'string';
+      },
+    },
+  ])
+  .addField("#job1", [
+    {
+      rule: "maxLength",
+      value: 40,
+    },
+    {
+      rule: "required",
+    },
+  ])
+  .addField("#job1-description", [
+    {
+      rule: "maxLength",
+      value: 500,
+    },
+    {
+      rule: "required",
+    },
+  ])
+  .addField("#start-date", [
+    {
+      rule: "required",
+    },
+  ])
+  .onSuccess((event) => {
+    console.log("Validation passes and form submitted", event);
+  }); 
+  
 
 function createStateOptions() {
   for (let i = 0; i < states.length; i += 1) {
@@ -20,6 +111,8 @@ function createStateOptions() {
 }
 
 createStateOptions();
+
+
 
 function createHeader() {
   let text = 'Personal information:'
@@ -65,21 +158,16 @@ function createPersonalInfo() {
   adressParagraph();
 }
 
-function checkDate() {
-  let date = startDate.value;
-  let day = date[0] + date[1];
-  let month = date[3] + date[4];
-  let year = date[6] + date[7] + date[8] + date[9];
-  if (parseInt(day) <= 0 || parseInt(day) > 31) {
-    alert('Invalid date');
-  } else if (parseInt(month) <= 0 || parseInt(month) > 12) {
-    alert("Invalid date");
-  } else if (parseInt(year) <= 0) {
-    alert("Invalid date");
-  } else {
-    return `${parseInt(day)}/${parseInt(month)}/${parseInt(year)}`;
+const picker = new Pikaday({
+  field: document.getElementById("start-date"),
+  format: 'D/M/YYYY',
+  toString(date, format) {
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
   }
-}
+});
 
 function createIntro() {
   let intro = document.querySelector('#presentation').value;
@@ -104,7 +192,7 @@ function createJobDesciption() {
 
 function createStartingDate() {
   let createP8 = document.createElement('p');
-  createP8.innerHTML = `<strong>Started: </strong>${checkDate()}`;
+  createP8.innerHTML = `<strong>Started: </strong>${startDate.value}`;
   resume.appendChild(createP8);
 }
 
@@ -122,25 +210,25 @@ function createPreviousJob() {
   createStartingDate();
 }
 
-function submitForm(event) {
-  event.preventDefault();
+function submitForm() {
+  const resume = document.querySelector('#my-resume');
+  resume.innerHTML = '';
   createHeader();
   createPersonalInfo();
   createSecHeader();
   createPreviousJob();
 }
 
-submitButton.addEventListener('click', submitForm);
+
+function validate(e) {
+  submitForm();
+}
+
+submitButton.addEventListener('click', validate);
 
 function clearAll() {
-  const paragraphs = document.querySelectorAll('p');
-  for (let i = 0; i < paragraphs.length; i += 1) {
-    resume.removeChild(paragraphs[i]);
-  }
-  const header = document.querySelector('h1');
-  resume.removeChild(header);
-  const secHeader = document.querySelector('h2');
-  resume.removeChild(secHeader);
+  const resume = document.querySelector('#my-resume');
+  resume.innerHTML = '';
 }
 
 clearButton.addEventListener('click', clearAll)

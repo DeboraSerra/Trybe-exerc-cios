@@ -49,106 +49,113 @@ The program includes more than 1500 hours of live and online classes, and approa
 
 ##### Block 6: HTML & CSS advanced
 
-- [ ] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _Libraries JavaScript e Frameworks CSS_
+- [x] 6-1: _HTML & CSS - Forms_
+- [ ] 6-2: _JavaScript Libraries and Frameworks CSS_
+- [ ] 6-3: _Introduction - CSS Flexbox_
 - [ ] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _Responsive CSS - Mobile First_
-- [ ] 6-6: _[Project - Facebook initial Page]()_
+- [ ] 6-6: _[Project - Trybewarts]()_
 
 ##### Block 7: JavaScript ES6 & Unitary tests
 
 - [ ] 7-1: _JavaScript ES6 - let, const, arrow functions and template literals_
-- [ ] 7-2: _JavaScript ES6 - Objects_
-- [ ] 7-3: _Unitary tests in JavaScript_
+- [ ] 7-2: _JavaScript ES6 - Exeption flow and Objects_
+- [ ] 7-3: _First steps in Jest_
 - [ ] 7-4: _[Project - JavaScript Unitary tests]()_
 
 ##### Block 8: JavaScript ES6
 
-- [ ] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [ ] 8-2: _JavaScript ES6 - Higher Order Functions - map and filter_
-- [ ] 8-3: _JavaScript ES6 - Hagher Order Functions - reduce_
-- [ ] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring and more_
-- [ ] 8-5: _[Project - Zoo functions]()_
+- [ ] 8-1: _Introduction to Higher Order Functions_
+- [ ] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - map and filter_
+- [ ] 8-4: _JavaScript ES6 - Hagher Order Functions - reduce_
+- [ ] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring and more_
+- [ ] 8-6: _[Project - Zoo functions]()_
 
 ##### Block 9: Asynchronicity & Callbacks
 
-- [ ] 9-1: _JavaScript Asynchronus and Callbacks_
-- [ ] 9-2: _JavaScript Promises_
+- [ ] 9-1: _Asynchronus JavaScript and Callbacks_
+- [ ] 9-2: _Asynchronous JavaScript - Fetch API and async/await_
+- [ ] 9-2: _Jest - Asynchronous tests_
 - [ ] 9-3: _[Project - Shopping cart]()_
-
-##### Block 10: Jest
-
-- [ ] 10-1: _First steps in Jest_
-- [ ] 10-2: _Jest - Asynchronus tests_
-- [ ] 10-3: _Jest - Simulating behavior_
-- [ ] 10-4: _[Project - Asynchronus Jest and Mocking]()_
 
 ## Front-end Development :hourglass_flowing_sand:
 
-##### Bloco 11: Introdução - React
+##### Block 10: Introduction to React
 
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [ ] 10-1: _Introduction - Front-end_
+- [ ] 10-1: _Introduction - React_
+- [ ] 10-1: _'Hello, world!' on React!_
+- [ ] 11-2: _React Components_
+- [ ] 11-3: _[Project - Solar System]()_
 
-##### Bloco 12: React
+##### Block 11: State components, events and formularies with React
 
-- [ ] 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulários no React_
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [ ] 11-1: _Components with estate and events_
+- [ ] 11-2: _Formularies on React_
+- [ ] 11-3: _[Project - Tryunfo]()_
 
-##### Bloco 13: React
+##### Block 12: Life cicle of components and React Router
 
-- [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [ ] 13-2: _Ciclo de vida de componentes em React_
-- [ ] 13-3: _React Router_
-- [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
+- [ ] 12-1: _Life cicle of components_
+- [ ] 12-2: _React Router_
+- [ ] 12-3: _[Project - TrybeTunes]()_
 
-##### Bloco 14: Metodologias Ãgeis
+##### Block 13: Agile methodologies
 
-- [ ] 14-1: _Metodologias Ãgeis_
-- [ ] 14-2: _[Projeto - Frontend Online Store]()_
+- [ ] 13-1: _Agile methodologies_
+- [ ] 13-2: _[Project - Frontend Online Store]()_
 
-##### Bloco 15: Testes em React
+##### Block 14: Automate tests with React Testing Library
 
-- [ ] 15-1: _Testando React com a React Testing Library_
-- [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
-- [ ] 15-3: _[Projeto - Testes em React]()_
+- [ ] 14-1: _RTL - First steps_
+- [ ] 14-2: _RTL - Mocks and Inputs_
+- [ ] 14-3: _RTL - Testing React Router_
+- [ ] 14-4: _[Project - React Tests]()_
 
-##### Bloco 16: Introdução ao Redux
+##### Block 15: Managing state with Redux
 
-- [ ] 16-1: _Introdução ao Redux_
-- [ ] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - Prática_
-- [ ] 16-4: _React com Redux - Parte 2_
-- [ ] 16-5: _Testes síncronos com React-Redux_
-- [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
+- [ ] 15-1: _Redux Introduction - The global state of the aplication_
+- [ ] 15-2: _Using Redux on React_
+- [ ] 15-3: _Using Redux on React - Practice_
+- [ ] 15-4: _Using Redux on React - Asynchronous actions_
+- [ ] 15-5: _Tests in React-redux_
+- [ ] 15-6: _[Project - Trybe Wallet]()_
 
-##### Bloco 17: Projeto React
+##### Block 16: Project Trivia Game
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_
+- [ ] 16-1: _[Project - Trivia Game]()_
 
-##### Bloco 18: React & Context API
+##### Block 17: React & Context API
 
-- [ ] 18-1: _Context API do React_
-- [ ] 18-2: _React Hooks - useState e useContext_
-- [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [ ] 17-1: _Context API on React_
+- [ ] 17-2: _React Hooks - useState and useContext_
+- [ ] 17-3: _React Hooks - useEffect and customized Hooks_
+- [ ] 17-4: _[Project - StarWars Datatable with Context API and Hooks]()_
 
-##### Bloco 19: Projeto Final de Front-end
+##### Block 18: Final Project on Front-end
 
-- [ ] 19-1: _[Projeto - App de Receitas]()_
+- [ ] 18-1: _[Project - Receipes app]()_
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Back-end development :hourglass_flowing_sand:
 
-##### Bloco 20: Introdução - Bancos de dados relacionais
+##### Block 19: Docker: Using Containers
 
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [ ] 19-1: _Introduction - Back-end_
+- [ ] 19-1: _Using containers - Docker_
+- [ ] 19-2: _Image manipulation and creation on Docker_
+- [ ] 19-3: _Orchestrating containers with Docker Compose_
+- [ ] 19-4: _[Project - Docker To-do list]()_
+
+##### Block 20: Introduction to SQL
+
+- [ ] 20-1: _Introduction - Relational Database_
+- [ ] 20-1: _SQL Database_
+- [ ] 20-2: _Finding data in a database_
+- [ ] 20-3: _Filtering data specificaly_
+- [ ] 20-4: _Manipulating tables_
+- [ ] 20-5: _[Project - All For One]()_
 
 ##### Bloco 21: Bancos de dados relacionais
 
@@ -252,6 +259,6 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [ ] 36-3: _Entrada e Saída de dados_
 - [ ] 36-4: _Entrada e Saída de dados_
 - [ ] 36-5: _[Projeto - Tech news]()_
-#
+
 
 Na pasta Academia de lógica encontram-se os exercícios realizados durante as mentorias do curso denominadas Academia de lógica.
