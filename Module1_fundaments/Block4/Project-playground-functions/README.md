@@ -1,261 +1,114 @@
 # Project Playground functions
 
-1 - Crie uma função usando o operador &&
-JavaScript possui um operador lógico &&, o qual recebe dois valores e retorna true se ambos os valores são verdadeiros, e retorna false se algum dos valores não o for.
+In this project we were ask to make functions following the requisits bellow. After passing the requisites we were oriented to refactor our work as we learn new things.
 
-Considerando isso, implemente na função compareTrue, um código que ao receber dois parâmetros booleanos deve:
+1. Create a function using the operator &&
 
-Retornar true se ambos os valores forem verdadeiros;
-Retornar false se um ou ambos os parâmetros forem falsos.
-Faça a função somente utilizando o operador &&.
+> Implement a code to the function compareTrue that when it receives two boolean paramaters it must:
 
-O que será verificado:
+  > Return `true` if they're both true;
+  > Return `false` if one or both are false.
+  > Implemente the function using only one operator &&.
 
-Retorne false quando se chamar a função compareTrue com um parâmetro de valor false e outro de valor true
+2. Create a function that calculates the area of a triangle
 
-Retorne false quando se chamar a função compareTrue com dois parâmetros de valor false
+> Write a function with the name calArea that receives a value for the base and another to the height of a triangle and returns its area.
 
-Retorne true quando se chamar a função compareTrue com dois parâmetros de valor true
+> Remember that the area of the triangle is calculate using the formula: (base * heigth) / 2.
 
-2 - Crie uma função que calcule a área de um triângulo
-Escreva uma função com o nome calcArea que receba um valor de base (chamado base) e outro de altura (chamado height) de um triângulo e retorne o cálculo da sua área.
+3. Create a function that divide a frase
 
-Lembre-se que a área de um triângulo é calculada através da seguinte fórmula: (base * altura) / 2.
+> Write a function with the name splitSentence, which will receive a string and return an array of strings separated foreach space in the original string.
 
-O que será verificado:
+> Exemple: if the function receive the string "go Trybe", the return must be ['go', 'Trybe'].
 
-Retorne o valor 250 quando a funcão calcArea é chamada com o parâmetro base com o valor 10 e o parâmetro height com o valor 50
+4 - Create a function that concatenate strings
 
-Retorne o valor 5 quando a funcão calcArea é chamada com o parâmetro base com o valor 5 e o parâmetro height com o valor 2 espera-se como resultado 5
+> Write a function named concatName that, when it receives an array of strings, return a string with the format 'LAST ITEM, FIRST ITEM', regardless the size of the array.
 
-Retorne o valor 25.5 quando a funcão calcArea é chamada com o parâmetro base com o valor 51 e o parâmetro height com o valor 1 espera-se como resultado 25.5
+5. Create a function that calculated a score on football
 
-3 - Crie uma função que divida a frase
-Escreva uma função com o nome splitSentence, a qual receberá uma string e retornará uma array de strings separadas por cada espaço na string original.
+> Write a function named footballPoints that receive the number of wins and the number of ties and return the score the team made in a championship.
 
-Exemplo: se a função receber a string "go Trybe", o retorno deverá ser ['go', 'Trybe'].
+> Consider that each win score 3 points and each tie score 1 ponit.
 
-O que será verificado:
+6. Create a function that calculate the number of reps of the biggest number. Write a function called highestCount that, when it receives an array of numbers returns the number of times that the biggest one repeats.
 
-Retorne o valor ['go', 'Trybe'] se a função receber a string 'go Trybe'
+7. Create a function of hunting the mouse
 
-Retorne o valor ['vamo', 'que', 'vamo']. se a função receber a string 'vamo que vamo'
+> Imagine there is two cats, called cat1 and cat2, and that both are hunting the same mouse. Imagin ethat the animals are in a straight line, each one in a position represented by a number.
 
-Retorne o valor ['foguete'] se a função receber a string 'foguete'
+> Knowing this, createa function called catAndMouse that, when it receives the position of mouse, cat1 and cat2, on that order, calculate the distances between the mouse and each of the cats and then returns which of the cats will catch the mouse first (the one that is closer to the mouse).
 
-4 - Crie uma função que use concatenação de strings
-Escreva uma função com o nome concatName que, ao receber uma array de strings, retorne uma string com o formato 'ÚLTIMO ITEM, PRIMEIRO ITEM', independente do tamanho da array.
+> I case the cats are at the same distance of the mouse, the function must return the string "os gatos trombam e o rato foge" (The cats bump and the mouse gets away).
 
-Isso quer dizer que, caso o parâmetro passado para concatName seja a Array ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'], a função deverá retornar Paolillo, Lucas.
+8. Create a function FizzBuzz
 
-O que será verificado:
+> Create a function called fizzBuzz that receive an array of numbers and return an array as the exemple below:
 
-Retorne 'Paolillo, Lucas' quando o parâmetro passado na funcão concatName seja ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']
+  > For each number of the array that is divisible just by 3, show a string 'fizz';
+  > For each number of the array that is divisible by 5, show a string 'buzz';
+  > In case the number is divisible by 3 and 5, show a string 'fizzBuzz';
+  > In case the number isn't divisible by 3 or by 5, show a string 'bug!';
 
-Retorne 'ré, foguete' quando o parâmetro passado na funcão concatName seja ['foguete', 'não', 'tem', 'ré']
+9. Createa function the code and decode
 
-Retorne 'captain, captain' quando o parâmetro passado na funcão concatName seja ['captain', 'my', 'captain']
+> Create two functions: the first must be called encode and, when it receives a string as paramater, must change all the lower case vowels for numbers using the following format:
 
-5 - Crie uma função que calcule a quantidade de pontos no futebol
-Escreva uma função com o nome footballPoints que receba o número de vitórias (esse parâmetro deverá se chamar wins) e o número de empates (esse parâmetro deverá se chamar ties) e retorne a quantidade de pontos que o time marcou em um campeonato.
+  > a -> 1
+  > e -> 2
+  > i -> 3
+  > o -> 4
+  > u -> 5
 
-Para tanto, considere que cada vitória vale 3 pontos e cada empate vale 1 ponto.
+> The second function must be called decode and do the opposite of the encode function, which means, receive a string containing numbers in the place of lower case letters and return a string with lower case vowels in the place of the numbers.
 
-O que será verificado:
+10. Create a function of Technologies' List
 
-Retorne 50 pontos quando o time tenha 14 vitórias e 8 empates
+> Create a function that receive an array of technology names That you want to learn. This function must receive a second parameter called name.
 
-Retorne 5 pontos quando o time tenha 1 vitória e 2 empates
-
-Retorne 0 pontos quando o time tenha 0 vitórias e 0 empates
-
-6 - Crie uma função que calcule a repetição do maior número
-Escreva uma função chamada highestCount que, ao receber uma array de números, retorne a quantidade de vezes que o maior deles se repete.
-
-Exemplo: caso o parâmetro de highestCount seja uma array com valores [9, 1, 2, 3, 9, 5, 7], a função deverá retornar 2, que é a quantidade de vezes que o número 9 (maior número do array) se repete.
-
-O que será verificado:
-
-Retorne 2 quando o parâmetro passado na função highestCount seja [9, 1, 2, 3, 9, 5, 7]
-
-Retorne 1 quando o parâmetro passado na função highestCount seja [0, 4, 4, 4, 9, 2, 1]
-
-Retorne 3 quando o parâmetro passado na função highestCount seja [0, 0, 0]
-
-7 - Crie uma função de Caça ao Rato
-Imagine que existem dois gatos, os quais chamaremos de cat1 e cat2, e que ambos estão caçando um mesmo rato chamado mouse. Imagine que os animais estão em uma reta, cada um em uma posição representada por um número.
-
-Sabendo disso, crie uma função chamada catAndMouse que, ao receber a posição de mouse, cat1 e cat2, nessa ordem, calcule as distâncias entre o rato e cada um dos gatos, em seguida, retorne qual dos felinos irá alcançar o rato primeiro (aquele que estiver mais perto do rato).
-
-Exemplo: caso o gato cat2 esteja a 2 unidades de distância do rato, e cat1 esteja a 3 unidades, sua função deverá retornar "cat2".
-
-Caso os gatos estejam na mesma distância do rato, a função deverá retornar a string "os gatos trombam e o rato foge".
-
-O que será verificado:
-
-Retorne a string 'cat2' caso a função catAndMouse receba os parâmetros onde gato cat2 esteja a 2 unidades de distância do rato e cat1 esteja a 3 unidades de distância do rato
-
-Retorne a string 'cat1' caso a função catAndMouse receba os parâmetros onde gato cat1 esteja a 6 unidades de distância do rato e cat2 esteja a 12 unidades de distância do rato
-
-Retorne a string 'os gatos trombam e o rato foge' caso a função catAndMouse receba os parâmetros onde os gatos estejam na mesma distância do rato
-
-8 - Crie uma função FizzBuzz
-Crie uma função chamada fizzBuzz que receba uma array de números e retorne uma array da seguinte forma:
-
-Para cada número do Array que seja divisível apenas por 3, apresente uma string "fizz";
-Para cada número do Array que seja divisível apenas por 5, apresente uma string "buzz";
-Caso o número seja divisível por 3 e 5, retorne a string "fizzBuzz";
-Caso o número não possa ser dividido por 3 nem por 5, retorne a string "bug!";
-Exemplo: caso o parâmetro seja [2, 15, 7, 9, 45], sua função deverá retornar ["bug!", "fizzBuzz", "bug!", "fizz", "fizzBuzz"].
-
-O que será verificado:
-
-Retorne as strings ['bug!', 'fizzBuzz', 'bug!', 'fizz', 'fizzBuzz'] quando é passado os parâmetros [2, 15, 7, 9, 45] para a função fizzBuzz
-
-Retorne as strings ['bug!', 'fizz'] quando é passado os parâmetros [7, 9] para a função fizzBuzz
-
-Retorne as strings ['fizz', 'buzz'] quando é passado os parâmetros [9, 25] para a função fizzBuzz
-
-9 - Crie uma função que Codifique e Decodifique
-Crie duas funções: a primeira deverá se chamar encode e, ao receber uma string como parâmetro, deverá trocar todas as vogais minúsculas por números, de acordo com o formato a seguir:
-
-a -> 1
-e -> 2
-i -> 3
-o -> 4
-u -> 5
-
-Ou seja, caso o parâmetro de encode seja "hi there!", o retorno deverá ser "h3 th2r2!".
-
-A segunda função deverá se chamar decode e faz o contrário de encode - ou seja, recebe uma string contendo números no lugar de letras minúsculas e retornará uma string com vogais minúsculas no lugar dos números (então, caso o parâmetro de decode seja "h3 th2r2!", o retorno deverá ser "hi there!").
-
-O que será verificado:
-
-Retorne uma string codificada quando a função encode for utilizada
-
-Retorne uma string decodificada quando a função decode for utilizada
-
-10 - Crie uma função de Lista de Tecnologias
-Crie uma função que recebe um array de nomes de tecnologias que você quer aprender. Essa função deve receber também um segundo parâmetro chamado name com um nome.
-
-Para cada tecnologia no array, crie um objeto com a seguinte estrutura:
+> For each technology in the array, create an object with the following structure:
 
 {
   tech: "NomeTech",
   name: name
 }
-Estes objetos devem ser inseridos em uma nova lista em ordem crescente a partir do campo tech no objeto.
 
-A saída da sua função deve ser uma lista de objetos ordenada pelo campo tech dos objetos com o formato acima.
+> The return of your function must be a list of objects ordered by the tech name um the format showed before.
 
-Exemplo:
+> If the array is empty the function must return 'Vazio!' ('Empty!').
 
-Entradas da função:
+##### Bônus
 
-["React", "Jest", "HTML", "CSS", "JavaScript"]
-"Lucas"
+11. Create a function of Phone Numbers
 
-// Saída:
+> Create a function called generatePhoneNumber that receive an array with 11 numbers and return a phone number, respecting the parenthesis, dashes and spaces.
 
-[
-  {
-    tech: "CSS",
-    name: "Lucas"
-  },
-  {
-    tech: "HTML",
-    name: "Lucas"
-  },
-  {
-    tech: "JavaScript",
-    name: "Lucas"
-  },
-  {
-    tech: "Jest",
-    name: "Lucas"
-  },
-  {
-    tech: "React",
-    name: "Lucas"
-  }
-]
-Caso o array venha vazio sua função deve retornar 'Vazio!'
+> Exemple: in case the parameter is [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1], generatePhoneNumber must return (12) 34567-8901.
 
-O que será verificado:
+> If the function receive an array with a size different than 11, it must return "Array com tamanho incorreto." ('Array with incorrect length).
 
-Retorne uma lista de objetos ordenados quando é passada uma lista com 5 tecnologias
+> If any of the numbers of the array is smaller than 0, bigger than 9 or repeat 3 or more times, it must return the string "não é possível gerar um número de telefone com esses valores" ('it's not possible to generate a phone number with tese values').
 
-Retorne a mensagem de erro 'Vazio!' quando a lista não tiver tecnologias
+12. Create a function with the conditions to create a triangle
 
-Bônus
+> A triangle is made with three lines: lineA, lineB and lineC. Create a function called triangleCheck that must receive three lines ans parameters and return if it is possible to make a triangle with the values of each line.
 
-11 - Crie uma função de Número de Telefone
-Crie uma função chamada generatePhoneNumber que receba uma array com 11 números e retorne um número de telefone, respeitando parênteses, traços e espaços.
+  > To make a triangle, the size of any of the sides of the triangle must be smaller then the sum of the other two and bigger then the absolute value of the subtraction between them.
 
-Exemplo: caso o parâmetro da função seja [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1], generatePhoneNumber deverá retornar (12) 34567-8901.
+> The return of the function must be aboolean.
 
-Se a função receber um array com tamanho diferente de 11, a mesma deve retornar "Array com tamanho incorreto.".
+13. Create wellcome function to the Trybe's Bar!
 
-Caso algum dos números da array seja menor que 0, maior que 9 ou se repita 3 vezes ou mais, generatePhoneNumber deverá retornar a string "não é possível gerar um número de telefone com esses valores".
+> According to the rules of this bar, for each drink the costumers must drink a cup of water so they won't have hangover.
 
-O que será verificado:
+> Create the function called hydrate that receive a string and return the sugestion of how many cups of water the costumer must drink. Exemples:
 
-Retorne a string "Array com tamanho incorreto." caso o array tenha o tamanho diferente de 11
-
-Retorne a string "não é possível gerar um número de telefone com esses valores" caso algum dos números do array seja menor que 0
-
-Retorne a string "não é possível gerar um número de telefone com esses valores" caso algum número do array seja maior que 9
-
-Retorne a string "não é possível gerar um número de telefone com esses valores" caso algum número do array se repetir 3 vezes ou mais
-
-Retorne um número de telefone, respeitando parênteses, traços e espaços caso os números do array estejam de acordo com as especificações
-
-12 - Crie uma função de Condição de existência de um triângulo
-Um triângulo é composto de três linhas: lineA, lineB e lineC. Crie uma função chamada triangleCheck que deverá receber as três linhas como parâmetro e retornar se é possível formar um triângulo com os valores apresentados de cada linha.
-
-Para tanto, tenha em mente algumas considerações:
-
-Para que seja possível formar um triângulo, é necessário que a medida de qualquer um dos lados seja menor que a soma das medidas dos outros dois e maior que o valor absoluto da diferença entre essas medidas.
-
-Para obter o valor absoluto de um número em JavaScript, pesquise pela função Math.abs.
-
-O retorno da sua função deverá ser um booleano.
-
-Exemplo: o retorno de triangleCheck(10, 14, 8) deverá ser true.
-
-O que será verificado:
-
-Retorne false quando a medida de qualquer um dos lados seja maior que a soma das medidas dos outros dois.
-
-Retorne false quando a medida de qualquer um dos lados seja menor que o valor absoluto da diferença entre essas medidas.
-
-Retorne true quando a medida de qualquer um dos lados seja menor que a soma das medidas dos outros dois e maior que o valor absoluto da diferença entre essas medidas.
-
-13 - Crie uma função de boas vindas ao Bar da Trybe!
-Segundo as regras desse bar, a cada bebida deve-se beber um copo de água para que não se tenha ressaca.
-
-Crie a função hydrate que recebe uma string, e retorne a sugestão de quantos copos de água você deve beber. Exemplos:
-
-String recebida:
-  "1 cerveja"
-String retornada:
-  "1 copo de água"
-String recebida:
-  "1 cachaça, 5 cervejas e 1 copo de vinho"
-String retornada:
-  "7 copos de água"
-String recebida:
-  "1 cachaça, 5 cervejas e 1 copo de vinho"
-String retornada:
-  "7 copos de água"
-Notas
-
-Para simplificar, consideraremos que qualquer coisa com um número à frente é uma bebida e que a sua string sempre virá com o formato quantidade (em número) + tipo da bebida.
-
-O número na frente de cada bebida está no intervalo entre 1 e 9.
-
-Dica: pesquise por algo similar a get all integers inside a string js.
-
-O que será verificado:
-
-Retorne a sugestão de quantos copos de água deve-se beber ao receber uma string
+  > Received string:
+    > "1 beer"
+  > Returned string:
+    > "1 cup of waters"
+  > Received string:
+    > "1 liquor, 5 beers and 1 glass of wine"
+  > Returned string:
+    > "7 cups of water"
