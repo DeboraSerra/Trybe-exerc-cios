@@ -1,19 +1,15 @@
 # Day 5-1 - JavaScript - DOM & selectors
 
-Funções de manipulação do DOM
-É hora de aplicar seus conhecimentos em manipular os elementos do HTML !
-A seguir, você verá um trecho de código HTML e CSS .
-Crie um arquivo HTML dentro do diretório exercises/javascript-dom-eventos-e-web-storage_1 e copie o código a seguir.
-Leia as instruções que estão dentro de um comentário na tag <script> .
-Não se esqueça de fazer um commit a cada exercício!
+The file exercise1 was produced using the template provided in the course and with the following exercise
 
+1. Create a function that change the text in the tag <p> to a description of how you see yourself in 2 years.
 
-  - document.getElementById()
-  - document.getElementsByClassName()
-  - document.getElementsByTagName()
-  1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
-  2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
-  3. Crie uma função que mude a cor do quadrado vermelho para branco.
-  4. Crie uma função que corrija o texto da tag <h1>.
-  5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-  6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+2. Create a function that change the square color from yellow to the Trybe green (rgb(76, 164, 109)).
+
+3. Create a function that change the squere color from red to white.
+
+4. Create a function that corrects the text from the tag <h1>.
+
+5. Createa function that modify the text from the tag <p> to upperCase.
+
+6. Create a function that show the content of all the tags <p> on the console.
