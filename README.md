@@ -50,10 +50,10 @@ The program includes more than 1500 hours of live and online classes, and approa
 ##### Block 6: HTML & CSS advanced
 
 - [x] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _JavaScript Libraries and Frameworks CSS_
-- [ ] 6-3: _Introduction - CSS Flexbox_
-- [ ] 6-3: _CSS Flexbox - Part 1_
-- [ ] 6-4: _CSS Flexbox - Part 2_
+- [x] 6-2: _JavaScript Libraries and Frameworks CSS_
+- [x] 6-3: _Introduction - CSS Flexbox_
+- [x] 6-3: _CSS Flexbox - Part 1_
+- [x] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _Responsive CSS - Mobile First_
 - [ ] 6-6: _[Project - Trybewarts]()_
 

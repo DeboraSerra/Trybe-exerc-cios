@@ -2,19 +2,28 @@
 
 #### Element selectors
 
-Recupere o elemento que contém o título da página e faça algo com ele, como alterá-lo para o nome do seu filme favorito.
-Agora recupere o segundo parágrafo e use sua criatividade para alterá-lo.
-Por fim, recupere o subtítulo e altere-o também.
+1. In the file fixingExercise1 was produced using the following directions.
 
-Utilizando o mesmo template de exercício anterior:
-Adicione uma classe igual para os dois parágrafos.
-Recupere os seus parágrafos via código JavaScript , usando a função getElementsByClassName ;
-Altere algum estilo do primeiro deles.
-Recupere o subtítulo e altere a cor dele usando a função getElementsByTagName .
+Recover the elemente that contain the page title and do something with it, like change it to your favorite movie title. 
+
+Then recover the second paragraph and change it.
+
+At last, recover the subtitle and change it too.
+
+2. The file fixingExercise2 was done using the directions below using the same template as before:
+
+Add one class to two different paragraphs.
+
+Recover the paragraphs through JavaScript code, using the function getElementsByClassName;
+
+Change any style to the first paragraph.
+
+Recover the subtitle and change its color using the funciton getElementsByTagName.
 
 #### Which selector to use
 
-Perceba que agora, na tag script , temos o atributo src . Ele servirá para importarmos arquivos .js externos, e funciona de forma semelhante à importação de arquivos CSS. Assim, mantemos nosso código HTML mais limpo, e podemos editar com mais facilidade nosso JavaScript. Legal, não é?
-Crie um arquivo JavaScript com o nome de "script.js" na pasta exercises/5_1 e coloque seus conhecimentos de getElementBy e querySelector em prática.
-Crie também um arquivo CSS e copie o código abaixo para adicionar estilo à página. Fique a vontade para soltar a criatividade e alterar o arquivo como desejar!
+3. The file fixingExercise3, script.js and style.css were poduced using the guides below and the template given in the course:
 
+Create a JavaScript file with the name `script.js` and practice what you know of `getElementBy` and `querySelector`.
+
+Also create a CSS file and add style to the page, starting from the code avilable in the course.

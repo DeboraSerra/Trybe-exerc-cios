@@ -1,5 +1,7 @@
 # Block 3 - Project Lessons Learned
 
+In this project we were asked to make an HTML page following the instructions bellow using also CSS to add specific styles to it. After passing the requisites we were oriented to improve our work the way we wanted.
+
 1. Add a background color to the page
 
 > It must have the background color: rgb(253, 251, 251)
