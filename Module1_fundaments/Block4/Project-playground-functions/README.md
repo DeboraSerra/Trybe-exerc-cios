@@ -78,7 +78,7 @@ In this project we were ask to make functions following the requisits bellow. Af
 
 > If the array is empty the function must return 'Vazio!' ('Empty!').
 
-##### Bônus
+#### Bonus
 
 11. Create a function of Phone Numbers
 
