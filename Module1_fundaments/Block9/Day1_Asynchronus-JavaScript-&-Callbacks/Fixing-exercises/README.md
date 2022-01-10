@@ -1,6 +1,6 @@
 # Day 9.1 - Fixing exercises - Asynchronus JavaScript and callbacks
 
-##### Callbacks
+#### Callbacks
 
 The file fixing-exercise1 was produced following the orientations below:
 
@@ -23,3 +23,16 @@ In file fixing-exercise2 the instructions below were followed:
 > * Insert a callback as parameter to the function getUser;
 
 > * Return the callback given as parameter of the function;
+
+#### Working with errors in asynchronus operations
+
+The file fixing-exercise3 was produced using the following exercise:
+
+1. Add a callback and handle the returned error.
+
+> * The funciton `getCountry` below have about 50% chance of getting a country successfully. It uses a callback to do any operation with the returned country.
+
+> * Add a second parameter, that must be a callbeck, in the fuction getCountry;
+
+> * Return this callback in a way it handles the error message.
+
