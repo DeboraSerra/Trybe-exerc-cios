@@ -1,44 +1,59 @@
 # Day 5-3 - JavaScript - Events
 
-Exercício 1:
-O array dezDaysList contém os dois últimos dias de novembro e os dias do mês de dezembro. Desenvolva uma função que crie dinamicamente cada dia do calendário e os adicione como filhos/filhas da tag <ul> com ID "days" . Note que os dias 29 e 30 de novembro estão no array pois representam respectivamente Domingo e Segunda-feira.
-Os dias devem estar contidos em uma tag <li> , e todos devem ter a classe day . Ex: <li class="day">3</li>
-Os dias 24, 25 e 31 são feriados e, além da classe day , devem conter também a classe holiday . Ex: <li class="day holiday">24</li>
-Os dias 4, 11, 18 e 25 são Sexta-feira. Eles devem conter a classe day e a classe friday . Ex: <li class="day friday">4</li>
-Copiar
-const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];;
-Exercício 2:
-Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
-Adicione a este botão a ID "btn-holiday" .
-Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
-Exercício 3:
-Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
-É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)" .
-Exercício 4:
-Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie dinamicamente um botão com o nome "Sexta-feira".
-Adicione a este botão o ID "btn-friday" .
-Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
-Exercício 5:
-Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
-É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
-Exercício 6:
-Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
-Dica - Propriedade: event.target .
-Exercício 7:
-Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
-O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
-Exercício 8:
-Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
-O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
-O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
-Exercício 9:
-Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
-Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task , ou seja, esta tarefa está deixando de ser uma tarefa selecionada.
-Exercício 10:
-Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
-Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119) .
-Bônus:
-Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".
-Se nenhum caractere for inserido no campo input , a função deve retornar um alert com uma mensagem de erro ao clicar em "ADICIONAR".
-Ao pressionar a tecla "enter" o evento também deverá ser disparado.
-Dica - Propriedade: key .
+Using the code given to us in the course, we were asked to follow the instructions below:
+
+1. Create a function that create each day of the calendar and add them as child of the tag `ul` with the ID _days_.
+
+> The days must be inside a `li` tag, and all of them must have the class _day_;
+
+> The days 24, 25 and 31 are holidays and, beside the class _day_, must have the class _holiday_. Ex: <li class="day holiday">24</li>;
+
+> The days 4, 11, 18 and 25 are friday. They must have the class _day_ and the class _friday_;
+
+2. Create a function that receive a string as parameter and create a button named _Feriados_ (Holidays).
+
+> Add to this button the ID _btn-holiday_;
+
+> Add this button as child of the tag `div` with the class _buttons-container_.
+
+3. Create a function that add to the button _Feriados_ a 'click' event that chenge the background color of the days that have the class _holiday_.
+
+> It is interesting that this button have the reverse logic too. When it is clicked again, the number return to the original color _rgb(238,238,238)_.
+
+4. Create a function that receive a string as parameter and create a button called _Sexta-feira_ (Friday).
+
+> Add the ID _btn-friday_.
+
+> Add this button as a child to the tag `div` with the class _buttons-container_.
+
+5. Create a function that add to the button _Sexta-feira_ a 'click' event to change the text shown on the fridays.
+
+> It is interesting that this button have the reverse logic too. When it is clicked again, return the text to the previus configuration.
+
+6. Create two functions to create a 'zoom' efect. When the cursor passes over a day, its text size must be bigger and, when it leaves, the text size must return to the original size.
+
+7. Create a function that add a task to the calendar. It must receive a string containing the task name as parameter and create a `span` tag with the task.
+
+> The element must be added as a child of the `div` tag that have the class _my-tasks_.
+
+8. Create a function that add a label color to the task created in exercise 7. It must receive a string ('color') and create an element `div` with the class _task_.
+> The parameter color must be used as background color to the created `div`.
+> The created element must be a child to the `div` tag with the class _my-tasks_.
+
+9. Create a function that add an event so, when the you click the element div with the `div` tag corresponding to your task, give it the class _task selected_, which means that your element will be selected.
+
+> When you click again on the element, your class must be only _task_, which means the task will no longer be selected.
+
+10. Create a function to add an event that, when you click on a day of the month, it will receive the label color of your selected task.
+
+> When you click the same day again, its color must return to the original one, rgb(119,119,119).
+
+##### Bonus:
+
+Let's add a to-do list to your calendar?
+
+Create a function that, when you type in an appointment in the text box _COMPROMISSOS_, add the item to the list _MEUS COMPROMISSOS_ when you click the button _ADICIONAR_.
+
+> If nothing is typed in the box, the function must return an alert with an error message when you click the button _ADICIONAR_.
+
+> When you press the 'Enter' key the event must also be triggered.
