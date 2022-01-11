@@ -56,11 +56,24 @@
     </article>
 
     <footer id="footer">
+      <h3>Choose your style</h3>
+      <section class="container">
+        <label for="background-color">Background color: <input type="color" name="color" id="background-color"></label>
+      
+        <label for="text-color">Text color: <input type="color" name="text" id="text-color"></label>
 
-      <button id="darkMode">darkMode</button>
-      <button id="fairyMode">fairyMode</button>
-      <button id="lightMode">lightMode</button>
+        <label for="font-size">Text size: <input type="number" name="size" id="font-size" min="1"></label>
 
+        <label for="line-height">Space between lines: <input type="number" name="line" id="line-height" min="1"></label>
+
+        <label for="font-family">Type of letter:</label>
+        <select name="type-font" id="font-family">
+          <option value=""></option>
+          <option value="serif">Serif</option>
+          <option value="sans-serif">Sans-serif</option>
+          <option value="monospace">Monospace</option>
+        </select>
+      </section>
       <p id="font-and-size">Generated 10 paragraphs, 837 words, 5592 bytes of <a href="https://www.lipsum.com/" target="_blank">Lorem Ipsum</a></p>
 
     </footer>

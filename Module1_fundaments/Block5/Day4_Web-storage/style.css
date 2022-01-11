@@ -62,15 +62,7 @@ h1 {
   padding-top: 50px;
 }
 
-button {
-  margin: 15px;
-  background-color: rgb(38, 38, 38);
-  color: rgb(238, 238, 238);
-}
 
-button:hover {
-  padding: 8px;
-}
 
 a {
   text-decoration: none;
@@ -80,3 +72,24 @@ a:hover {
   font-size: 1.5em;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+#background-color, #text-color {
+  margin: 20px 5px;
+  width: 10%;
+  height: 30px;
+}
+
+#font-size, #line-height {
+  margin: 20px 5px;
+  width: 10%;
+}
+
+section option {
+  text-align: center;
+}

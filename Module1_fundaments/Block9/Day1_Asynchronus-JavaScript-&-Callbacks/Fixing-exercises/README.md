@@ -35,6 +35,3 @@ The file fixing-exercise3 was produced using the following exercise:
 > * Add a second parameter, that must be a callbeck, in the fuction getCountry;
 
 > * Return this callback in a way it handles the error message.
-
-#### Asynchronus tests with callback
-
