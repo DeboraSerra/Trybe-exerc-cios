@@ -22,7 +22,7 @@ guessColor();
 function answer(e) {
   const myColor = colorToGuess.innerText;
   if (e.target.style.backgroundColor === `rgb${myColor}`) {
-    answerParagraph.innerText = 'Acertou!';
+    answerParagraph.innerText = 'You are right!';
     const score = parseInt(scoreDiv.innerHTML, 10);
     localStorage.setItem('score', score);
     let myScore = parseInt(localStorage.getItem('score'), 10);
@@ -30,7 +30,7 @@ function answer(e) {
     localStorage.setItem('score', myScore);
     scoreDiv.innerText = myScore;
   } else {
-    answerParagraph.innerText = 'Errou! Tente novamente!';
+    answerParagraph.innerText = 'Wrong! Try again!';
   }
 }
 
@@ -58,7 +58,7 @@ function setScore() {
 }
 
 function resetGame() {
-  answerParagraph.innerText = 'Escolha uma cor';
+  answerParagraph.innerText = 'Choose a color';
   guessColor();
   circlesColors();
   setScore();
