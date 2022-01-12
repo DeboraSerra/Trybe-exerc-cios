@@ -1,11 +1,16 @@
 # Bonus project - Meme generator
 
-1 - Crie uma caixa de texto com a qual quem usa pode interagir para inserir texto em cima da imagem escolhida.
-A caixa onde o texto é inserido deve ter um id denominado text-input;
+To use the meme generator you must choose an image or uplode one from your computer and type the text you want. If you'd like, you can also choose a margin to your foto.
 
-Você deve criar um elemento para servir de "container" para a imagem e para o texto do meme. Este elemento deve ter um id denominado meme-image-container;
+To make this project, we were asked to follow the guidelines below:
 
-Dentro do elemento de container, você deve criar um outro elemento para mostrar o texto digitado. O elemento de texto deve estar totalmente contido dentro do container e ter o id denominado meme-text;
+1. Create a text box where the user can insert a text on top of the image.
+
+> It must have the ID _text-input_;
+
+> You must create an element to be a container to the image and to the meme text. It must have the ID _meme-image-container_;
+
+> Inside the _meme-generator-container_ you must create another element to show the text typed. It must have the ID _meme-text_;
 
 Se não houver imagem inserida, ele deve ser inserido e estar visível dentro do container vazio onde a imagem aparecerá.
 
