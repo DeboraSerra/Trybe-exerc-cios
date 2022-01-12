@@ -54,8 +54,8 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 6-3: _Introduction - CSS Flexbox_
 - [x] 6-3: _CSS Flexbox - Part 1_
 - [x] 6-4: _CSS Flexbox - Part 2_
-- [ ] 6-5: _Responsive CSS - Mobile First_
-- [ ] 6-6: _[Project - Trybewarts]()_
+- [x] 6-5: _Responsive CSS - Mobile First_
+- [x] 6-6: _[Project - Trybewarts](https://github.com/DeboraSerra/Trybe-exercicios/tree/main/Module1_fundaments/Block6/Project-Trybewarts)_
 
 ##### Block 7: JavaScript ES6 & Unitary tests
 
