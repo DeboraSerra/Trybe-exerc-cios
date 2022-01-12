@@ -1,143 +1,126 @@
-let body = document.querySelector('body');
-let header = document.querySelector('header');
-let title = document.querySelector('#title');
-let description = document.querySelector('#description');
-let article = document.querySelector('article');
-let sections = document.querySelectorAll('section');
-let paragraph = document.querySelectorAll('p');
-let footer = document.querySelector('footer');
-let buttonDark = document.querySelector('#darkMode');
-buttonDark.addEventListener('click', darkMode);
-let buttonLight = document.querySelector('#lightMode');
-buttonLight.addEventListener('click', lightMode);
-let fairyButton = document.querySelector('#fairyMode');
-fairyButton.addEventListener('click', fairyMode);
-let link = document.querySelector('a');
+const body = document.querySelector('body');
+const header = document.querySelector('header');
+const title = document.querySelector('#title');
+const description = document.querySelector('#description');
+const article = document.querySelector('article');
+const sections = document.querySelectorAll('section');
+const paragraph = document.querySelectorAll('p');
+const footer = document.querySelector('footer');
+const link = document.querySelector('a');
+const backgroundColor = document.querySelector('#background-color');
+const textColor = document.querySelector('#text-color');
+const fontSize = document.querySelector('#font-size');
+const lineHeight = document.querySelector('#line-height');
+const fontFamily = document.querySelector('#font-family')
+const styleContainer = document.querySelector('.container');
+const styleTitle = document.querySelector('h3');
 
-
-function darkMode() {
-  body.style.backgroundColor = 'rgb(0, 0, 0)';
-  body.style.color = 'rgb(238, 238, 238)'
-  header.style.backgroundColor = "rgb(0, 0, 0)";
-  header.style.color = "rgb(238, 238, 238)";
-  title.style.backgroundColor = "rgb(0, 0, 0)";
-  title.style.color = "rgb(238, 238, 238)";
-  title.style.fontFamily = 'monospace';
-  title.style.fontSize = "4em";
-  description.style.backgroundColor = "rgb(0, 0, 0)";
-  description.style.color = "rgb(238, 238, 238)";
-  description.style.borderBottom = '2px solid rgb(238, 238, 238)';
-  description.style.fontFamily = 'monospace';
-  description.style.fontSize = "25px";
-  article.style.backgroundColor = "rgb(0, 0, 0)";
-  article.style.color = "rgb(238, 238, 238)";
-  for (let i = 0; i < sections.length; i += 1){
-    sections[i].style.backgroundColor = "rgb(0, 0, 0)";
-    sections[i].style.color = "rgb(238, 238, 238)";
-  }
-  for (let i = 0; i < paragraph.length; i += 1){
-    paragraph[i].style.backgroundColor = "rgb(0, 0, 0)";
-    paragraph[i].style.color = "rgb(238, 238, 238)";
-    paragraph[i].style.fontFamily = 'monospace';
-    paragraph[i].style.fontSize = "25px";
-  }
-  footer.style.backgroundColor = "rgb(0, 0, 0)";
-  link.style.backgroundColor = "rgb(0, 0, 0)";
-  link.style.color = "rgb(238, 238, 238)";
-  buttonDark.style.backgroundColor = 'rgb(238, 238, 238)';
-  buttonDark.style.color = 'black';
-  buttonLight.style.backgroundColor = "rgb(238, 238, 238)";
-  buttonLight.style.color = "black";
-  fairyButton.style.color = 'black';
-  fairyButton.style.backgroundColor = 'rgb(238, 238, 238)';
-  localStorage.setItem('Mode', 'darkMode');
+const changeBackground = () => {
+  const selectedColor = backgroundColor.value;
+  body.style.backgroundColor = selectedColor;
+  header.style.backgroundColor = selectedColor;
+  title.style.backgroundColor = selectedColor;
+  description.style.backgroundColor = selectedColor;
+  article.style.backgroundColor = selectedColor;
+  sections.forEach((item) => item.style.backgroundColor = selectedColor);
+  paragraph.forEach((item) => item.style.backgroundColor = selectedColor);
+  footer.style.backgroundColor = selectedColor;
+  link.style.backgroundColor = selectedColor;
+  styleContainer.style.backgroundColor = selectedColor;
+  styleTitle.style.backgroundColor = selectedColor;
+  localStorage.setItem('backgroundColor', selectedColor);
 }
 
-function lightMode() {
-  body.style.backgroundColor = "rgb(238, 238, 238)";
-  body.style.color = 'rgb(38, 38, 38)';
-  header.style.backgroundColor = "rgb(238, 238, 238)";
-  header.style.color = "rgb(38, 38, 38)";
-  title.style.backgroundColor = "rgb(238, 238, 238)";
-  title.style.color = "rgb(38, 38, 38)";
-  title.style.fontFamily = 'sans-serif';
-  title.style.fontSize = "4em";
-  description.style.backgroundColor = "rgb(238, 238, 238)";
-  description.style.color = "rgb(38, 38, 38)";
-  description.style.fontFamily = "sans-serif";
-  description.style.fontSize = "25px";
-  description.style.borderBottom = "2px solid rgb(38, 38, 38)";
-  article.style.backgroundColor = "rgb(238, 238, 238)";
-  article.style.color = "rgb(38, 38, 38)";
-  for (let i = 0; i < sections.length; i += 1) {
-    sections[i].style.backgroundColor = "rgb(238, 238, 238)";
-    sections[i].style.color = "rgb(38, 38, 38)";
-  }
-  for (let i = 0; i < paragraph.length; i += 1) {
-    paragraph[i].style.backgroundColor = "rgb(238, 238, 238)";
-    paragraph[i].style.color = "rgb(38, 38, 38)";
-    paragraph[i].style.fontFamily = 'sans-serif';
-    paragraph[i].style.fontSize = "25px";
-  }
-  footer.style.backgroundColor = "rgb(238, 238, 238)";
-  link.style.backgroundColor = "rgb(238, 238, 238)";
-  link.style.color = "rgb(38, 38, 38)";
-  buttonDark.style.backgroundColor = "rgb(38, 38, 38)";
-  buttonDark.style.color = "rgb(238, 238, 238)";
-  buttonLight.style.backgroundColor = "rgb(38, 38, 38)";
-  buttonLight.style.color = "rgb(238, 238, 238)";
-  fairyButton.style.color = "rgb(238, 238, 238)";
-  fairyButton.style.backgroundColor = "rgb(38, 38, 38)";
-  localStorage.setItem('Mode', 'lightMode');
+backgroundColor.addEventListener("input", changeBackground);
+
+const changeColor = () => {
+  const selectedColor = textColor.value;
+  body.style.color = selectedColor;
+  header.style.color = selectedColor;
+  title.style.color = selectedColor;
+  description.style.color = selectedColor;
+  article.style.color = selectedColor;
+  sections.forEach((item) => (item.style.color = selectedColor));
+  paragraph.forEach((item) => (item.style.color = selectedColor));
+  footer.style.color = selectedColor;
+  link.style.color = selectedColor;
+  styleContainer.style.color = selectedColor;
+  styleTitle.style.color = selectedColor;
+  localStorage.setItem("color", selectedColor);
 }
 
-function fairyMode() {
-  body.style.backgroundColor = "#ffb6c1";
-  body.style.color = "rgb(66, 0, 66)";
-  header.style.backgroundColor = "#ffb6c1";
-  header.style.color = "rgb(66, 0, 66)";
-  title.style.backgroundColor = "#ffb6c1";
-  title.style.color = "rgb(66, 0, 66)";
-  title.style.fontFamily = 'serif';
-  title.style.fontSize = "4em";
-  description.style.backgroundColor = "#ffb6c1";
-  description.style.color = "rgb(66, 0, 66)";
-  description.style.fontFamily = "serif";
-  description.style.fontSize = "25px";
-  description.style.borderBottom = "2px solid rgb(66, 0, 66)";
-  article.style.backgroundColor = "#ffb6c1";
-  article.style.color = "rgb(66, 0, 66)";
-  for (let i = 0; i < sections.length; i += 1) {
-    sections[i].style.backgroundColor = "#ffb6c1";
-    sections[i].style.color = "rgb(66, 0, 66)";
-  }
-  for (let i = 0; i < paragraph.length; i += 1) {
-    paragraph[i].style.backgroundColor = "#ffb6c1";
-    paragraph[i].style.color = "rgb(66, 0, 66)";
-    paragraph[i].style.fontFamily = 'serif';
-    paragraph[i].style.fontSize = "25px";
-  }
-  footer.style.backgroundColor = "#ffb6c1";
-  link.style.backgroundColor = "#ffb6c1";
-  link.style.color = "rgb(66, 0, 66)";
-  buttonDark.style.backgroundColor = "rgb(66, 0, 66)";
-  buttonDark.style.color = "#ffb6c1";
-  buttonLight.style.backgroundColor = "rgb(66, 0, 66)";
-  buttonLight.style.color = "#ffb6c1";
-  fairyButton.style.color = "#ffb6c1";
-  fairyButton.style.backgroundColor = "rgb(66, 0, 66)";
-  localStorage.setItem("Mode", "fairyMode");
+textColor.addEventListener('input', changeColor);
+
+const changeFontSize = () => {
+  const selectedNumber = fontSize.value;
+  body.style.fontSize = selectedNumber + "px";
+  header.style.fontSize = selectedNumber + "px";
+  title.style.fontSize = selectedNumber + "px";
+  description.style.fontSize = selectedNumber + "px";
+  article.style.fontSize = selectedNumber + 'px';
+  sections.forEach((item) => (item.style.fontSize = selectedNumber + "px"));
+  paragraph.forEach((item) => (item.style.fontSize = selectedNumber + "px"));
+  footer.style.fontSize = selectedNumber + "px";
+  link.style.fontSize = selectedNumber + "px";
+  styleContainer.style.fontSize = selectedNumber + "px";
+  styleTitle.style.fontSize = selectedNumber + "px";
+  localStorage.setItem("fontSize", selectedNumber);
 }
 
+fontSize.addEventListener('input', changeFontSize);
 
+const changeLineHeight = () => {
+  const selectedNumber = lineHeight.value;
+  body.style.lineHeight = selectedNumber + "px";
+  header.style.lineHeight = selectedNumber + "px";
+  title.style.lineHeight = selectedNumber + "px";
+  description.style.lineHeight = selectedNumber + "px";
+  article.style.lineHeight = selectedNumber + "px";
+  sections.forEach((item) => (item.style.lineHeight = selectedNumber + "px"));
+  paragraph.forEach((item) => (item.style.lineHeight = selectedNumber + "px"));
+  footer.style.lineHeight = selectedNumber + "px";
+  link.style.lineHeight = selectedNumber + "px";
+  styleContainer.style.lineHeight = selectedNumber + "px";
+  styleTitle.style.lineHeight = selectedNumber + "px";
+  localStorage.setItem("lineHeight", selectedNumber);
+}
 
-window.onload = function(){
-  const screenMode = localStorage.getItem("Mode");
-  if (screenMode === "darkMode") {
-    darkMode();
-  } else if (screenMode === "lightMode") {
-    lightMode();
-  } else if (screenMode === "fairyMode") {
-    fairyMode();
+lineHeight.addEventListener('input', changeLineHeight);
+
+const changeFontFamily = () => {
+  const selectedFont = fontFamily.options[fontFamily.selectedIndex].value;
+  if (selectedFont) {
+    body.style.fontFamily = selectedFont;
+    header.style.fontFamily = selectedFont;
+    title.style.fontFamily = selectedFont;
+    description.style.fontFamily = selectedFont;
+    article.style.fontFamily = selectedFont;
+    sections.forEach((item) => (item.style.fontFamily = selectedFont));
+    paragraph.forEach((item) => (item.style.fontFamily = selectedFont));
+    footer.style.fontFamily = selectedFont;
+    link.style.fontFamily = selectedFont;
+    styleContainer.style.fontFamily = selectedFont;
+    styleTitle.style.fontFamily = selectedFont;
+    localStorage.setItem("fontFamily", selectedFont);
   }
 }
+
+fontFamily.addEventListener('input', changeFontFamily);
+
+window.onload = () => {
+  const backgroundColorStorage = localStorage.getItem('backgroundColor');
+  const colorStorage = localStorage.getItem('color');
+  const textSizeStorage = localStorage.getItem('fontSize');
+  const lineHeightStorage = localStorage.getItem('lineHeight');
+  const fontFamilyStorage = localStorage.getItem('fontFamily');
+  backgroundColor.value = backgroundColorStorage;
+  changeBackground();
+  textColor.value = colorStorage;
+  changeColor();
+  fontSize.value = textSizeStorage;
+  changeFontSize();
+  lineHeight.value = lineHeightStorage;
+  changeLineHeight();
+  fontFamily.options[fontFamily.selectedIndex].value = fontFamilyStorage;
+  changeFontFamily();
+};

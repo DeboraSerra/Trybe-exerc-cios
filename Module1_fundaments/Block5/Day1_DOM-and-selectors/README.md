@@ -8,8 +8,8 @@ The file exercise1 was produced using the template provided in the course and wi
 
 3. Create a function that change the squere color from red to white.
 
-4. Create a function that corrects the text from the tag <h1>.
+4. Create a function that corrects the text from the tag `h1`.
 
-5. Createa function that modify the text from the tag <p> to upperCase.
+5. Createa function that modify the text from the tag `p` to upperCase.
 
-6. Create a function that show the content of all the tags <p> on the console.
+6. Create a function that show the content of all the tags `p` on the console.

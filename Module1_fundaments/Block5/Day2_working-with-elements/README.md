@@ -1,18 +1,35 @@
 # Day 5-2 - JavaScript - Working with elements
 
-Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
-Adicione a tag main com a classe main-content como filho da tag body ;
-Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
-Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
-Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
-Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
-Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
-Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
-Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
-Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
-Adicione a classe title na tag h1 criada;
-Adicione a classe description nas 3 tags h3 criadas;
-Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
-Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
-Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
-Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+Starting from the code provided in the course page, we were asked to follow the exercises below:
+
+1. Add a tag `h1` with the text _Exercício 5.2 - JavaScript DOM_ as a child of the tag `body`;
+
+2. Add a `main` tag with the class _main-content_ as a child of the tag `body`;
+
+3. Add a tag `section` with the class _center-content_ as a child of the tag `main` created before;
+
+4. Add a `p` tag as a child to the tag `section` created on step 3 and put some text;
+
+5. Add a tag `section` with the class _left-content_ as a child to the `main` tag created on step 2;
+
+6. Add a tag `section` with the class _right-content_ as a child to the tag main created on step 2;
+
+7. Add an image with `src` set to: _https://picsum.photos/200_ and the class _small-image_. This element must be a child to the section created on step 5;
+
+8. Add an unordered list with the values 1 to 10, as in, one, two, ... as values of the list. This lit must be a child for the section created on step 6;
+
+9. Add 3 tags `h3`, all being a child to the `main` created on step 2.
+
+Now that you created a lot of things, let's make some alterations and removals:
+
+10. Add the class _title_ to the tag `h1` created before;
+
+11. Add the class _description_ in all the `h3` tags;
+
+12. Remove the section created on step 5 (the one that have the class _left-content_);
+
+13. Center the section created on step 6 (the one that have the class _right-content_).
+
+14. Change the background color of the parent element of the section created on step 3 (the one that have the class _center-content_) to the color green;
+
+15. Remove the last two elements (nine and ten) of the list created on step 8.
