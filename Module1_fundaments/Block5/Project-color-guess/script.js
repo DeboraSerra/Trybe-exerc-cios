@@ -4,7 +4,7 @@ const answerParagraph = document.querySelector('#answer');
 const resetButton = document.querySelector('#reset-game');
 const scoreDiv = document.querySelector('#score');
 
-function newColor() {
+const newColor = () => {
   let color = '';
   const number1 = Math.floor((Math.random() * 255) + 1);
   const number2 = Math.floor((Math.random() * 255) + 1);
@@ -13,13 +13,13 @@ function newColor() {
   return color;
 }
 
-function guessColor() {
+const guessColor = () => {
   colorToGuess.innerHTML = newColor();
 }
 
 guessColor();
 
-function answer(e) {
+const answer = (e) => {
   const myColor = colorToGuess.innerText;
   if (e.target.style.backgroundColor === `rgb${myColor}`) {
     answerParagraph.innerText = 'You are right!';
@@ -34,21 +34,21 @@ function answer(e) {
   }
 }
 
-function circlesColors() {
+const circlesColors = () => {
   const randomIndex = Math.floor(Math.random() * 6);
   const myColor = colorToGuess.innerText;
-  for (let i = 0; i < circles.length; i += 1) {
+  circles.forEach((item, i) => {
     if (i !== randomIndex) {
-      circles[i].style.backgroundColor = `rgb${newColor()}`;
+      item.style.backgroundColor = `rgb${newColor()}`;
     }
-    circles[i].addEventListener('click', answer);
-  }
+    item.addEventListener('click', answer);
+  })
   circles[randomIndex].style.backgroundColor = `rgb${myColor}`;
 }
 
 circlesColors();
 
-function setScore() {
+const setScore = () => {
   if (localStorage.getItem('score')) {
     const myScore = localStorage.getItem('score');
     scoreDiv.innerText = myScore;
@@ -57,11 +57,9 @@ function setScore() {
   }
 }
 
-function resetGame() {
-  answerParagraph.innerText = 'Choose a color';
+resetButton.addEventListener("click", () => {
+  answerParagraph.innerText = "Choose a color";
   guessColor();
   circlesColors();
   setScore();
-}
-
-resetButton.addEventListener('click', resetGame);
+});
