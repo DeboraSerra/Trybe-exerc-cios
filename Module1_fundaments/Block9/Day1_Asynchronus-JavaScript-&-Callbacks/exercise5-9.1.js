@@ -1,5 +1,3 @@
-const print = (string) => console.log(string);
-
 const uppercase = (str, callback) => {
   setTimeout(() => {
     callback(str.toUpperCase());

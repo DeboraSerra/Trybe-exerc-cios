@@ -1,25 +1,28 @@
 const { print, uppercase } = require('../exercise5-9.1');
 
 describe('Test the uppercase function', () => {
-  test('Test the word JavaScript', () => {
-    setTimeout((done) => {
+  test('Test the word JavaScript', (done) => {
+    function callback(str) {
       try {
-        expect(uppercase("JavaScript", print)).toBe("JAVASCRIPT");
+        expect(str).toBe('JAVASCRIPT');
         done();
-      } catch (error) {
-        done(error);
+      } catch (e) {
+        done(e);
       }
-    }, 500);
+    };
+    uppercase('JavaScript', callback);
+  
   });
-  test('Test the word Jest', () => {
-    setTimeout((done) => {
-      try {
-        expect(uppercase("Jest", print)).toBe("JEST");
-        done();
-      } catch (error) {
-        done(error);
-      }
-    }, 500);
+  test('Test the word Jest', (done) => {
+   function callback(str) {
+     try {
+       expect(str).toBe("JEST");
+       done();
+     } catch (e) {
+       done(e);
+     }
+   }
+   uppercase("Jest", callback);
   });
 })
 
