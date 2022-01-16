@@ -5,6 +5,5 @@ const uppercase = (str, callback) => {
 };
 
 module.exports = {
-  print,
   uppercase,
 };

@@ -18,15 +18,13 @@
   <p id='result'></p>
   <script>
 
-    const isNumber = () => {
-      const value1 = document.getElementById('value1').value;
-      const value2 = document.getElementById('value2').value;
+    const isNumber = (a, b) => {
       if (
-        (value1 === '' || value2 === '') ||
-        (typeof parseInt(value1) !== 'number') ||
-        (isNaN(parseInt(value1))) ||
-        (typeof parseInt(value2) !== 'number') ||
-        (isNaN(parseInt(value2)))) {
+        (a === '' || b === '') ||
+        (typeof parseInt(a) !== 'number') ||
+        (isNaN(parseInt(a))) ||
+        (typeof parseInt(b) !== 'number') ||
+        (isNaN(parseInt(b)))) {
         throw new Error('Add a valid number');
       }
     }
@@ -35,7 +33,7 @@
       const value1 = document.getElementById('value1').value;
       const value2 = document.getElementById('value2').value;
       try {
-        isNumber();
+        isNumber(value1, value2);
         const result = parseInt(value1) + parseInt(value2);
         document.getElementById('result').innerHTML = `Resultado: ${result}`;
       } catch (e) {

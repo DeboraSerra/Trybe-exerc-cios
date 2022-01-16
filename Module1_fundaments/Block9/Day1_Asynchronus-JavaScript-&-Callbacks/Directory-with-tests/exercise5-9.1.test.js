@@ -1,4 +1,4 @@
-const { print, uppercase } = require('../exercise5-9.1');
+const uppercase = require('../exercise5-9.1');
 
 describe('Test the uppercase function', () => {
   test('Test the word JavaScript', (done) => {
