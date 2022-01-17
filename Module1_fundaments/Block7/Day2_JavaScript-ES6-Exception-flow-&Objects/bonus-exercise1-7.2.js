@@ -41,10 +41,8 @@ const createReport = (obj, teacher) => {
   for (key in obj) {
     for (otherKey in obj[key]) {
       if (obj[key][otherKey] === teacher) {
-        const myClasses = obj[key].materia;
-        const studentsNum = obj[key].numeroEstudantes;
-        report.classes.push(myClasses);
-        report.students += studentsNum;
+        report.classes.push(obj[key].materia);
+        report.students += obj[key].numeroEstudantes;
       }
     }
   }

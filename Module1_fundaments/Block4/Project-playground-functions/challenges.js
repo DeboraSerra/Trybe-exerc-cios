@@ -71,7 +71,8 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(numbers) {
   const newArray = [];
   numbers.forEach((item) => {
-    (item % 3 === 0 && item % 5 !== 0) ? newArray.push('fizz')
+    (item % 3 === 0 && item % 5 !== 0) 
+      ? newArray.push('fizz')
       : (item % 3 !== 0 && item % 5 === 0)
         ? newArray.push('buzz')
         : (item % 3 === 0 && item % 5 === 0)

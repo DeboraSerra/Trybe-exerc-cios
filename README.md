@@ -59,9 +59,9 @@ The program includes more than 1500 hours of live and online classes, and approa
 
 ##### Block 7: JavaScript ES6 & Unitary tests
 
-- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions and template literals_
-- [ ] 7-2: _JavaScript ES6 - Exeption flow and Objects_
-- [ ] 7-3: _First steps in Jest_
+- [x] 7-1: _JavaScript ES6 - let, const, arrow functions and template literals_
+- [x] 7-2: _JavaScript ES6 - Exeption flow and Objects_
+- [x] 7-3: _First steps in Jest_
 - [ ] 7-4: _[Project - JavaScript Unitary tests]()_
 
 ##### Block 8: JavaScript ES6
