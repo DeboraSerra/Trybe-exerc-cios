@@ -6,12 +6,12 @@ const fetchJoke = async () => {
     method: 'GET',
     headers: { Accept: 'application/json' },
   };
-  const joke = await fetch(API_URL, myObject)
-    .then((response) => response.json())
-    .then((data) => { jokeContainer.innerHTML = data.joke; })
-    .catch((error) => console.log(error));
-
+  const response = await fetch(API_URL, myObject);
+  const data = await response.json();
+  jokeContainer.innerHTML = data.joke;
 };
 
-console.log('joke', fetchJoke());
-window.onload = () => showJoke();
+fetchJoke()
+  .catch((error) => console.error(error));
+
+window.onload = () => fetchJoke();
