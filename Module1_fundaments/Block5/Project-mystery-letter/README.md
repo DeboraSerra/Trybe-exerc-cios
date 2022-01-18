@@ -1,109 +1,51 @@
 # Bonus project - Mystery letter
 
-1 - Deve haver um input com o id="carta-texto" onde a pessoa usuária poderá digitar o conteúdo da carta
-O que será verificado:
+The project Mystery letter was created using the directions below. To use it you have to type any text inside the input and click the button to generate the letter. If you want to change the style of the any word you just have to click it until you are satisfied with the style.
 
-Será validado que existe um elemento input com id=carta-texto
-2 - Deve haver um parágrafo com o id="carta-gerada" onde a pessoa usuária verá o resultado de sua carta misteriosa
-O que será verificado:
+1. There must be an input with id="carta-texto" where the user can type the content of the letter.
 
-Será validado que existe um elemento p com o id="carta-gerada"
-3 - Deve haver um botão com id="criar-carta" e ao clicar nesse botão, a carta misteriosa deve ser gerada
-Pontos importantes:
+2. There must be a paragraph with id="carta-gerada" whre the user will see the result of the letter.
 
-* Cada palavra deve aparecer dentro de uma tag `span`.
-* As tags `span` devem ser adicionadas como filhas do parágrafo que possui o id `carta-gerada`.
-O que será verificado:
+3. There must be a button with id="criar-carta" amd when you click it, the letter must be generated.
 
-Será validado que existe um elemento button com id="criar-carta"
+> Important points:
 
-Será validado que ao clicar no botão, a carta misteriosa deve ser gerada
+>* Each word must apear inside a tag `span`.
+>* The tags `span` must be added as childre to the paragraph `carta-gerada`.
 
-4 - Ao criar uma carta através do botão com id="criar-carta", o input com id="carta-texto" deve permanecer com o texto digitado
-O que será verificado:
+4. When you create a aletter throw the button with id="criar-carta", the input `carta-texto` must remain with the text typed.
 
-Será validado que ao criar uma carta através do botão id="criar-carta" o input` com id="carta-texto" permanece com o texto digitado
-5 - Se a pessoa usuária não preencher o campo ou preencher com apenas espaços vazios adicionar a mensagem 'Por favor, digite o conteúdo da carta.'
-O que será verificado:
+5. If the user doesn't type the field or type only spaces, the message 'Por favor, digite o conteúdo da carta.' must apear as response.
 
-Será validado que irá exibir a mensagem "Por favor, digite o conteúdo da carta." no elemento p com o `id="carta-gerada"
-6 - Crie a classe newspaper
-Pontos importantes:
+6. Create the class `newspaper` with the following properties:
+>* `background-color` with the value `antiquewhite`
+>* `font-family` with the value `Times New Roman`
+>* `font-weight` with the value `bold`
 
-* Defina as propriedades:
-  - `background-color` com o valor `antiquewhite`
-  - `font-family` com o valor `Times New Roman`
-  - `font-weight` com o valor `bold`
-O que será verificado:
+7. Create the class `magazine1` with the properties:
 
-Será validado se a classe newspaper possui a propriedade background-color igual a rgb(250, 235, 215)
+>* `background-color` with the value `teal`
+>* `color` with the value `white`
+>* `font-family` with the value `Verdana`
+>* `font-weight` with the value `900`
+>* `text-transform` with the value `uppercase`
 
-Será validado se a classe newspaper possui font-family igual a "Times New Roman"
+8. Create the class `magazine2` with the properties:
 
-Será validado se a classe newspaper possui a propriedade font-weight igual a 700
+>* `background-image` with the image `images/pink-pattern.png`
+>* `color` with the value `fuchsia`
+>* `font-family` with the value `Verdana`
+>* `font-weight` with the value `900`
 
-7 - Crie a classe magazine1.
-Pontos importantes:
+9. Create the class `medium` with the properties:
 
-* Defina as propriedades:
-  - `background-color` com o valor `teal`
-  - `color` com o valor `white`
-  - `font-family` com o valor `Verdana`
-  - `font-weight` com o valor `900`
-  - `text-transform` com o valor `uppercase`
-O que será verificado:
+>* `font-size` with the value `20px`
+>* `padding` with the value `8px`
 
-Será validado se a classe magazine1 possui a propriedade background-color igual a rgb(0, 128, 128)`
+10. Create the class `big` with the properties:
 
-Será validado se a classe magazine1 possui a propriedade color igual a rgb(255, 255, 255)`
-
-Será validado se a classe magazine1 possui propriedade font-family igual a "Verdana"
-
-Será validado se a classe magazine1 possui a propriedade font-weight igual a "900"
-
-Será validado se a classe magazine1 possui a propriedade text-transform igual a "uppercase"`
-
-8 - Crie a classe magazine2.
-Pontos importantes:
-
-* Defina as propriedades:
-  - `background-image` com a imagem `images/pink-pattern.png`
-  - `color` com o valor `fuchsia`
-  - `font-family` com o valor `Verdana`
-  - `font-weight` com o valor `900`
-O que será verificado:
-
-Será validado se a classe magazine2 possui a propriedade background-image igual a "images/pink-pattern.png"
-
-Será validado se a classe magazine2 possui a propriedade color igual a rgb(255, 0, 255)
-
-Será validado se a classe magazine2 possui a propriedade font-family igual a "Verdana"
-
-Será validado se a classe magazine2 possui a propriedade font-weight igual a "900"
-
-9 - Crie a classe medium.
-Pontos importantes:
-
-* Defina as propriedades:
-  - `font-size` com o valor `20px`
-  - `padding` com o valor `8px`
-O que será verificado:
-
-Será validado se a classe medium possui a propriedade font-size igual a "20px"
-
-Será validado se a classe medium possui a propriedade padding igual a "8px"
-
-10 - Crie a classe big.
-Pontos importantes:
-
-* Defina as propriedades:
-  - `font-size` com o valor `30px`
-  - `padding` com o valor `10px`
-O que será verificado:
-
-Será validado se a classe big possui a propriedade font-size igual a "30px"
-
-Será validado se a classe big possui a propriedade padding igual a "10px"
+>* `font-size` with the value `30px`
+>* `padding` with the value `10px`
 
 11 - Crie a classe reallybig.
 Pontos importantes:
