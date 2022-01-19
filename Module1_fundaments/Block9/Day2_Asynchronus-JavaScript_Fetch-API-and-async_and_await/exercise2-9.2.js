@@ -14,21 +14,17 @@ const createLi = () => {
 };
 
 const fetchAPI = async () => {
-  await fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-      data.data.forEach((item) => {
-        coins.push({
-          name: item.name,
-          symbol: item.symbol,
-          price: (parseFloat(item.priceUsd)).toFixed(2),
-        });
-      });
-    })
-    .catch((error) => { list.innerHTML = error; });
+  const response = await fetch(url);
+  const data = await response.json();
+  data.data.forEach((item) => {
+    coins.push({
+      name: item.name,
+      symbol: item.symbol,
+      price: (parseFloat(item.priceUsd)).toFixed(2),
+    });
+  });
   createLi();
 };
 
-window.onload = () => {
-  fetchAPI();
-};
+fetchAPI()
+  .catch((error) => { list.innerHTML = error; });
