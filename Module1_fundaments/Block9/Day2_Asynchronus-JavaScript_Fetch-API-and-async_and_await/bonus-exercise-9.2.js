@@ -16,36 +16,28 @@ const createLi = () => {
 };
 
 const changeCurrency = async () => {
-  await fetch(url2)
-    .then((response) => response.json())
-    .then((data) => {
-      coinsPrice.forEach((item, i) => {
-        const priceUsd = item;
-        const priceBrl = priceUsd * (parseFloat(data.brl)).toFixed(2);
-        coins[i].price = (parseFloat(priceBrl)).toFixed(2);
-      });
-    })
-    .catch((error) => { list.innerHTML = error; });
-
+  const response = await fetch(url2);
+  const data = await response.json();
+  coinsPrice.forEach((item, i) => {
+    const priceUsd = item;
+    const priceBrl = priceUsd * (parseFloat(data.brl)).toFixed(2);
+    coins[i].price = (parseFloat(priceBrl)).toFixed(2);
+  });
   createLi();
 };
 
 const fetchAPI = async () => {
-  await fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-      data.data.forEach((item) => {
-        coins.push({
-          name: item.name,
-          symbol: item.symbol,
-        });
-        coinsPrice.push((parseFloat(item.priceUsd)).toFixed(2));
-      });
-    })
-    .catch((error) => { list.innerHTML = error; });
+  const response = await fetch(url);
+  const data = await response.json();
+  data.data.forEach((item) => {
+    coins.push({
+      name: item.name,
+      symbol: item.symbol,
+    });
+    coinsPrice.push((parseFloat(item.priceUsd)).toFixed(2));
+  });
   changeCurrency();
 };
 
-window.onload = () => {
-  fetchAPI();
-};
+fetchAPI()
+  .catch((error) => { list.innerHTML = error; });
