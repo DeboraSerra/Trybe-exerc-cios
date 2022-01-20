@@ -24,11 +24,7 @@ function generatePhoneNumber(array) {
 
   let obj = {};
   array.forEach((item) => {
-    if (!obj[item]) {
-      obj[item] = 1;
-    } else {
-      obj[item] += 1;
-    }
+    (!obj[item]) ? obj[item] = 1 : obj[item] += 1;
     if (item < 0 || item > 9) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
