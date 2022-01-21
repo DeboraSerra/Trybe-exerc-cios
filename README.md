@@ -62,13 +62,13 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions and template literals_
 - [x] 7-2: _JavaScript ES6 - Exeption flow and Objects_
 - [x] 7-3: _First steps in Jest_
-- [ ] 7-4: _[Project - JavaScript Unitary tests]()_
+- [x] 7-4: _[Project - JavaScript Unitary tests]()_
 
 ##### Block 8: JavaScript ES6
 
-- [ ] 8-1: _Introduction to Higher Order Functions_
-- [ ] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - map and filter_
+- [x] 8-1: _Introduction to Higher Order Functions_
+- [x] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- [x] 8-3: _JavaScript ES6 - Higher Order Functions - map and filter_
 - [ ] 8-4: _JavaScript ES6 - Hagher Order Functions - reduce_
 - [ ] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring and more_
 - [ ] 8-6: _[Project - Zoo functions]()_
