@@ -75,7 +75,8 @@ const estudantes = [
 
 
 const bestSubject = estudantes.map((item) => {
-  const biggestScore = item.materias.reduce(((acc, subj) => (acc >= subj.nota) ? acc : subj.nota), 0);
+  const biggestScore = item.materias
+    .reduce(((acc, subj) => (acc >= subj.nota) ? acc : subj.nota), 0);
   const subject = item.materias.find((subj) => {
     if (subj.nota === biggestScore) {
       return subj.name;
