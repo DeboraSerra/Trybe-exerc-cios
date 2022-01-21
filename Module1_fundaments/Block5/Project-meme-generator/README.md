@@ -12,102 +12,56 @@ To make this project, we were asked to follow the guidelines below:
 
 > Inside the _meme-generator-container_ you must create another element to show the text typed. It must have the ID _meme-text_;
 
-Se não houver imagem inserida, ele deve ser inserido e estar visível dentro do container vazio onde a imagem aparecerá.
+> If there is no image inserted, the text must be visible inside the empty container were the image will be.
 
-O que será verificado:
+2. The site must allow who use it to upload an image from their computer.
 
-Será validado se o input de texto existe e conseguimos inputar texto nele;
+> Inside the container element, you must create another element to show the image selected. this element must have the ID _meme-image_;
 
-Será validado se o texto digitado no input é visível na tela;
+> The element where the image is uploaded must be identified with the ID _meme-insert_. This element doesn't need to be inside the container;
 
-Será validado se existe um elemento de container para onde o texto será mostrado.
+> The image must be fully contained inside the element identified as _meme-image-container_ (it means the it can't be any space left between the container and the image, and the image can't be bigger than the container);
 
-2 - O site deve permitir que quem usa faça upload de uma imagem de seu computador.
-Dentro do elemento de container, você deve criar um outro elemento para mostrar a imagem selecionada. Este elemento deve possuir um id denominado meme-image;
+> The inserted text must be over the image.
 
-O elemento onde é feito o upload da imagem deve ser identificado com o id denominado meme-insert. Este elemento não precisa estar dentro do elemento de container;
+3. Add a border to the container. It must be 1px thick, must be black and the type 'solid'. The area were the image will be must have the color 'white'.
 
-A imagem deve estar totalmente contida dentro do elemento identificado como meme-image-container ("totalmente contida" quer dizer que não deve sobrar espaço entre o container e a imagem, e a imagem não deve ultrapassar o tamanho do container);
+4. Add a text that will be inserted over the image and it must have a color, shadow and size specified.
 
-O texto inserido no elemento text-input deve ser inserido sobre a imagem escolhida meme-image.
+> The text of the element _meme-text_ must have a 'black' shadow with 5px horizontally, 5px vertically and a radius blur of 5px;
 
-O que será verificado:
+> The size of the text must be 30px;
 
-Será validado se é possível carregar uma imagem através do elemento correto;
+> The text color must be 'white'.
 
-Será validado se a imagem carregada é exibida dentro do elemento correto;
+5. Stablish a limit of characters the user can isert.
 
-Será validado se o texto é inserido corretamente sobre a imagem.
+> The max number of characters in the input must be 60.
 
-3 - Adicione uma moldura no container. A moldura deve ter 1 pixel de largura, deve ser preta e do tipo 'solid'. A área onde a imagem aparecerá deve ter fundo branco.
-O elemento que serve de container para a imagem deve ter o a cor de fundo branca;
+##### Bonus
 
-O elemento que serve de container para a imagem deve ter uma borda preta, sólida, com 1 pixel de largura;
+6. Allow the user to choose one out of three border.
 
-A imagem deve estar totalmente contida dentro do elemento identificado como meme-image-container ("totalmente contida" quer dizer que não deve sobrar espaço entre o container e a imagem, e a imagem não deve ultrapassar o tamanho do container).
+> The page must have three buttons, that must change the border around the container.
 
-O que será verificado:
+> They must be elements of the type button;
 
-Será validado se o elemento que serve de container para a imagem tem a cor de fundo branca;
+> Each button must be defined with a background color the color as the border that will be put on the container;
 
-Será validado se o elemento que serve de container para a imagem tem uma borda preta, sólida, com 1 pixel de largura;
+> Each button must be like:
 
-Será validado se a imagem deve estar totalmente contida dentro do elemento identificado como meme-image-container.
+>* One button identified with the ID _fire_ and must put a border with 3px, dashed and red to the container.
 
-4 - Adicione o texto que será inserido sobre a imagem deve ter uma cor, sombra e tamanho específicos.
-O texto do elemento meme-text deve ter uma sombra preta, de 5 pixels na horizontal, 5 pixels na vertical e um raio de desfoque de 5 pixels;
+>* One button with the id _water_ that will put a border with 5px, double and blue to the container.
 
-O texto do elemento meme-text deve ter a fonte com o tamanho de 30 pixels;
+>* One button with the ID _earth_ that will put a border with the type groove, green and with 6px to the container.
 
-O texto do elemento meme-text deve estar na cor branca.
+> After one of the three is selected the standard border specified in requisit 3 can't be shown;
 
-O que será verificado:
+7. Have a set of 4 standard images of famous memes so the user can pick. show a miniature of the images and, when they are clicked, the image must apear inside the border of the container element.
 
-Será validado se o texto do elemento meme-text dtem uma sombra preta, de 5 pixels na horizontal, 5 pixels na vertical e um raio de desfoque de 5 pixels;
+> The elements that show the miniature of the memes must be identified with the ID _meme-1_ to the first, _meme-2_ to the second, _meme-3_ to the third and _meme-4_ to the fourth.
 
-Será validado se o texto do elemento meme-text tem a fonte com o tamanho de 30 pixels;
+> The images must be in a directory called _imgs_ with the names meme1.png, meme2.png, meme3.png and meme4.png. Atention to the image format!
 
-Será validado se o texto do elemento meme-text deve estar na cor branca.
-
-5 - Limite o tamanho do texto que o usuário pode inserir.
-A quantidade máxima de caracteres digitáveis no elemento text-input deve ser 60.
-O que será verificado:
-
-Será validado se a quantidade máxima de caracteres digitáveis no elemento text-input deve ser 60.
-
-Requisitos Bônus:
-6 - Permita a quem usa customizar o meme escolhido acrescentando a ele uma de três bordas. A página deve ter três botões, que ao serem clicados devem cada um trocar a própria borda ao redor do container.
-As bordas devem ser acrescentadas ao container, identificado como meme-image-container;
-
-Os três botões devem ser elementos do tipo button;
-
-Cada elemento button deve ser estilizado de forma a ter a cor de fundo da mesma cor que a moldura que irá colocar no container;
-
-Cada button deve ter o respectivo id e estilizar o container conforme especificado:
-
-Um botão identificado com o id chamado fire deve estilizar o container da imagem com uma borda de 3 pixels, dashed e vermelha.
-
-Um botão com id chamado water deve estilizar o container da imagem com uma borda azul, com 5 pixels do tipo double .
-
-Um botão com id chamado earth deve estilizar o container da imagem com uma borda do tipo groove, verde e com 6 pixels.
-
-Após uma das três bordas ser selecionada, a borda padrão especificada no requisito 3 não deve mais aparecer;
-
-O que será verificado:
-
-Será validado se o botão com identificado com id fire funciona corretamente.
-
-Será validado se o botão com identificado com id water funciona corretamente.
-
-Será validado se o botão com identificado com id earth funciona corretamente
-
-7 - Tenha um conjunto de quatro imagens pré prontas de memes famosos para o usuário escolher. Mostre miniaturas das imagens e, mediante clique do usuário, essa imagem deve aparecer dentro da moldura do elemento de container.
-O elemento que mostra as miniaturas dos memes deve ser identificado um um id denominado meme-1 para o primeiro meme, meme-2 para o segundo, meme-3 para o terceiro e meme-4 para o quarto.
-
-As imagens que identificam os memes devem ficar dentro da aplicação, num diretório chamado imgs com os respectivos nomes meme1.png, meme2.png, meme3.png e meme4.png. Atenção também para o formato das imagens! warning
-
-As imagens devem aparecer dentro do container de forma análoga às imagens enviadas por upload para a página.
-
-O que será verificado:
-
-Será validado se as imagens prontas apresentam o comportamente esperado.
+> The images must apear inside the container the same way as the images uploaded to the page.

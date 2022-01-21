@@ -54,14 +54,14 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 6-3: _Introduction - CSS Flexbox_
 - [x] 6-3: _CSS Flexbox - Part 1_
 - [x] 6-4: _CSS Flexbox - Part 2_
-- [ ] 6-5: _Responsive CSS - Mobile First_
-- [ ] 6-6: _[Project - Trybewarts]()_
+- [x] 6-5: _Responsive CSS - Mobile First_
+- [x] 6-6: _[Project - Trybewarts](https://github.com/DeboraSerra/Trybe-exercicios/tree/main/Module1_fundaments/Block6/Project-Trybewarts)_
 
 ##### Block 7: JavaScript ES6 & Unitary tests
 
-- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions and template literals_
-- [ ] 7-2: _JavaScript ES6 - Exeption flow and Objects_
-- [ ] 7-3: _First steps in Jest_
+- [x] 7-1: _JavaScript ES6 - let, const, arrow functions and template literals_
+- [x] 7-2: _JavaScript ES6 - Exeption flow and Objects_
+- [x] 7-3: _First steps in Jest_
 - [ ] 7-4: _[Project - JavaScript Unitary tests]()_
 
 ##### Block 8: JavaScript ES6

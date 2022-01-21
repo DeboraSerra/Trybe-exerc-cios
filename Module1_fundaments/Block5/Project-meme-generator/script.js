@@ -13,41 +13,25 @@ const seeNothingMonkey = document.querySelector('#meme-4');
 
 memeContainer.style.border = '1px solid black';
 
-function inputMemeText(e) {
+textInput.addEventListener('keyup', (e) => {
   memeText.innerHTML = textInput.value;
-  if (e.key === 'Enter') {
-    textInput.value = '';
+  if (e.key === "Enter") {
+    textInput.value = "";
   }
-}
+});
 
-textInput.addEventListener('keyup', inputMemeText);
-
-function insertMemeImage() {
+imageInput.addEventListener('change', () => {
   const file = imageInput.files[0];
   const image = URL.createObjectURL(file);
   memeImage.src = image;
-  memeText.style.color = 'white';
-}
+  memeText.style.color = "white";
+});
 
-imageInput.addEventListener('change', insertMemeImage);
+fireButton.addEventListener('click', () => memeContainer.style.border = '3px dashed red');
 
-function fireBorder() {
-  memeContainer.style.border = '3px dashed red';
-}
+waterButton.addEventListener("click", () => memeContainer.style.border = "5px double blue");
 
-fireButton.addEventListener('click', fireBorder);
-
-function waterBorder() {
-  memeContainer.style.border = '5px double blue';
-}
-
-waterButton.addEventListener('click', waterBorder);
-
-function earthBorder() {
-  memeContainer.style.border = '6px groove green';
-}
-
-earthButton.addEventListener('click', earthBorder);
+earthButton.addEventListener('click', () => memeContainer.style.border = '6px groove green');
 
 function slectImage(e) {
   const image = e.target.src;

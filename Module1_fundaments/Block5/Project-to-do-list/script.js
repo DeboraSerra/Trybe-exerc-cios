@@ -8,29 +8,15 @@ const moveUpButton = document.querySelector('#mover-cima');
 const moveDownButton = document.querySelector('#mover-baixo');
 const removeSelectedButton = document.querySelector('#remover-selecionado');
 
-function completeTask(e) {
-  if (e.target.classList.contains('completed')) {
-    e.target.classList.remove('completed');
-  } else {
-    e.target.classList.add('completed');
-  }
-}
+const completeTask = (e) => (e.target.classList.contains('completed')) ? e.target.classList.remove('completed') : e.target.classList.add('completed');
 
-function selectItem(e) {
+const selectItem = (e) => {
   const newTaskList = document.querySelectorAll('.task');
-  for (let i = 0; i < newTaskList.length; i += 1) {
-    if (newTaskList[i] !== e.target) {
-      newTaskList[i].classList.remove('selected');
-    }
-  }
-  if (e.target.classList.contains('selected')) {
-    e.target.classList.remove('selected');
-  } else {
-    e.target.classList.add('selected');
-  }
+  newTaskList.forEach((item) => (item !== e.target) ? item.classList.remove('selected') : stop);
+  e.target.classList.toggle('selected');
 }
 
-function addNewTaskButton() {
+const addNewTaskButton = () => {
   if (!inputTask.value) {
     alert('Nenhuma tarefa adicionada!');
   } else {
@@ -47,59 +33,36 @@ function addNewTaskButton() {
 
 taskButton.addEventListener('click', addNewTaskButton);
 
-function clearTaskList() {
+const clearTaskList = () => {
   const newTaskList = document.querySelectorAll('.task');
-  for (let i = 0; i < newTaskList.length; i += 1) {
-    taskList.removeChild(newTaskList[i]);
-  }
-  localStorage.clear();
+  newTaskList.forEach((item) => taskList.removeChild(item));
+  localStorage.removeItem('Task list');
 }
 
 deleteAllButton.addEventListener('click', clearTaskList);
 
-function clearCompletedTasks() {
+const clearCompletedTasks = () => {
   const completedTasks = document.querySelectorAll('.completed');
-  for (let i = 0; i < completedTasks.length; i += 1) {
-    taskList.removeChild(completedTasks[i]);
-  }
+  completedTasks.forEach((item) => taskList.removeChild(item));
 }
 
 deleteCompleted.addEventListener('click', clearCompletedTasks);
 
-function saveTasks() {
-  const listToSave = [];
-  const newTaskList = document.querySelectorAll('.task');
-  for (let i = 0; i < newTaskList.length; i += 1) {
-    listToSave.push(newTaskList[i].innerText);
-    let task = newTaskList[i].innerText;
-    let taskClass = newTaskList[i].classList;
-    localStorage.setItem(JSON.stringify(task), taskClass);
-  }
-  localStorage.setItem('Task list', JSON.stringify(listToSave));
+const saveTasks = () => {
+  const tasksToSave = taskList.innerHTML
+  localStorage.setItem('Task list', tasksToSave);
 }
 
 saveTasksButton.addEventListener('click', saveTasks);
 
-function addClasses() {
-  const newTasks = document.querySelectorAll('li');
-  for (let i = 0; i < newTasks.length; i += 1) {
-    let key = newTasks[i].innerText;
-    let classes = localStorage.getItem(JSON.stringify(key));
-    newTasks[i].classList = classes;
-  }
-}
-
 function getTasks() {
-  const savedList = JSON.parse(localStorage.getItem('Task list'));
-  for (let i = 0; i < savedList.length; i += 1) {
-    let newItem = document.createElement('li');
-    let text = savedList[i];
-    newItem.innerText = text;
-    taskList.appendChild(newItem);
-    newItem.addEventListener('click', selectItem);
-    newItem.addEventListener('dblclick', completeTask);
-  }
-  addClasses();
+  const savedTasks = localStorage.getItem('Task list');
+  taskList.innerHTML = savedTasks;
+  const newTaskList = document.querySelectorAll('.task');
+  newTaskList.forEach((item) => {
+    item.addEventListener("click", selectItem);
+    item.addEventListener("dblclick", completeTask);
+  })
 }
 
 window.onload = function () {
@@ -108,7 +71,7 @@ window.onload = function () {
   }
 }
 
-function moveUp() {
+const moveUp = () => {
   if (document.querySelector('.selected')) {
     if (document.querySelector('.selected').previousElementSibling) {
       let taskOne = document.querySelector('.selected');
@@ -127,7 +90,7 @@ function moveUp() {
 
 moveUpButton.addEventListener('click', moveUp);
 
-function moveDown() {
+const moveDown = () => {
   if (document.querySelector('.selected')) {
     if (document.querySelector('.selected').nextElementSibling) {
       let taskOne = document.querySelector('.selected');
@@ -146,7 +109,7 @@ function moveDown() {
 
 moveDownButton.addEventListener('click', moveDown);
 
-function removeSelected() {
+const removeSelected = () => {
   const selectedTask = document.querySelector('.selected');
   taskList.removeChild(selectedTask);
 }

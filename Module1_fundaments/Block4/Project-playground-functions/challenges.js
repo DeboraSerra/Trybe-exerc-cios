@@ -1,28 +1,22 @@
 // Desafio 1
 function compareTrue(boolean1, boolean2) {
-  let result = false;
-  if (boolean1 && boolean2) {
-    result = true;
-  }
-  return result;
+  return boolean1 && boolean2;
 }
 
 // Desafio 2
 function calcArea(base, heigth) {
-  let area = (base * heigth) / 2;
-  return area;
+  return (base * heigth) / 2;
+
 }
 
 // Desafio 3
 function splitSentence(string) {
-  let newArray = string.split(' ');
-  return newArray;
+  return string.split(' ');
 }
 
 // Desafio 4
 function concatName(array) {
-  let newString = '';
-  newString = array[array.length - 1] + ', ' + array[0];
+  let newString = array[array.length - 1] + ', ' + array[0];
   return newString;
 }
 
@@ -76,17 +70,15 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(numbers) {
   const newArray = [];
-  for (let index of numbers) {
-    if (index % 3 === 0 && index % 5 !== 0) {
-      newArray.push('fizz');
-    } else if (index % 3 !== 0 && index % 5 === 0) {
-      newArray.push('buzz');
-    } else if (index % 3 === 0 && index % 5 === 0) {
-      newArray.push('fizzBuzz');
-    } else {
-      newArray.push('bug!');
-    }
-  }
+  numbers.forEach((item) => {
+    (item % 3 === 0 && item % 5 !== 0) 
+      ? newArray.push('fizz')
+      : (item % 3 !== 0 && item % 5 === 0)
+        ? newArray.push('buzz')
+        : (item % 3 === 0 && item % 5 === 0)
+          ? newArray.push('fizzBuzz')
+          : newArray.push('bug!');
+  })
   return newArray;
 }
 

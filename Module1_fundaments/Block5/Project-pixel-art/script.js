@@ -1,51 +1,35 @@
-const colors = document.querySelectorAll('.color');
 const resetButton = document.querySelector('#clear-board');
-const firstColor = document.querySelectorAll('.color');
 const board = document.querySelector('#pixel-board');
-const input = document.querySelector('input');
+const input = document.querySelector('#board-size');
 const buttonInput = document.querySelector('#generate-board');
 
-function randomNumber() {
-  const number = parseInt(Math.random() * 255 + 1);
-  return number;
+const colorPixels = (e) => {
+  const myColor = document.querySelector('.color').value;
+  e.target.style.backgroundColor = myColor
 }
 
-firstColor.forEach((color, i) =>
-  i === 0
-    ? (color.style.backgroundColor = "black")
-    : (color.style.backgroundColor = `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`)
-);
-
-function colorPixel(e) {
-  const myColor = document.querySelector('.selected').style.backgroundColor;
-  if (e.target.style.backgroundColor !== myColor) {
-    e.target.style.backgroundColor = myColor;
-  } else if (e.target.style.backgroundColor === myColor) {
-    e.target.style.backgroundColor = 'white';
-  }
-}
-
-function newLine(x) {
+const newLine = (x) => {
   for (let i = 0; i < x; i += 1) {
     let pixelLine = document.createElement("div");
     pixelLine.className = "pixel-line";
     board.appendChild(pixelLine);
   }
 }
-function initialize() {
+
+const initialize = () => {
   newLine(5);
 
   let pixelLine = document.querySelectorAll('.pixel-line');
-  
-  for (let x = 0; x < 5; x += 1){
+
+  pixelLine.forEach((item) => {
     for (let i = 0; i < 5; i += 1) {
       const myPixel = document.createElement("div");
       myPixel.className = "pixel";
       myPixel.style.backgroundColor = "white";
-      pixelLine[i].appendChild(myPixel);
-      myPixel.addEventListener("click", colorPixel);
+      item.appendChild(myPixel);
+      myPixel.addEventListener("click", colorPixels);
     }
-  }
+  })
 }
 
 window.onload = initialize();
@@ -53,102 +37,81 @@ window.onload = initialize();
 function lessThanFive() {
   newLine(5);
 
-  let pixelLine = document.querySelectorAll(".pixel-line");
+  const pixelLine = document.querySelectorAll(".pixel-line");
 
-  for (let x = 0; x < 5; x += 1) {
+  pixelLine.forEach((item) => {
     for (let i = 0; i < 5; i += 1) {
       const myPixel = document.createElement("div");
       myPixel.className = "pixel";
       myPixel.style.backgroundColor = "white";
-      pixelLine[i].appendChild(myPixel);
-      myPixel.addEventListener("click", colorPixel);
+      item.appendChild(myPixel);
+      myPixel.addEventListener("click", colorPixels);
     }
-  }
+  });
 }
 
 function moreThanFifty() {
   newLine(50);
 
-  let pixelLine = document.querySelectorAll(".pixel-line");
+  const pixelLine = document.querySelectorAll(".pixel-line");
 
-  for (let x = 0; x < 50; x += 1) {
+  pixelLine.forEach((item) => {
     for (let i = 0; i < 50; i += 1) {
       const myPixel = document.createElement("div");
       myPixel.className = "pixel";
       myPixel.style.backgroundColor = "white";
-      pixelLine[i].appendChild(myPixel);
-      myPixel.addEventListener("click", colorPixel);
+      item.appendChild(myPixel);
+      myPixel.addEventListener("click", colorPixels);
     }
-  }
+  });
 }
 
-function createLine() {
+const createLine = () => {
   let pixelLine = document.querySelectorAll(".pixel-line");
-
-  for (let x = 0; x < input.value; x += 1) {
+  const number = input.value;
+  for (let x = 0; x < number; x += 1) {
     const myPixel = document.createElement("div");
     myPixel.className = "pixel";
     myPixel.style.backgroundColor = "white";
     pixelLine[x].appendChild(myPixel);
-    myPixel.addEventListener("click", colorPixel);
+    myPixel.addEventListener("click", colorPixels);
   }
 }
 
-function createBoard() {
+const createBoard = () => {
   if (input.value < 5) {
     lessThanFive();
   } else if (input.value > 50) {
     moreThanFifty();
   } else {
     const myNumber = input.value;
-
     newLine(myNumber);
-
-    for (let i = 0; i < input.value; i += 1) {
+    for (let i = 0; i < myNumber; i += 1) {
       createLine();
     }
   }
 }
 
-function deleteBoard() {
+const deleteBoard = () => {
   if (!input.value) {
     alert('Board inválido!');
-    Location.reload();
+    document.location.reload();
   } else {
     const lines = document.querySelectorAll('.pixel-line');
-    for (let i = 0; i < lines.length; i += 1) {
-      board.removeChild(lines[i]);
-    }
+    lines.forEach((item) => board.removeChild(item))
   }
   createBoard();
 }
 
 buttonInput.addEventListener('click', deleteBoard);
-function enter(e) {
-  if (e.key === "Enter") {
-    deleteBoard();
-  }
-}
+
+const enter = (e) => (e.key === "Enter") ? (deleteBoard(), e.target) : stop;
 
 input.addEventListener("keyup", enter);
 
-
-function selectColor(e) {
-  for (let i = 0; i < colors.length; i += 1) {
-    colors[i].className = 'color';
-  }
-  e.target.className = 'color selected';
-}
-
-for (let i = 0; i < colors.length; i += 1) {
-  colors[i].addEventListener('click', selectColor);
-}
-
-function clearBoard() {
+const clearBoard = () => {
   const pixels = document.querySelectorAll('.pixel');
-  for (let i = 0; i < pixels.length; i += 1) {
-    pixels[i].style.backgroundColor = 'white';
-  }
+  pixels.forEach((item) => item.style.backgroundColor = 'white');
 }
 
 resetButton.addEventListener('click', clearBoard);
