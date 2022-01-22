@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(81, 167, 247, 0.623);
+}
+
+.header {
+  text-align: center;
+  font-size: 5vh;
+  color: rgb(1, 53, 121);
+  margin: 15px auto 15px auto;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-around;
+  height: 85vh;
+  align-items: center;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.801);
+  color: white;
+  height: 50vh;
+  width: 15%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card h4 {
+  text-align: center;
+  font-size: 2.5vh;
+}
+
+.card p {
+  font-size: 2.5vh;
+}
+
+.footer {
+  background-color: rgb(1, 53, 121);
+  color: white;
+  text-align: center;
+  height: 49px;
+}

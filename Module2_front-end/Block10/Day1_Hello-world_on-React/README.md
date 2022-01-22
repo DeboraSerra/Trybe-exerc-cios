@@ -1,5 +1,9 @@
 # Day 10.1 - 'Hello, World!' on React
 
+The directories exercise1-10.1 and exercise2-10.2 were created following the proposed exercises below:
+
+##### Exercise1-10.1
+
 1. Create a new project using `npx create-react-app exercise1-10.1` and access the directory created.
 
 2. Create a simple to do List following the steps below:
@@ -9,6 +13,9 @@
 >* Now, call the function inside your App component. Insert the value you want, save the page and use the `npm start` command.
 
 >* At last, create a tasks array and use the HOF map to show each item of the array as a list item on your App component.
+
+
+##### Exercise2-10.1
 
 3. Create another project using `npx create-react-app`.
 
