@@ -1,10 +1,10 @@
-# CSS Flexbox - Parte 1
+# Day 6.3 - CSS Flexbox - Part 1
 
 On this exercise we were asked to access the repository provided and follow the instructions to get the template code and images that will be used.
 
 ### Exercise Trybe Gallery Preview
 
-Image!!!
+![Page template](https://github.com/DeboraSerra/Trybe-exercicios/blob/main/Module1_fundaments/Block6/Day3-CSS-Flexbox-Part1/Images/Page-template.jpg)
 
 1. Create a header to your aplication. It must have three elements and they must be positioned with Flexbox. The result must be similar to the image above.
 
