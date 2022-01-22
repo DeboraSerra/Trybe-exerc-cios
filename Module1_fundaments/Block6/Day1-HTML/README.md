@@ -1,54 +1,66 @@
 # Day 6-1 - HTML & CSS - Forms
 
-Criando um formulário de currículo.
-Crie um arquivo HTML chamado form.html para o formulário.
-Caso julgue necessário, crie estilos CSS para o seu formulário, de acordo com a sua imaginação. Coloque-os em um arquivo styles.css .
-Crie também um arquivo script.js para seu código JavaScript .
-Vamos criar um formulário de cadastro de currículo com base na especificação a seguir:
-Faça as validações inicialmente pelo HTML
-Crie um <fieldset> para os seguintes dados pessoais:
-Nome - Texto
-Limite de 40 caracteres
-Campo obrigatório
-Email - Texto
-Limite de 50 caracteres
-Campo obrigatório
-CPF - Texto
-Limite de 11 caracteres
-Campo obrigatório
-Endereço - Texto
-Limite de 200 caracteres
-Campo obrigatório
-Cidade - Texto
-Limite de 28 caracteres
-Campo obrigatório
-Estado - Select
-Todos os estados do Brasil
-Utilize estruturas de repetição via JavaScript para gerar os <option>
-Campo obrigatório
-Tipo - Radio Button
-Casa, Apartamento
-Campo obrigatório
-Crie outro <fieldset> para dados do seu último emprego
-Resumo do currículo - TextArea
-Limite de 1000 caracteres
-Campo obrigatório
-Cargo - Texto
-Limite de 40 caracteres
-Campo obrigatório
-Descrição do cargo - Texto
-Limite de 500 caracteres
-Campo obrigatório
-Data de início - Texto
-Verificar o formato da data dd/mm/aaaa .
-O dia deve ser > 0 e <= 31.
-O mês deve ser > 0 e <= 12.
-O ano não pode ser negativo.
-Caso alguma das condições seja inválida no momento do envio do formulário, exibir via alert uma mensagem de erro contextualizada.
-Campo obrigatório
-Logo abaixo do formulário, crie um botão que:
-Chame uma função JavaScript e interrompa o fluxo automático do form utilizando o preventDefault() . Note que isso vai impedir as validações do HTML ao fazer o submit
-Implemente, agora, no Javascript , as validações que foram pedidas ao longo da montagem do formulário.
-Caso todos os dados sejam válidos, monte uma <div> com o consolidado dos dados que foram inseridos no formulário.
-Caso haja algum dado inválido, mostre em uma <div> uma mensagem de erro. Se o erro for na Data de Início , a mensagem deve ser contextualizada.
-Crie um botão Limpar que limpa todos os campos do formulário e a <div> com seu currículo também.
+Create a file form.html, style.css and script.js and create a resume form according with the specification below.
+
+Initially make the validations using the html.
+
+Create a `fieldset` to the following personal data:
+
+* Name - text
+>> Max 40 characters
+>> Required
+
+* Email - text
+>> Max 50 characters
+>> Required
+
+* Social security number - text
+>> Max 11 characters
+>> Required
+
+* Adress - text
+>> Max 200 characters
+>> Required
+
+* City - text
+>> max 28 characters
+>> Required
+
+* State - Select
+>> All brazilian states (use JS to generate the `option` tags)
+>> Required
+
+* Type - Radio Button
+>> House, Apartment
+>> required
+
+
+Create another `fieldset` to the last job data
+
+* Abstract of the resume - TextArea
+>> Max 1000 characters
+>> Required
+
+* Position - text
+>> Max 40 characters
+>> Required
+
+* Job description - test
+>> Max 500 characters
+>> Required
+
+* Start date - text
+>> Check if the date format is DD/MM/YYYY.
+>> The day must be between 0 and 31.
+>> The month must be between 0 and 12.
+>> The year can't be a neative number.
+
+In case any of the conditions is invalid when the send button is clicked, an alert must be shown.
+
+Create a JS function using `preventDefault()`.
+
+Implement the validations requested before through JS.
+
+In case all the data is valid, insert a `div` with the data inserted at the form.
+
+Create a _Clear form_ button to clear all the fields of the form and the `div` with the resume.

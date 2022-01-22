@@ -1,32 +1,27 @@
 # Day 6-1 - Fixing exercise - HTML & CSS - Forms
 
-#### Input tags, types and attributes
+#### Input tags, types and attributes (index.html, style.css)
 
-Para fixar
-Vamos praticar um pouco, criando uma tela de login? 🔥
-1 - Adicione os campos de entrada para email e senha.
-2 - Adicione um checkbox com o texto Lembre-me .
-3 - Adicione um botão com o texto Entrar .
-4 - Adicione os placeholder Digite seu email e Digite sua senha para os campos de email e senha.
-5 - Adicione o atributo required para os campos de email e senha.
-6 - Adicione o atributo autocomplete="off" para o campo de email.
-7 - Adicione o atributo autofocus para o campo de email.
+The first exercise was produced with the propositions below:
 
-#### Understanding preventDefault
+1. Add the input fields to the e-mail and password.
 
-Para fixar:
-Crie um arquivo HTML index.html
-Crie um arquivo Javascript script.js
-Em seu arquivo HTML
-Adicione o <script src="script.js"></script> no final do body do HTML
-Copie os três elementos acima ( a , input type="text" , checkbox ) em sua página
-Em seu arquivo Javascript
-Adicione os seletores abaixo no começo do arquivo
-Copiar
-// SELETORES
-const INPUT_TEXT = document.querySelector("#input-text");
-const INPUT_CHECKBOX = document.querySelector("#input-checkbox");
-const HREF_LINK = document.querySelector("#href");
-1 - Adicione um evento click no elemento a que possui o id href . Na função do evento, implemente o método .preventDefault() para previnir o comportamento padrão do elemento. Ou seja, ao clicar no link, nada deve acontecer.
-2 - Adicione um evento click no elemento checkbox que possui o id input-checkbox . Na função do evento, implemente o método .preventDefault() para previnir o comportamento padrão do elemento. Ou seja, ao clicar na caixinha, nada deve acontecer.
-3 - Adicione um evento keypress no elemento input type="text" que possui o id input-text . Na função do evento, implemente o método .preventDefault() de forma que somente o caractere a (letra 'a' minúscula) possa ser digitado na caixinha. ( dica: para capturar a tecla digitada, utilize o event.key )
+2. Add a checkbox with the text _Remember me_.
+
+3. Add a button with the text _Enter_.
+
+4. Add the placeholders _Type your email_ and _Your password_ to the respective inputs.
+
+5. Add the attribute `required` to the email and password fields.
+
+6. Add the attributes `autocomplete='off'` and `autofocus` to the email field.
+
+#### Understanding preventDefault (index2.html, style2.css, script2.js)
+
+Add the given codes to yous html and js files.
+
+1. Add a click event to the element with the id `href` and implement the method `.preventDefault()` to prevent the default behavior of the element.
+
+2. Add a click event to the checkbox element that have the id `input-checkbox` and implement the method `.preventDefault()`.
+
+3. Add a keypress event to the element with the id `input-text` and implement the method `.preventDefault()` in a way that onle the letter _a_ can be typed into the box.

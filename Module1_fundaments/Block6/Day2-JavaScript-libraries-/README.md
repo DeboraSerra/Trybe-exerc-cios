@@ -1,10 +1,9 @@
 # Day 6.2 - JavaScript Libraries and CSS Frameworks
 
-Agora a prática
-Adicione um framework CSS de sua escolha ao formulário que você construiu na última aula e o utilize para estilizar o formulário.
-Sugestões: Bulma , Bootstrap , Semantic UI e Materialize .
-Adicione uma biblioteca JavaScript de date picker ao formulário que você construiu na última aula. Utilize essa biblioteca no campo "Data de início" do formulário. Você pode remover as validações de data que adicionou, uma vez que a biblioteca se encarregará de permitir somente datas válidas.
-Sugestões: DatePickerX e Pikaday .
-spoiler-alert : a leitura de documentações pode parecer algo complexo de início mas é extremamente normal se você sentir alguma dificuldade. Algumas bibliotecas terão uma maneira mais direta de mostrar as informações, como é o caso da DatePickerX que indicamos acima. Outras tendem a ser mais detalhadas e exigem um pouco mais de atenção na leitura, o que pode parecer mais difícil a princípio, como a Pikaday , que também te indicamos. Sugerimos que você leia as duas documentações e escolha a que você compreender melhor a utilização. E não se preocupe, pois ler documentações fará parte de sua rotina na sua vida de pessoa desenvolvedora, e a experiência junto com a prática torna tudo mais intuitivo e simples.
-Adicione uma biblioteca JavaScript de validações ao formulário que você construiu na última aula. Utilize essa biblioteca para substituir as validações que você fez manualmente.
-Sugestões: Just-validate e popup-validation
+Using the form buit on day 6.1, follow the exercises below:
+
+1. Add a CSS framework and use it to style the form.
+
+2. Add a JavaScript library of date picker and use it on the field _Start date_. You can then remove the validations you made, since the library will allow only valid dates.
+
+3. Add a JavaScript validation library and use it to substitute the validations you made manually.
