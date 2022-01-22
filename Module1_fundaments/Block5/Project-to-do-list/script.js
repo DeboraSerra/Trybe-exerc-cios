@@ -18,7 +18,7 @@ const selectItem = (e) => {
 
 const addNewTaskButton = () => {
   if (!inputTask.value) {
-    alert('Nenhuma tarefa adicionada!');
+    alert('No task added!');
   } else {
     let newItem = document.createElement('li');
     let text = inputTask.value;
