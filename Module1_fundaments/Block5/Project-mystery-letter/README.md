@@ -17,12 +17,14 @@ The project Mystery letter was created using the directions below. To use it you
 
 5. If the user doesn't type the field or type only spaces, the message 'Por favor, digite o conteúdo da carta.' must apear as response.
 
-6. Create the class `newspaper` with the following properties:
+##### Create the classes below with the properties listed for each one
+
+6. Class `newspaper`:
 >* `background-color` with the value `antiquewhite`
 >* `font-family` with the value `Times New Roman`
 >* `font-weight` with the value `bold`
 
-7. Create the class `magazine1` with the properties:
+7. Class `magazine1`:
 
 >* `background-color` with the value `teal`
 >* `color` with the value `white`
@@ -30,106 +32,61 @@ The project Mystery letter was created using the directions below. To use it you
 >* `font-weight` with the value `900`
 >* `text-transform` with the value `uppercase`
 
-8. Create the class `magazine2` with the properties:
+8. Class `magazine2`:
 
 >* `background-image` with the image `images/pink-pattern.png`
 >* `color` with the value `fuchsia`
 >* `font-family` with the value `Verdana`
 >* `font-weight` with the value `900`
 
-9. Create the class `medium` with the properties:
+9. Class `medium`:
 
 >* `font-size` with the value `20px`
 >* `padding` with the value `8px`
 
-10. Create the class `big` with the properties:
+10. Class `big`:
 
 >* `font-size` with the value `30px`
 >* `padding` with the value `10px`
 
-11 - Crie a classe reallybig.
-Pontos importantes:
+11. Class `reallybig`:
 
-* Defina as propriedades:
-  - `font-size` com o valor `40px`
-  - `padding` com o valor `15px`
-O que será verificado:
+>* `font-size` with the value `40px`
+>* `padding` with the value `15px`
 
-Será validado se a classe reallybig possui a propriedade font-size igual a "40px"
+12. Class `rotateleft`:
 
-Será validado se a classe reallybig possui a propriedade padding igual a "15px"
+>* `transform` with the value `rotate(-5deg)`
 
-12 - Crie a classe rotateleft.
-Pontos importantes:
+13. Class `rotateright`:
 
-* Defina as propriedades:
-  - `transform` com o valor `rotate(-5deg)`
-O que será verificado:
+>* `transform` with the value `rotate(5deg)`
 
-Será validado se a classe rotateleft possui a propriedade transform igual a "matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0)"
-13 - Crie a classe rotateright.
-Pontos importantes:
+14. Class `skewleft`:
 
-* Defina as propriedades:
-  - `transform` com o valor `rotate(5deg)`
-O que será verificado:
+>* `transform` with the value `skewX(10deg)`;
 
-Será validado se a classe rotateright possui a propriedade transform igual a "matrix(0.996195, 0.0871557, -0.0871557, 0.996195, 0, 0)"
-14 - Crie a classe skewleft.
-Pontos importantes:
+15. Class `skewright`:
 
-* Defina as propriedades:
-  - `transform` com o valor `skewX(10deg)`;
-O que será verificado:
+>* `transform` with the value `skewX(-10deg)`;
 
-Será validado se a classe skewleft possui a propriedade transform igual a "matrix(1, 0, 0.176327, 1, 0, 0)"
-15 - Crie a classe skewright.
-Pontos importantes:
+16. Add the classes in a random way to style the words.
 
-* Defina as propriedades:
-  - `transform` com o valor `skewX(-10deg)`;
-O que será verificado:
+>* The classes must be added to the `span` tags in a random way.
+>* Add one of each group of class to each word.
+>* Use the groups:
+>>  - `newspaper`, `magazine1`, `magazine2` (style group)
+>>  - `medium`, `big`, `reallybig` (size group)
+>>  - `rotateleft`, `rotateright` (rotation group)
+>>  - `skewleft`, `skewright` (inclination group)
 
-erá validado se a classe skewright possui a propriedade transform igual a "matrix(1, 0, -0.176327, 1, 0, 0)"
-16 - Adicione as classes de forma aleatória a fim de estilizar as palavras.
-Pontos importantes:
+#### Bonus
 
-* As classes devem ser adicionadas às tags `span` de forma **aleatória**.
-* Sempre adicione mais de uma classe em uma palavra.
-* Utilize as classes:
-  - `newspaper`, `magazine1`, `magazine2` (Grupo estilo)
-  - `medium`, `big`, `reallybig` (Grupo tamanho)
-  - `rotateleft`, `rotateright` (Grupo rotação)
-  - `skewleft`, `skewright` (Grupo inclinação)
+17.Whith the letter generated, add the possibility to change the style of a word when it is clicked.
 
-  Não é necessário utilizar classes de todos os grupos em uma palavra, mas **não** utilize mais de uma classe do mesmo grupo.
-  Ou seja, se você utilizar as classes `magazine1` e `skewright` em uma palavra, as classes `newspaper`, `magazine2`, `skeleft` não devem ser usadas para essa mesma palavra.
-O que será verificado:
+>* When you click a word, a new set of random styles will be chosen.
+>* The number of changes must be ilimited.
 
-Será validado se ao criar uma carta ela recebe uma lista de classes aleatórias
+18. The page must have a paragraph with the id _carta-contador_ where there will be a word counter.
 
-Será validado se ao criar uma segunda carta ela recebe uma lista de classes aleatórias
-
-Será validado se as classes das duas cartas não são exatamente iguais
-
-Requisitos Bônus:
-17 - Com uma carta misteriosa gerada, adicione a possibilidade de alterar o estilo de uma palavra específica ao clicar nela
-Pontos importantes:
-
-* Ao clicar em uma palavra, um novo estilo **aleatório** deve ser aplicado.
-* O número de mudanças deve ser ilimitado;
-O que será verificado:
-
-Será validado se ao clicar em uma carta uma nova lista aleatória de classes é gerada
-
-Será validado se ao clicar novamente na mesma carta uma nova lista aleatória de classes é gerada e se a nova lista é diferente da lista anterior
-
-18 - Deve haver um parágrafo com o id="carta-contador" onde existirá um contador de palavras
-Pontos importantes:
-
-* Esse contador deve informar a quantidade de palavras presentes na carta misteriosa gerada.
-O que será verificado:
-
-Será validado que existe um elemento p com o id="carta-contador"
-
-Será validado se ao criar uma carta o elemento p com o `id="carta-contador" é atualizado com o número de palavras da carta (valor numérico).
+>* This counter must show the number of words in the generated mystery letter.
