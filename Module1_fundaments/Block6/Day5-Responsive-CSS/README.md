@@ -52,3 +52,7 @@ Using the code provided:
 * The images can't be bigger than the screen;
 * The items in the navigation element must appear one on each line;
 * The element with the id `header` must be fixed, in a way it always shows on the top of the screen.
+
+#### BONUS
+
+As bonus exercise, take the exercise made for the shrimp-mantis and add media-query and CSS library.
