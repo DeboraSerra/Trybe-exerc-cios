@@ -94,7 +94,7 @@ const createBoard = () => {
 
 const deleteBoard = () => {
   if (!input.value) {
-    alert('Board inválido!');
+    alert('invalid Board!');
     document.location.reload();
   } else {
     const lines = document.querySelectorAll('.pixel-line');
