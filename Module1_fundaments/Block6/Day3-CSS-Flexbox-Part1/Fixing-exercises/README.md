@@ -1,150 +1,19 @@
 # Day 6-3 - Fixing exercises - CSS Flexbox - Part I
 
-#### Introdução, estrutura básica, flex-direction, flex-wrap, flex-flow e reverse
+#### Introduction, basic structure, flex-direction, flex-wrap, flex-flow and reverse (fixing-exercise1-6.3.html)
 
-1 - Teste as possibilidades ( row , column , row-reverse e column-reverse ) para a propriedade flex-direction .
-2 - Teste as possibilidades ( wrap e nowrap ) para a propriedade flex-wrap .
-3 - Teste as possibilidades para a propriedade flex-flow .
+1. Test the possibilities to the property `flex-direction`.
 
-#### Propriedades: justify-content, align-items e align-content
+2. Test the possibilities to the property `flex-wrap`.
 
-Para fixar
-Interessante quantas possibilidades para manipular o posicionamento de elementos o flex-box nos traz, não é? Copie o código abaixo e teste algumas destas possibilidades para fixar seu conhecimento.
-1 - Utilizando o código abaixo, teste as possibilidades ( center , flex-start , flex-end , space-around e space-between ) para a propriedade justify-content .
-Copiar
-<!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox - Justify Content</title>
-    <style>
-      .box {
-        color: #9069EF;
-        background-color: rgb(243, 243, 243);
-        border: 2px solid #232525;
-        font-size: 50px;
-        height: 60px;
-        margin: 10px 5px;
-        text-align: center;
-        width: 20%;
-      }
+3. Test the possibilities to the property `flex-flow`.
 
-      .box-container {
-        background-color: #0fa36b;
-        display: flex;
-        /* ADICIONE AQUI SEUS TESTES */
-      }
-    </style>
+#### Properties: justify-content, align-items and align-content (fixing-exercise2-6.3.html, fixing-exercise3-6.3.html, fixing-exercise4-6.3.html)
 
-  </head>
-  <body>
-    <div class="box-container">
-      <div class="box">1</div>
-      <div class="box">2</div>
-      <div class="box">3</div>
-    </div>
-  </body>
-</html>
-2 - Teste as possibilidades ( center , flex-start , flex-end , stretch e baseline ) para a propriedade align-items . Não se esqueça de copiar o código abaixo! 😉
-Copiar
-<!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox - Align Items</title>
-    <style>
-      .box-one {
-        color: #9069EF;
-        background-color: rgb(243, 243, 243);
-        border: 2px solid #232525;
-        font-size: 70px;
-        min-height: 80px;
-        margin: 10px 5px;
-        text-align: center;
-        width: 50px;
-      }
+Using the code provided, follow the exercises below:
 
-      .box-two {
-        color: #9069EF;
-        background-color: rgb(243, 243, 243);
-        border: 2px solid #232525;
-        font-size: 50px;
-        min-height: 60px;
-        margin: 10px 5px;
-        text-align: center;
-        width: 50px;
-      }
+1. Test the possibilities to the property `justify-content`.
 
-      .box-three {
-        color: #9069EF;
-        background-color: rgb(243, 243, 243);
-        border: 2px solid #232525;
-        font-size: 30px;
-        margin: 10px 5px;
-        min-height: 50px;
-        text-align: center;
-        width: 50px;
-      }
+2. Test the possibilities to the property `align-items`.
 
-      .box-container {
-        background-color: #0fa36b;
-        display: flex;
-        /* ADICIONE AQUI SEUS TESTES */
-      }
-    </style>
-
-  </head>
-  <body>
-    <div class="box-container">
-      <div class="box-one">1</div>
-      <div class="box-two">2</div>
-      <div class="box-three">3</div>
-    </div>
-  </body>
-</html>
-3 - Teste as possibilidades ( center , flex-start , flex-end , stretch , space-around e space-between ) para a propriedade align-content .
-Copiar
-<!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox - Align Content</title>
-    <style>
-      .box {
-        color: #9069EF;
-        background-color: rgb(243, 243, 243);
-        border: 2px solid #232525;
-        font-size: 50px;
-        min-height: 60px;
-        margin: 10px 5px;
-        text-align: center;
-        width: 30%;
-      }
-
-      .box-container {
-        /* ADICIONE AQUI SEUS TESTES */
-        background-color: #0fa36b;
-        display: flex;
-        flex-wrap: wrap;
-        height: 600px;
-      }
-    </style>
-
-  </head>
-  <body>
-    <div class="box-container">
-      <div class="box">1</div>
-      <div class="box">2</div>
-      <div class="box">3</div>
-      <div class="box">4</div>
-      <div class="box">5</div>
-      <div class="box">6</div>
-      <div class="box">7</div>
-      <div class="box">8</div>
-      <div class="box">9</div>
-    </div>
-  </body>
-</html>
+3. Test the possibilities to the property `align-content`.
