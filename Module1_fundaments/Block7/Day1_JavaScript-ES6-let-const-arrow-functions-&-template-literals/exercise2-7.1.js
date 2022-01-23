@@ -17,4 +17,4 @@ const sortedNums = array => array.sort((a,b) => a-b);
 
 sortedNums(oddsAndEvens);
 
-console.log(`The numbers ${oddsAndEvens} are ordered in ascending order`);
+console.log(`The numbers ${oddsAndEvens} are ordered in crescent order`);
