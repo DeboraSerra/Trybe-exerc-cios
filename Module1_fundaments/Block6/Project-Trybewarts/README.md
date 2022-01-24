@@ -116,7 +116,7 @@
 
 * The footer must have the text "Direitos reservados à Trybewarts©"
 
-#### BONUS
+### BONUS
 
 20. Create a counter with the id `counter` containing the number of characters available in the textarea, from 500 to 0, that must be updated every time something is typed.
 
