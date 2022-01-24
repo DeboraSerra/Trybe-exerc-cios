@@ -1,6 +1,6 @@
 # Day 6.5 - Responsive CSS - Mobile first
 
-#### Part I - Create a page to a small screen
+### Part I - Create a page to a small screen
 
 Using the code provided, start by changing the style of the page for a mobile device.
 Change the style to fit the screen according to the breakpoints.
@@ -26,7 +26,7 @@ Change the style to fit the screen according to the breakpoints.
 * Adjust the margin of the page;
 * Add a property max-width to make sure the lines won't be to wide.
 
-#### Part II - Create 3 different layouts using mobile first
+### Part II - Create 3 different layouts using mobile first
 
 Create three versions of layout to the code provided, one for each size starting with small and working your way to the big one.
 To do this you must think how it will work to the user.
@@ -36,7 +36,7 @@ To do this you must think how it will work to the user.
 * How should the header be positioned?
 * What to do with the author information?
 
-#### Part III - Create layouts to mobile devices and to print
+### Part III - Create layouts to mobile devices and to print
 
 Using the code provided:
 
@@ -53,6 +53,6 @@ Using the code provided:
 * The items in the navigation element must appear one on each line;
 * The element with the id `header` must be fixed, in a way it always shows on the top of the screen.
 
-#### BONUS
+### BONUS
 
 As bonus exercise, take the exercise made for the shrimp-mantis and add media-query and CSS library.
