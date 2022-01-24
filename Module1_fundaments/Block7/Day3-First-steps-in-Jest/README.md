@@ -1,51 +1,70 @@
 # Day 7.3 - First step in Jest
 
-Praticando a implementação de testes
-Você vai implementar vários testes em contextos diferentes a fim de consolidar a mecânica e também a forma de pensar em testes.
-Copie as funções já implementadas e desenvolva os testes. Separe as funções e os testes em arquivos diferentes para evitar qualquer tipo de problema.
-Crie os arquivos com o respectivo nome da função. Ex: sum.js e sum.test.js
-1 - A função sum(a, b) retorna a soma do parâmetro a com o b
-Teste se o retorno de sum(4, 5) é 9
-Teste se o retorno de sum(0, 0) é 0
-Teste se a função sum lança um erro quando os parâmetros são 4 e "5" (string 5)
-Teste se a mensagem de erro é "parameters must be numbers" quando realizar a chamada sum(4, "5")
+You will implement tests in different contexts using the functions given on the course. Separate the functions and the tests in different files to avoid any trouble.
 
-2 - A função myRemove(arr, item) recebe um array arr e retorna uma cópia desse array sem o elemento item caso ele exista no array
-Verifique se a chamada myRemove([1, 2, 3, 4], 3) retorna o array esperado
-Verifique se a chamada myRemove([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4]
-Verifique se a chamada myRemove([1, 2, 3, 4], 5) retorna o array esperado
+###### (sum.js, sum.test.js)
 
-3 - A função myFizzBuzz(num) recebe um número num e retorna "fizzbuzz" se o número for divisível por 3 e 5 , retorna "fizz" se for divisível apenas por 3 , retorna "buzz" se divisível apenas por 5 , retorna o próprio número caso não seja divisível por 3 ou 5 e retorna false caso num não seja um número
-Faça uma chamada com um número divisível por 3 e 5 e verifique se o retorno é o esperado
-Faça uma chamada com um número divisível por 3 e verifique se o retorno é o esperado
-Faça uma chamada com um número divisível por 5 e verifique se o retorno é o esperado
-Faça uma chamada com um número que não é divisível por 3 ou 5 e verifique se o retorno é o esperado
-Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
+1. The function sum(a, b) return the sum of the parameters a and b.
 
-No Bloco 4 você desenvolveu um projeto para testar os seus conhecimentos em Javascript e lógica de programação: o Playground functions . Nos exercícios a seguir, você irá trabalhar com os testes para algumas funções que você criou! Aproveite para refatorá-las e usar todos os recursos que já aprendemos até aqui, como as Higher Order Functions e as features do Javascript ES6.
-4 - Para as funções encode e decode crie os seguintes testes em Jest:
-Teste se encode e decode são funções;
-Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente;
-Para a função decode teste se os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u , respectivamente;
-Teste se as demais letras/números não são convertidos para cada caso;
-Teste se a string que é retornada pelas funções têm o mesmo número de caracteres que a string passada como parâmetro.
-5 - A função techList recebe como parâmetros um array contendo uma lista de tecnologias e uma string com um nome. Para cada tecnologia no array a função cria, em ordem alfabética, um objeto com a seguinte estrutura:
-Copiar
+>* Test if the return of sum(4, 5) is 9;
+>* Test if the return of sum(0, 0) is 0;
+>* Test if the function sum throws an error when the parameters are 4 and '5' (string 5);
+>* Test if the error message is "parameters must be numbers" when calling sum(4, "5").
+
+###### (myRemove.js, myRemove.test.js)
+
+2. The function myRemove(arr, item) receive an array `arr` and return a copy of this element without the item if it exists in the array.
+
+>* Test if myRemove([1, 2, 3, 4], 3) returns the expected array;
+>* Test if myRemove([1, 2, 3, 4], 3) doesn't return the array [1, 2, 3, 4];
+>* Test if myRemove([1, 2, 3, 4], 5) returns the expected array.
+
+###### (myFizzBuzz.js, myFizzBuzz.test.js)
+
+3. The function myFizzBuzz(num) receives a number `num` and returns "fizzbuzz" if the number is divisible by 3 and by 5, "fizz" if it's divisible only by 3, "buzz" if it's divisible only by 5, the number if it isn't divisible by 3 or by 5 and false in case `num` isn't a number.
+
+>* Test if calling the function with a number divisible by 3 and by 5 returns the expected result;
+>* Test if calling the function with a number divisible only by 3 returns the expected result;
+>* Test if calling the function with a number divisible only by 5 returns the expected result;
+>* Test if calling the function with a number that isn't divisible by 3 and by 5 returns the expected result;
+>* Test if calling the function with an argument that isn't a number, it returns the expected result;
+
+###### (encode-decode.js, encode-decode.test.js)
+
+4.To the functions encode and decode create the following Jest tests:
+
+>* Test if encode and decode are functions;
+>* To the encode function test if the vowels a, e, i, o and u are converted to 1, 2, 3, 4 and 5, respectively;
+>* To the decode function, test if the numbers 1, 2, 3, 4 and 5 are converted to the vowels a, e, i, o, u , respectively;
+>* Teste se as demais letras/números não são convertidos para cada caso;
+>* Test if the returned string has the same number of characters as the string passed as the argument.
+
+###### (techList.js, techList.test.js)
+
+5. The function techList receive as parameters an array containing a list of tecnologies and a string with a name. For each tecnology in the array, the function creates, alphabeticaly, an object with the following structure:
+```
 {
   tech: 'nomeTecnologia',
   name: name,
 }
-Implemente a função techList a partir dos testes abaixo. Experimente refatorar a função que você criou para esse projeto! É importante nunca alterar os testes ou as variáveis já escritas no código .
+```
+>Implement the tests to check the behavior of this function.
 
+###### (hydrate.js, hydrate.test.js)
 
-6 - A função hydrate recebe uma string no formato "numero bebida", e retorna a sugestão de quantos copos de água você deve beber para se hidratar. Para cada bebida, deve-se tomar um copo de água para não ter ressaca. Exemplo:
+6. The function hydrate receivea string with the format 'number drink', and return a sugestion of how many cuos of water you should drink. For each drink, you should drink a cup of water.
 
-Implemente a função hydrate a partir dos testes abaixo. Experimente refatorar a função que você criou para o projeto Playground Function! É importante nunca alterar os testes ou as variáveis já escritas no código .
+>Implement the tests to check the behavior of this function.
 
-Bônus
-1 - Você está pronto para um desafio?! Neste exercício, você irá praticar o desenvolvimento orientado a testes implementando:
-A função;
-Os testes para essa função;
-Considere os dados abaixo. Você deve criar uma função que receba dois parâmetros: o id do funcionário e a informação disponível sobre ele ( firstName , lastName , specialities ). Você também deverá criar os testes para essa função. Sua função deverá então retornar os resultados da busca pelo id para aquele funcionário e a informação consultada. Caso o id não conste no quadro de funcionários, sua função deve retornar o erro "ID não identificada" . Se a informação que se quer acessar não existir, a função deve retornar o erro "Informação indisponível" .
+#### BONUS (id-check.js, id-check.test.js)
 
-Como ponto de partida, comece implementando um teste para checar se a função existe. Execute o teste que você escreveu e implemente, na função, a funcionalidade que passará nesse teste. Repita esse processo até que todos os retornos esperados sejam testados.
+1. Create a function that receive two paramaters: employee's id and the available detail about him/her (firstName , lastName , specialities). 
+* Start creating the tests to this function.
+
+> Your function must return the result of the search for the detail and id of the employee. 
+
+> If the id isn't in the employee list, your function must return the error "Unidentified ID".
+
+> If the detail you want to check doesn't exist, the function must return the error "Information unavailable".
+
+> Start implementing the test to check what you want the function to do, then implemat just enough so the function will pass. Repeat until all you want the function to do is implemented.
