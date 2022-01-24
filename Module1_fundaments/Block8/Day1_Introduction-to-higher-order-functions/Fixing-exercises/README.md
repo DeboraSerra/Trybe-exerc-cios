@@ -1,14 +1,11 @@
 # Day 1 - Fixing exercises - JavaScript ES6 - Introdução a Higher Order Functions
 
-Para fixar
-Vamos praticar com os seguintes exercícios:
-1 - Crie uma função que retorne a string 'Acordando!!' ;
-2 - Crie outra função que retorne a string 'Bora tomar café!!' ;
-3 - Crie mais uma função que retorne a string 'Partiu dormir!!' ;
-4 - Agora desenvolva uma HOF chamada doingThings e configure esta função para que imprima no console o resultado da execução das funções que você criou nos exemplos anteriores. Exemplo:
+###### (fixing-exercise1-8.1.js)
 
-// Ao chamar a função doingThings:
-doingThings(wakeUp);
+1. Create a function that returns the string 'Waking up!' ;
 
-// Ela deve retornar o valor do respectivo parâmetro, neste caso:
-// Acordando!!
+2. Create another function that returns the string 'Let's have some coffee!';
+
+3. Create one more function that returns the string 'Back to sleep!!';
+
+4. Now develop a HOF called `doingThings` and make this function print on the console the result of the execution of the functions created before.
