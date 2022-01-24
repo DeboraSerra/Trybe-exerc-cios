@@ -2,7 +2,7 @@
 
 ![Page template]()
 
-#### Part 1
+### Part 1
 
 Using the code provided, follow the exercises below so your page will be similar to the image above:
 
@@ -14,7 +14,7 @@ Using the code provided, follow the exercises below so your page will be similar
 
 4. Use the property `align-self` to the correct element so the header will be like the image.
 
-#### Part 2
+### Part 2
 
 1. Apply a 350px base to the aside container.
 
