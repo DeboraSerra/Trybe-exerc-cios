@@ -1,20 +1,16 @@
 # Day 3-3 - HTML & CSS - Selectoresand positioning
 
-#### Box model on CSS
+### Box model on CSS 
 
-The followng exercise produced the files _exercise1-3.3.html_ and _style1.css_.
-
-Fixing exercise - visualizing the box model
+#### Fixing exercise - visualizing the box model (exercise1-3.3.html, style1.css)
 
 1 - Put a padding with 20px in class `.padding`.
 2 - Put a margin with 30px in class `.margin`.
 3 - Put a border with the value '5px solid black' in class `.border`.
 
-#### Elements positioning
+### Elements positioning 
 
-The files _exercise2-3.3.html_ and _style2.css_ were made using the proposed exercise below.
-
-Fixing exercise:
+#### Fixing exercise: (exercise2-3.3.html, style2.css)
 
 Using the Nintendo© characters.
 
@@ -22,11 +18,9 @@ Using the Nintendo© characters.
 2 - Position tha tag `p` to be inside the speaking baloon.
 3 - Position the baloon to be Bowser speaking.
 
-#### Selectors grouping and pseudoclasses
+### Selectors grouping and pseudoclasses
 
-The _exercise3-3.3.html_, _style3.css_, _exercise4-3.3.html_ and _style4.css_ were made using the following proposed exercises:
-
-Fixing exercise I:
+#### Fixing exercise I (exercise3-3.3.html, style3.css, exercise4-3.3.html, style4.css)
 
 1 - Add an ordered list of the top 3 sites you know.
 2 - Create a file on the same directory and name it _style.css_.
@@ -37,11 +31,9 @@ Fixing exercise I:
 4 - Add an unordered list with, at least, 3 characteristcs that you like.
 5 - On _style.css_ file, add the property `list-style: none` to both lists.
 
-#### Combinations and descendants classes
+### Combinations and descendants classes 
 
-The files _exercise5-3.3.html_ and _style5.css_ were created using the proposed exercises below:
-
-Fixing exercise:
+#### Fixing exercise (exercise5-3.3.html, style5.css)
 
 Create the file _style.css_ and make the following exercises:
 1 - Make all the item of Ordered Lists have a yellow background color. If the item's number is EVEN, make the font color green. If the number is ODD, use the property `text-tranform` to make the text uppercase. (Hint: combine classes might be useful here).
