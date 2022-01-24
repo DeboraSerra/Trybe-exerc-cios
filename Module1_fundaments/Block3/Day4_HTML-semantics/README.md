@@ -1,10 +1,8 @@
 # Day 3-4 - Semantic HTML
 
-#### Block elements and inline elements
+### Block elements and inline elements
 
-The file _exercise1-3.4.html_ were made using the proposed exercise below.
-
-Fixing exercise:
+#### Fixing exercise (exercise1-3.4.html)
 
 To make this exercise, read carefully. After understanding the exercise, develop the solution and than check to see if you were able to make what was asked.
 
@@ -12,9 +10,7 @@ To make this exercise, read carefully. After understanding the exercise, develop
 
 Remember that the page structure must be the same so the samantics of the code will be mantained.
 
-#### Now practice
-
-The exercise below produced the files _index2.html_ and _style.css_.
+#### Now practice (index2.html, style.css)
 
 The goal of this exercise is to practice what you just learned about semantic HTML.
 
