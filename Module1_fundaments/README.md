@@ -36,10 +36,10 @@ This module was divided in 9 blocks like specified below, and on each directory 
 
 ## Block 5: Introduction - JavaScript - Projects
 
-- JavaScript - DOM and selectors_
-- JavaScript - Working with elements_
-- JavaScript - Events_
-- JavaScript - Web Storage_
+- JavaScript - DOM and selectors
+- JavaScript - Working with elements
+- JavaScript - Events
+- JavaScript - Web Storage
 - Project - Pixel art
 - Project - To do List
 - Project - Meme Generator
