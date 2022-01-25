@@ -1,75 +1,10 @@
 # Day 8.3 - JavaScript ES6 - Higher Order Functions - map and filter
 
-Agora a prática
-Para os exercícios propostos use o seguinte template:
-Copiar
-const books = [
-  {
-    id: 1,
-    name: 'As Crônicas de Gelo e Fogo',
-    genre: 'Fantasia',
-    author: {
-      name: 'George R. R. Martin',
-      birthYear: 1948,
-    },
-    releaseYear: 1991,
-  },
-  {
-    id: 2,
-    name: 'O Senhor dos Anéis',
-    genre: 'Fantasia',
-    author: {
-      name: 'J. R. R. Tolkien',
-      birthYear: 1892,
-    },
-    releaseYear: 1954,
-  },
-  {
-    id: 3,
-    name: 'Fundação',
-    genre: 'Ficção Científica',
-    author: {
-      name: 'Isaac Asimov',
-      birthYear: 1920,
-    },
-    releaseYear: 1951,
-  },
-  {
-    id: 4,
-    name: 'Duna',
-    genre: 'Ficção Científica',
-    author: {
-      name: 'Frank Herbert',
-      birthYear: 1920,
-    },
-    releaseYear: 1965,
-  },
-  {
-    id: 5,
-    name: 'A Coisa',
-    genre: 'Terror',
-    author: {
-      name: 'Stephen King',
-      birthYear: 1947,
-    },
-    releaseYear: 1986,
-  },
-  {
-    id: 6,
-    name: 'O Chamado de Cthulhu',
-    genre: 'Terror',
-    author: {
-      name: 'H. P. Lovecraft',
-      birthYear: 1890,
-    },
-    releaseYear: 1928,
-  },
-];
+Using the code provided:
 
-// Adicione o código do exercício aqui:
-1 - Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
-Dica: Use a função map
-Copiar
+1. Create an array of strings in the format: Name_of_the_book - Book's_Genre - Name_of_the_author.
+
+```
 const expectedResult = [
   'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
   'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
@@ -78,13 +13,11 @@ const expectedResult = [
   'A Coisa - Terror - Stephen King',
   'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
 ];
+```
 
-function formatedBookNames() {
-  // escreva seu código aqui
-}
-2 - Construa um array de objetos a partir do array de livros. Cada objeto deve conter uma propriedade author , com o nome da pessoa autora do livro, e uma propriedade age com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha considerando suas idades quando o livro foi lançado.
-Dica: use as funções map , sort
-Copiar
+2. COnstruct an array of objects starting from the books array. Each object must have the key author, with the author's name as value, and the key age, with the author's age when the book was released as value. The array must be ordered by age.
+
+```
 const expectedResult = [
   {
     age: 31,
@@ -111,13 +44,11 @@ const expectedResult = [
     author: 'J. R. R. Tolkien',
   },
 ];
+```
 
-function nameAndAge() {
-  // escreva seu código aqui
-}
-3 - Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia.
-Dica: use a função filter ;
-Copiar
+3. Create an array with all the objects that have fantasy or sci-fi genre.
+
+```
 const expectedResult = [
   { 
     id: 1,
@@ -148,13 +79,11 @@ const expectedResult = [
     releaseYear: 1965
   }
 ];
+```
 
-function fantasyOrScienceFiction() {
-  // escreva seu código aqui
-}
-4 - Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
-Dica: use as funções filter e sort
-Copiar
+4. Create an array ordered by the oldest with the books with more than 60 years.
+
+```
 const expectedResult = [
   {
     id: 6,
@@ -178,38 +107,31 @@ const expectedResult = [
     releaseYear: 1954,
   },
 ];
+```
 
-function oldBooksOrdered() {
-  // escreva seu código aqui
-}
-5 - Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
-Copiar
+5. Create an array in alphabetical order with the names of all the sci-fi or fantasy authors.
+
+```
 const expectedResult = [
   'Frank Herbert',
   'George R. R. Martin',
   'Isaac Asimov',
   'J. R. R. Tolkien',
 ];
+```
 
-function fantasyOrScienceFictionAuthors() {
-  // escreva seu código aqui
-}
-6 - Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
-Copiar
+6. Create an array with the names of all the books with more than 60 years since it was released.
+
+```
 const expectedResult = [
   'O Senhor dos Anéis',
   'Fundação',
   'O Chamado de Cthulhu',
 ];
+```
 
-function oldBooks() {
-  // escreva seu código aqui
-}
-7 - Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
-Dica: cada inicial termina com um ponto.
-Copiar
+7. Find the name of the book writen by the author with the registered name starting with three inicials.
+
+```
 const expectedResult = 'O Senhor dos Anéis';
-
-function authorWith3DotsOnName() {
-  // escreva seu código aqui
-}
+```
