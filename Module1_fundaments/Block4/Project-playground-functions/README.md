@@ -5,10 +5,11 @@ In this project we were ask to make functions following the requisits bellow. Af
 1. Create a function using the operator &&
 
 > Implement a code to the function compareTrue that when it receives two boolean paramaters it must:
-
-  > Return `true` if they're both true;
-  > Return `false` if one or both are false.
-  > Implemente the function using only one operator &&.
+ ```
+Return `true` if they're both true;
+Return `false` if one or both are false.
+Implemente the function using only one operator &&.
+```
 
 2. Create a function that calculates the area of a triangle
 
@@ -46,20 +47,22 @@ In this project we were ask to make functions following the requisits bellow. Af
 
 > Create a function called fizzBuzz that receive an array of numbers and return an array as the exemple below:
 
-  > For each number of the array that is divisible just by 3, show a string 'fizz';
-  > For each number of the array that is divisible by 5, show a string 'buzz';
-  > In case the number is divisible by 3 and 5, show a string 'fizzBuzz';
-  > In case the number isn't divisible by 3 or by 5, show a string 'bug!';
+  >> For each number of the array that is divisible just by 3, show a string 'fizz';
+  >> For each number of the array that is divisible by 5, show a string 'buzz';
+  >> In case the number is divisible by 3 and 5, show a string 'fizzBuzz';
+  >> In case the number isn't divisible by 3 or by 5, show a string 'bug!';
 
 9. Createa function the code and decode
 
 > Create two functions: the first must be called encode and, when it receives a string as paramater, must change all the lower case vowels for numbers using the following format:
 
-  > a -> 1
-  > e -> 2
-  > i -> 3
-  > o -> 4
-  > u -> 5
+```
+a -> 1
+e -> 2
+i -> 3
+o -> 4
+u -> 5
+```
 
 > The second function must be called decode and do the opposite of the encode function, which means, receive a string containing numbers in the place of lower case letters and return a string with lower case vowels in the place of the numbers.
 
@@ -69,10 +72,12 @@ In this project we were ask to make functions following the requisits bellow. Af
 
 > For each technology in the array, create an object with the following structure:
 
+```
 {
   tech: "NomeTech",
   name: name
 }
+```
 
 > The return of your function must be a list of objects ordered by the tech name um the format showed before.
 
@@ -94,7 +99,7 @@ In this project we were ask to make functions following the requisits bellow. Af
 
 > A triangle is made with three lines: lineA, lineB and lineC. Create a function called triangleCheck that must receive three lines ans parameters and return if it is possible to make a triangle with the values of each line.
 
-  > To make a triangle, the size of any of the sides of the triangle must be smaller then the sum of the other two and bigger then the absolute value of the subtraction between them.
+  >> To make a triangle, the size of any of the sides of the triangle must be smaller then the sum of the other two and bigger then the absolute value of the subtraction between them.
 
 > The return of the function must be aboolean.
 
@@ -104,11 +109,13 @@ In this project we were ask to make functions following the requisits bellow. Af
 
 > Create the function called hydrate that receive a string and return the sugestion of how many cups of water the costumer must drink. Exemples:
 
-  > Received string:
-    > "1 beer"
-  > Returned string:
-    > "1 cup of waters"
-  > Received string:
-    > "1 liquor, 5 beers and 1 glass of wine"
-  > Returned string:
-    > "7 cups of water"
+```
+Received string:
+  "1 beer"
+Returned string:
+  "1 cup of waters"
+Received string:
+  "1 liquor, 5 beers and 1 glass of wine"
+Returned string:
+  "7 cups of water"
+```

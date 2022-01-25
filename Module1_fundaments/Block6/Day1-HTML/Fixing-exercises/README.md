@@ -1,6 +1,6 @@
 # Day 6-1 - Fixing exercise - HTML & CSS - Forms
 
-#### Input tags, types and attributes (index.html, style.css)
+### Input tags, types and attributes (index.html, style.css)
 
 The first exercise was produced with the propositions below:
 

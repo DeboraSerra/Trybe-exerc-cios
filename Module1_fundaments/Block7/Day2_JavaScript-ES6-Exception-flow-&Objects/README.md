@@ -1,157 +1,43 @@
 # Day 7.2 - JavaScript ES6 - Exception flow and objects
 
-Parte I
-Lembra da calculadora que fizemos como exemplo anteriormente? Hora de levá-la para um nível mais avançado!
-Copie e cole o código abaixo no seu editor de texto:
-Copiar
-<!DOCTYPE html>
-<html lang='pt-BR'>
-<head>
-  <meta charset='UTF-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>Calculadora</title>
-</head>
-<body>
-  <p>Informe dois números para realizar a soma:</p>
-  <label for='value1'>Valor 1:</label>
-  <input type='text' id='value1'>
-  <label for='value2'>Valor 2:</label>
-  <input type='text' id='value2'>
-  <button id='button'>Somar</button>
-  <p id='result'></p>
-  <script>
-    function sum() {
-      const value1 = document.getElementById('value1').value;
-      const value2 = document.getElementById('value2').value;
-      const result = parseInt(value1) + parseInt(value2);
-      document.getElementById('result').innerHTML = `Resultado: ${result}`;
-      document.getElementById('value1').value = '';
-      document.getElementById('value2').value = '';
-    }
-    window.onload = () => {
-      const button = document.getElementById('button');
-      button.addEventListener('click', sum);
-    }
-  </script>
-</body>
-</html>
-Tire um tempinho para entender o código acima:
-A aplicação pede ao usuário que informe dois números para realizar uma soma. Esses números são inseridos através dos inputs ;
-Ao clicar o botão, a função sum é chamada, capturando o valor escrito nos inputs e realizando a operação. Antes, é necessária a conversão do valor usando o parseInt , pois ele chega à função em forma de string ;
-Ao final, a função sum imprime o valor em um parágrafo e limpa os inputs para que a pessoa usuária possa inserir novos valores.
-Aparentemente está tudo funcionando, mas a aplicação não possui fluxo de exceção. Ou seja, caso ocorra um erro, eles não serão tratados. Que tal resolver isso?
-1 - Crie um erro personalizado que será chamado se a pessoa usuária digitar apenas um número.
-Tente executar a aplicação com um dos valores em branco. Notou que o retorno não é muito descritivo?
-Utilize o throw new Error e o bloco try/catch .
-Imprima o erro no parágrafo com id result , para que a pessoa usuária saiba o que aconteceu. Lembre-se de usar erros descritivos!
-Evite funções que tenham muitas responsabilidades distintas.
-2 - Agora adicione uma outra exceção, caso a pessoa usuária digite um valor que não seja numérico.
-Você pode fazer essa verificação utilizando a função isNan() .
-3 - Você se lembrou de limpar os inputs após o clique do botão? Teve que repetir código para isso? Que tal refatorar sua função utilizando o finally ?
+#### Part I(exercise1-7.2.html)
 
-Parte II
-Para os exercícios a seguir, use o seguinte código.
-Copiar
-const order = {
-  name: 'Rafael Andrade',
-  phoneNumber: '11-98763-1416',
-  address: {
-    street: 'Rua das Flores',
-    number: '389',
-    apartment: '701',
-  },
-  order: {
-    pizza: {
-      marguerita: {
-        amount: 1,
-        price: 25,
-      },
-      pepperoni: {
-        amount: 1,
-        price: 20,
-      }
-    },
-    drinks: {
-      coke: {
-        type: 'Coca-Cola Zero',
-        price: 10,
-        amount: 1,
-      }
-    },
-    delivery: {
-      deliveryPerson: 'Ana Silveira',
-      price: 5,
-    }
-  },
-  payment: {
-    total: 60,
-  },
-};
+Using the code provided:
 
-const customerInfo = (order) => {
-  // Adicione abaixo as informações necessárias.
+1. Create a personalized error that will be called if the user type just one number. Use `throw new Error` and a `try/catch` block and print the error in the paragraph with the id `result`.
 
-}
+2. Now add another exception, in case the user type a value that isn't a number.
 
-customerInfo(order);
+3. Use `finally` to clean the inputs.
 
-const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
+#### Part II (exercise2-7.2.js)
 
-}
+Using the code provided:
 
-orderModifier(order);
-Agora você vai fazer alguns exercícios de fixação.
-Complete a função customerInfo() para que seu retorno seja similar a "Olá Ana Silveira, entrega para: Rafael Andrade, Telefone: 11-98763-1416, R. Rua das Flores, Nº: 389, AP: 701".
-Note que o parâmetro da função já está sendo passado na chamada da função.
-Complete a função orderModifier() para que seu retorno seja similar a "Olá Luiz Silva, o total do seu pedido de marguerita, pepperoni e Coca-Cola Zero é R$ 50,00."
-Modifique o nome da pessoa compradora.
-Modifique o valor total da compra para R$ 50,00.
+1. Complete the function `customerInfo()` so its return will be similar to "Hi Ana Silveira, delivery to: Rafael Andrade, Phone: 11-98763-1416, R. Rua das Flores, Nº: 389, AP: 701".
 
-#### Part III
+2. Complete the function `orderModifier()` so its return will be similar to "Hi Luiz Silva, your order of marguerita, pepperoni and Coca-Cola Zero is a total of R$ 50,00."
 
-Crie uma função para adicionar o turno da noite na lesson2 . Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
-Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
-Crie uma função para mostrar o tamanho de um objeto.
-Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
-Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign . Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1 , lesson2 e lesson3 . Ao executar o comando console.log(allLessons) , a saída deverá ser a seguinte:
+#### Part III (exercise3-7.2.js)
 
-console.log(allLessons);
-/*
-{
-  lesson1:
-   { materia: 'Matemática',
-     numeroEstudantes: 20,
-     professor: 'Maria Clara',
-     turno: 'manhã' },
-  lesson2:
-   { materia: 'História',
-     numeroEstudantes: 20,
-     professor: 'Carlos',
-     turno: 'noite' },
-  lesson3:
-   { materia: 'Matemática',
-     numeroEstudantes: 10,
-     professor: 'Maria Clara',
-     turno: 'noite' }
-};
-*/
+1. Create a function to add the night shift to thelesson2. This function must receive three parameters: the object to be modified, the key to be added and its value.
 
-Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
-Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. Por exemplo:
+2. Create a function to list the keys of an object. This function must receive an object as parameter.
 
-console.log(getValueByNumber(lesson1, 0));
-// Output: 'Matématica'
+3. Create a function to show the size of the object.
 
-Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave. Exemplo:
+4. Create a function to list the values of an object. This function must receive an object as parameter.
 
-console.log(verifyPair(lesson3, 'turno', 'noite'));
-// Output: true,
-console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
-// Output: false
+5. Create an object called allLessons, that must group all the lessons using `Object.assing`. Each key of this new object will be a lesson.
 
-#### Bonus exercise
+6. Using the object created before, create a function that return the total number of students in all classes.
 
-Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5.
-Crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. Use o objeto criado no exercício 5:
+7. Create a function that get the value of the key according to its position on the object.
+
+8. Create a function that check if the pair (key/value) exist in the function. This function must receive three parameters: the object, the name of the key and the value of the key.
+
+#### Bonus exercise (bonus-exercise1-7.2.js)
+
+1. Create a function to count how many students whatched to the Math class. Use the object created in exercise 5.
+
+2. Create a function to return an object that represent the report of the teacher, the classes he/she teached and the total of students. Use the object created on exercise 5.

@@ -2,7 +2,7 @@
 
 The directories exercise1-10.1 and exercise2-10.2 were created following the proposed exercises below:
 
-##### Exercise1-10.1
+##### (exercise1-10.1.js)
 
 1. Create a new project using `npx create-react-app exercise1-10.1` and access the directory created.
 
@@ -15,7 +15,7 @@ The directories exercise1-10.1 and exercise2-10.2 were created following the pro
 >* At last, create a tasks array and use the HOF map to show each item of the array as a list item on your App component.
 
 
-##### Exercise2-10.1
+##### (exercise2-10.1.js)
 
 3. Create another project using `npx create-react-app`.
 

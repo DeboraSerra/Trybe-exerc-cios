@@ -2,7 +2,7 @@
 
 #### Element selectors
 
-1. In the file fixingExercise1 was produced using the following directions.
+###### (fixingExercise1-5.1.html)
 
 Recover the elemente that contain the page title and do something with it, like change it to your favorite movie title. 
 
@@ -10,7 +10,7 @@ Then recover the second paragraph and change it.
 
 At last, recover the subtitle and change it too.
 
-2. The file fixingExercise2 was done using the directions below using the same template as before:
+###### (fixingExercise-5.1.html)
 
 Add one class to two different paragraphs.
 
@@ -22,7 +22,7 @@ Recover the subtitle and change its color using the funciton getElementsByTagNam
 
 #### Which selector to use
 
-3. The file fixingExercise3, script.js and style.css were poduced using the guides below and the template given in the course:
+###### (fixingExercise3-5.1.html)
 
 Create a JavaScript file with the name `script.js` and practice what you know of `getElementBy` and `querySelector`.
 

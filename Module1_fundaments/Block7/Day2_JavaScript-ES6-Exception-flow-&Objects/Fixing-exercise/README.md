@@ -1,9 +1,9 @@
 # Day 7.2 - Fixing exercises - JavaScript ES6 - Exception flow and objects
 
-#### Objects: Part I - Adding new keys
+#### Objects: Part I - Adding new keys (fixing-exercise1-7.2.js)
 
-Agora, para praticar, crie uma função que receba três parâmetros, sendo eles: um objeto, o nome de uma chave e o seu valor. O retorno dessa função deve ser o objeto já com a nova chave adicionada nele.
+Create a function that receive three parametes, which are: an objectm the name of a key and its value. The return must be the object with the new key addded to it.
 
-#### Objects: Part II - Object.keys
+#### Objects: Part II - Object.keys (fixing-exercise2-7.2.js)
 
-Tente criar uma função que exiba as habilidades do objeto student . Cada habilidade deve ser exibida no formato "Nome da habilidade, Nível: valor da chave referente à habilidade". Após tentar criar a função, veja a sugestão de resposta logo abaixo e compare com a sua solução.
+Create a function that shows the skills from an object `student`. Each skill must be shown in the following format: "Skill name, Level: Value of the skill key".

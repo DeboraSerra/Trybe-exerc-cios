@@ -4,7 +4,7 @@ On this day we were taught the most important commands to work with Git and GitH
 
 The exercise were made accordingly with the specified below.
 
-## Now the practice
+## Now the practice (trybe-skills2.txt)
 
 ⚠️ To make the exercises below, you must use the project with the text on the _.txt_ file, located in the directory from the day before, create a copy to use today.
 

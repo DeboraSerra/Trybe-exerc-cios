@@ -1,115 +1,27 @@
-# CSS Flexbox - Parte 2Parte 1
-1 - Adicione uma propriedade que defina o tamanho Flexbox base para o container da imagem 268px e para o container do menu 500px . Após aplicar as propriedades o header deverá estar similar a imagem abaixo:
-Header exercicio 1
-2 - Adicione uma propriedade Flexbox que modifique a ordem em que a logomarca e os itens do menu aparecem na tela. Após aplicar a propriedade o header deverá estar similar a imagem abaixo:
-Header exercicio 2
-3 - Adicione uma propriedade Flexbox que faça o container do menu crescer, quando houver espaço disponível. Após aplicar a propriedade o header deverá estar similar a imagem abaixo:
-Header exercicio 3
-4 - Utilize a propriedade align-self no elemento correto para que o header da página tenha o seguinte comportamento:
-Header exercicio 4
-Parte 2
-Vamos continuar praticando com a continuação do header realizado no exercício acima e construir um main com o restante de sua página. Copie o restante dos códigos HTML e CSS e aplique a seus documentos criados anteriormente.
-Copiar
-    <main class="main-container">
-      <section class="movie-container">
-        <section>
-          <h2>Assista hoje</h2>
-          <div class="card-container">
-            <div>FILMES 1</div>
-            <div>FILMES 2</div>
-            <div>FILMES 3</div>
-            <div>FILMES 4</div>
-            <div>FILMES 5</div>
-            <div>FILMES 6</div>
-            <div>FILMES 7</div>
-            <div>FILMES 8</div>
-            <div>FILMES 9</div>
-          </div>
-        </section>
-        <article>
-          <h2>Mais assitidos</h2>
-          <div class="card-container">
-            <div>FILMES 1</div>
-            <div>FILMES 2</div>
-            <div>FILMES 3</div>
-            <div>FILMES 4</div>
-            <div>FILMES 5</div>
-            <div>FILMES 6</div>
-            <div>FILMES 7</div>
-            <div>FILMES 8</div>
-            <div>FILMES 9</div>
-          </div>
-        </article>
-      </section>
-  <aside class="aside-container">
-    <h3>Últimas notícias</h3>
+# Day 6.4 -  CSS Flexbox - Part 2
 
-    <h4>Title</h4>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet officia in provident esse excepturi ipsam!</p>
+![Page template]()
 
-    <h4>Title</h4>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet officia in provident esse excepturi ipsam!</p>
+### Part 1
 
-    <h4>Title</h4>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet officia in provident esse excepturi ipsam!</p>
-  </aside>
-</main>
-Copiar
-.main-container {
-  display: flex;
-  flex-wrap: wrap;
-}
+Using the code provided, follow the exercises below so your page will be similar to the image above:
 
-.movie-container {
-  display: flex;
-  flex-direction: column;
-}
+1. Add a property that define the size of the Flaxbox to the image container to 268px and to th emenu container to 500px.
 
-.movie-container h2 {
-  margin: 40px 0;
-  text-align: center;
-}
+2. Add a Flexbox property that modify the order that the logo and the items of the menu appear on screen.
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+3. Add a Flexbox property that make the menu grow when there is available space.
 
-.card-container div {
-  align-items: center;
-  background-color: #5C687C;
-  border: black solid 1px;
-  display: flex;
-  height: 150px;
-  justify-content: center;
-  margin: 10px;
-}
+4. Use the property `align-self` to the correct element so the header will be like the image.
 
-.aside-container {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-}
+### Part 2
 
-.aside-container h3, h4 {
-  margin-bottom: 10px;
-  text-align: center;
-}
+1. Apply a 350px base to the aside container.
 
-.aside-container p {
-  margin: 10px 0;
-  text-align: justify;
-}
-1 - Aplique uma base de 350px para seu container aside . Deverá ficar similar a imagem abaixo:
-Main do exercicio 1
-2 - Aplique um alinhamento para centralizar e outro para expandir. Seu aside apresentar o seguinte comportamento:
-Main do exercicio 2
-3 - Adicione uma propriedade que faça com que seu container de filmes tenha uma base de 700px e outra base de 16% para as div do container de seu card. Deve ficar similar a imagem abaixo:
-Main do exercicio 3
-4 - Aplique uma propriedade com o valor 10 que expanda o container de filmes. Deve ficar similar a imagem abaixo:
-Main do exercicio 3
-5 - Adicione uma propriedade com o valor 1 que faça com que suas div do container de filmes ocupe todo o espaço em branco. Deve ficar similar a imagem abaixo:
-Main do exercicio 3
-Parte 3 (opcional)
-Para finalizar, escolha alguns exercícios antigos como, por exemplo, o portfólio ou até mesmo os projetos de HTML , CSS e JavaScript e estruture as páginas utilizando Flexbox .
+2. Apply an align to center and another to expand.
+
+3. Add a property that make the movie container have a base of 700px and anothar base of 16% to the card containers.
+
+4. Apply a property with the value 10 that will expand the movies container.
+
+5. Add a property with the value 1 that make the movies container to fill the blank space.

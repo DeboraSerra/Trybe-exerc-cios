@@ -1,107 +1,31 @@
 # Day 8.5 - Fixing exercise - JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
 
-##### Spread operator
+### Spread operator (fixing-exercise1-8.5.js)
 
-Para fixar
-Para fixar e praticar, vamos fazer uma salada de frutas com itens adicionais que você desejar. Faça uma função chamada fruitSalad passando como parâmetro specialFruit e additionalItens , faça a função retornar uma lista única contendo todos os itens da nossa salada de frutas usando o spread .
-Copiar
-// Faça uma lista com as suas frutas favoritas
-const specialFruit = ['', '', ''];
+Create a function called `fruitSalad` receiving as parameter `specialFruit` and `additionalItems` and returning a list with all the items added using spread.
 
-// Faça uma lista de complementos que você gostaria de adicionar
-const additionalItens = ['', '', ''];
+### Object destructuring (fixing-exercise2-8.5.js)
 
-const fruitSalad = (fruit, additional) => {
-  // Esreva sua função aqui
-};
+1. Using the code provided, create a third object with the personal data and the job data together using spread.
 
-console.log(fruitSalad(specialFruit, additionalItens));
-Lembre-se de continuar praticando e dar asas para a sua imaginação com outras possibilidades.
+2. Using the new object, print a frase using object destructuring and template literals in the format: "Hi, my name is Maria, I'm 21 years old and I'm Brazilian. I work as a Software engineer and my squad is RLL-Rocket Landing Logic"
 
-##### Object destructuring
+### Array destructuring (fixing-exercise3-8.5.js)
 
-Para Fixar
-1 - Temos dois objetos, um com informações pessoais de uma pessoa usuária e outro com informações referentes ao cargo desta pessoa usuária na empresa trappistEnterprise . Precisamos criar um terceiro objeto, que terá os dados pessoais e os dados de cargo juntos. Para isso, utilize o spread operator .
-Copiar
+1. Create the same result as the given code, but using array destructuring.
 
-const user = {
-  name: 'Maria',
-  age: 21,
-  nationality: 'Brazilian',
-};
+2. Using array destructuringm reorganize the values of the variable so they make sense.
 
-const jobInfos = {
-  profession: 'Software engineer',
-  squad: 'Rocket Landing Logic',
-  squadInitials: 'RLL',
-};
-2 - Com o objeto em mãos, imprima no console uma frase utilizando os dados do objeto criado anteriormente. Para isso, utilize a desestruturação de objetos em conjunto com template literals .
-Exemplo "Hi, my name is Maria, I'm 21 years old and I'm Brazilian. I work as a Software engineer and my squad is RLL-Rocket Landing Logic"
+3. Using array destructuring, make the given code have only th eeven numbers.
 
-##### Array destructuring
+### Default destructuring (fixing-exercise4-8.5.js)
 
-Para Fixar
-1 - Produza o mesmo resultado do código, porém utilizando o array destructuring para recolher a função e a saudação.
-Copiar
-const saudacoes = ['Olá', (saudacao) => console.log(saudacao)];
+Rewrite the given function so, when it's called with the argument person, it returns `João is Brazilian`.
 
-saudacoes[1](saudacoes[0]); // Olá
+### Object porperty shorthand (fixing-exercise5-8.5.js)
 
-// Produza o mesmo resultado acima, porém utilizando array destructuring
-2 - A seguir, temos alguns valores que estão descritos em variáveis incoerentes. Através da desestruturação de arrays, corrija os valores das variáveis.
-Copiar
-let comida = 'gato';
-let animal = 'água';
-let bebida = 'arroz';
+Change the given function to use property shorthand.
 
-console.log(comida, animal, bebida); // arroz gato água
+### Object Default Parameter (fixing-exercise6-8.5.js)
 
-// Utilizando array destructuring, faça com que os valores apareçam nas variáveis correspondentes ao seu verdadeiro tipo
-3 - array abaixo possui alguns números que não condizem com o conteúdo que ele deveria possuir. Através de array destructuring, faça com que existam apenas números pares na variável numerosPares .
-Copiar
-let numerosPares = [1, 3, 5, 6, 8, 10, 12];
-
-console.log(numerosPares); // [6, 8, 10, 12];
-
-// Utilize array destructuring para produzir o resultado esperado pelo console.log abaixo
-
-##### Default destructuring
-
-Para Fixar
-Do jeito que está, quando passamos person para a função GetNationality o retorno é João is undefined . Ajuste a função GetNationality para que a chamada GetNationality(person) retorne João is Brazilian .
-Copiar
-const getNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
-
-const person = {
-  firstName: 'João',
-  lastName: 'Jr II',
-};
-
-const otherPerson = {
-  firstName: 'Ivan',
-  lastName: 'Ivanovich',
-  nationality: 'Russian',
-};
-
-console.log(getNationality(otherPerson)); // Ivan is Russian
-console.log(getNationality(person));
-
-##### Object porperty shorthand
-
-Agora é hora de praticar: altere a função getPosition utilizando a property shorthand .
-Copiar
-const getPosition = (latitude, longitude) => ({
-  latitude: latitude,
-  longitude: longitude});
-
-console.log(getPosition(-19.8157, -43.9542));
-
-##### Object Default Parameter
-
-Para praticar, escreva uma função multiply que multiplique dois números passados como argumentos. Atribua como default o valor 1 caso não seja passado nenhum valor como segundo parâmetro.
-Copiar
-const multiply = (number, value) => {
-  // Escreva aqui a sua função
-};
-
-console.log(multiply(8));
+Write a function `multiply` that multiplies the two numbers passed as arguments. Set the default value as 1 to the second parameter, if there isn't passed any value to it.

@@ -7,53 +7,53 @@ Initially make the validations using the html.
 Create a `fieldset` to the following personal data:
 
 * Name - text
->> Max 40 characters
->> Required
+>> * Max 40 characters
+>> * Required
 
 * Email - text
->> Max 50 characters
->> Required
+>> * Max 50 characters
+>> * Required
 
 * Social security number - text
->> Max 11 characters
->> Required
+>> * Max 11 characters
+>> * Required
 
 * Adress - text
->> Max 200 characters
->> Required
+>> * Max 200 characters
+>> * Required
 
 * City - text
->> max 28 characters
->> Required
+>> * max 28 characters
+>> * Required
 
 * State - Select
->> All brazilian states (use JS to generate the `option` tags)
->> Required
+>> * All brazilian states (use JS to generate the `option` tags)
+>> * Required
 
 * Type - Radio Button
->> House, Apartment
->> required
+>> * House, Apartment
+>> * required
 
 
 Create another `fieldset` to the last job data
 
 * Abstract of the resume - TextArea
->> Max 1000 characters
->> Required
+>> * Max 1000 characters
+>> * Required
 
 * Position - text
->> Max 40 characters
->> Required
+>> * Max 40 characters
+>> * Required
 
 * Job description - test
->> Max 500 characters
->> Required
+>> * Max 500 characters
+>> * Required
 
 * Start date - text
->> Check if the date format is DD/MM/YYYY.
->> The day must be between 0 and 31.
->> The month must be between 0 and 12.
->> The year can't be a neative number.
+>> * Check if the date format is DD/MM/YYYY.
+>> * The day must be between 0 and 31.
+>> * The month must be between 0 and 12.
+>> * The year can't be a neative number.
 
 In case any of the conditions is invalid when the send button is clicked, an alert must be shown.
 
