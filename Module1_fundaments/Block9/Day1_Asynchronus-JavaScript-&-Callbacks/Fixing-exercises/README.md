@@ -1,8 +1,6 @@
 # Day 9.1 - Fixing exercises - Asynchronus JavaScript and callbacks
 
-#### Callbacks
-
-The file fixing-exercise1 was produced following the orientations below:
+### Callbacks (fixing-exercise1-9.1.js)
 
 1. Add a callback as parameter for the function `getUser`.
 
@@ -14,7 +12,7 @@ The file fixing-exercise1 was produced following the orientations below:
 
 > * Complete the calling of the function in a way that the return will be: "Ivan is Russian".
 
-In file fixing-exercise2 the instructions below were followed:
+###### (fixing-exercise2-9.1.js)
 
 2. Set, as parameter and as return, a callback to the function `getUser`.
 
@@ -24,9 +22,7 @@ In file fixing-exercise2 the instructions below were followed:
 
 > * Return the callback given as parameter of the function;
 
-#### Working with errors in asynchronus operations
-
-The file fixing-exercise3 was produced using the following exercise:
+### Working with errors in asynchronus operations (fixing-exercise3-9.1.js)
 
 1. Add a callback and handle the returned error.
 
