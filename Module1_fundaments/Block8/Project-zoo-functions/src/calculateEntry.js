@@ -6,19 +6,17 @@ function countEntrants(entrants) {
   let child = 0;
   let adult = 0;
   let senior = 0;
-  if (entrants.length > 0) {
     child = entrants
       .filter((item) => item.age < 18).length;
     adult = entrants
       .filter((item) => item.age >= 18 && item.age < 50).length;
     senior = entrants
       .filter((item) => item.age >= 50).length;
-  }
   return { child, adult, senior };
 }
 
 function calculateEntry(entrants) {
-  if (!entrants || entrants === {}) return 0;
+  if (!entrants || Object.keys(entrants).length === 0) return 0;
   const { child, adult, senior } = countEntrants(entrants);
   return Object.values(prices).reduce((acc, item, i) => {
     if (i === 0) return acc + item * adult;
@@ -36,6 +34,6 @@ const people = [
   { name: 'Carlos Nogueira', age: 50 },
 ]
 
-console.log(calculateEntry(people));
+console.log(calculateEntry());
 
 module.exports = { calculateEntry, countEntrants };
