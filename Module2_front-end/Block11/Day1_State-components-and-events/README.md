@@ -13,4 +13,18 @@
 
 4. Make sure your functions have access to the `this` object.
 
-### Binding components with states and events ()
+### Binding components with states and events (Fancy-button-refactor2.js)
+
+Now, refactor your aplication so it counts the number of clicks on each button.
+
+5. First define an inicial state to each button.
+
+6. Then, when a button is clicked, change asynchronously the state of this button from 0 to 1.
+
+7. At last, use the previous state to increase the count of clicks every time the button is clicked.
+
+### In summary (Colored-button.js)
+
+8. Define a logic to stablish that, when a number of clicks is even, it must be green.
+
+9. The current color of the button must be printed with `console.log()` inside the function that handle the click.
