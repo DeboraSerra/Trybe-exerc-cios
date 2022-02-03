@@ -1,12 +1,12 @@
 import React from "react";
-import pokemons from "./data";
-import Pokemon from "./Pokemon";
+import NextPokemon from "./Next-pokemon-button";
+import './Pokedex.css';
 
 class Pokedex extends React.Component {
   render() {
     return (
       <section className="pokedex">
-        {pokemons.map(item => <Pokemon key={item.id} pokemon={item}/>)}
+        <NextPokemon/>
       </section>
     )
   }

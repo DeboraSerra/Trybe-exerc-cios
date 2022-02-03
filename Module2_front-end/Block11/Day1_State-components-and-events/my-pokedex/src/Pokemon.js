@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import './Card.css';
 
 class Pokemon extends React.Component {
   render() {
@@ -11,17 +11,10 @@ class Pokemon extends React.Component {
           <p>{type}</p>
           <p>Average weight: {wheight} {unit}</p>
         </section>
-        <a href={link} target='_blank'><img src={image} alt={name}/></a>
+        <a href={link} target='_blank' rel="noreferrer"><img src={image} alt={name}/></a>
       </section>
     )
   }
-}
-
-Pokemon.propTypes = {
-  name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  weight: PropTypes.number.isRequired,
-  unit: PropTypes.string.isRequired,
 }
 
 export default Pokemon;
