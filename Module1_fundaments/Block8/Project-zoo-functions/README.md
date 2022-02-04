@@ -41,3 +41,5 @@ This project was ment to simulate different softwares that would be necessary in
 10. Implement the function `getEmployeesCoverage`.
 
 > This function is responsible to associate the coverage informations of all the employees. It can alse be filtered using the first name, last name or id of an employee.
+
+As a personal project, I decided to use de codes into an html page simulating a real zoo.
