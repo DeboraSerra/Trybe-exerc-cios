@@ -4,8 +4,8 @@ const list = document.getElementById('coins');
 const coins = [];
 
 const createLi = () => {
-  coins.forEach((item, i) => {
-    if (i <= 10) {
+  coins.forEach((item, index) => {
+    if (index <= 10) {
       const listItem = document.createElement('li');
       listItem.innerHTML = `${item.name} (${item.symbol}): ${item.price}`;
       list.appendChild(listItem);
