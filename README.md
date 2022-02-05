@@ -71,14 +71,14 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 8-3: _JavaScript ES6 - Higher Order Functions - map and filter_
 - [x] 8-4: _JavaScript ES6 - Hagher Order Functions - reduce_
 - [x] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring and more_
-- [ ] 8-6: _[Project - Zoo functions]()_
+- [x] 8-6: _[Project - Zoo functions](https://github.com/DeboraSerra/Trybe-exercicios/tree/main/Module1_fundaments/Block8/Project-zoo-functions)_
 
 ##### Block 9: Asynchronicity & Callbacks
 
-- [ ] 9-1: _Asynchronus JavaScript and Callbacks_
-- [ ] 9-2: _Asynchronous JavaScript - Fetch API and async/await_
-- [ ] 9-2: _Jest - Asynchronous tests_
-- [ ] 9-3: _[Project - Shopping cart]()_
+- [x] 9-1: _Asynchronus JavaScript and Callbacks_
+- [x] 9-2: _Asynchronous JavaScript - Fetch API and async/await_
+- [x] 9-2: _Jest - Asynchronous tests_
+- [x] 9-3: _[Project - Shopping cart]()_
 
 ## Front-end Development :hourglass_flowing_sand:
 
