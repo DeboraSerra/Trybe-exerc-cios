@@ -62,15 +62,10 @@ function createCartItemElement({ sku, name, salePrice }) {
 
 async function creteItemCart(id) {
   const item = await fetchItem(id);
-  const itemData = {
-    sku: item.id,
-    image: item.thumbnail,
-    name: item.title,
-    salePrice: item.price,
-  };
-  cartParent.appendChild(createCartItemElement(itemData));
+  const {id: sku, title: name, price: salePrice} = item;
+  cartParent.appendChild(createCartItemElement({sku, name, salePrice}));
   saveCartItems('cartItems', cartParent.innerHTML);
-  sumPrice(itemData.salePrice);
+  sumPrice(salePrice);
 }
 
 function loading(parent) {
@@ -88,16 +83,10 @@ async function createItems() {
   loading(itemsParent);
   const products = await fetchProducts('computador');
   loaded(itemsParent);
-  products.results.forEach((product, index) => {
-    const item = {
-      sku: product.id,
-      image: product.thumbnail,
-      name: product.title,
-      salePrice: product.price,
-    };
-    itemsParent.appendChild(createProductItemElement(item));
+  products.results.forEach(({id: sku, title: name, thumbnail: image}, index) => {
+    itemsParent.appendChild(createProductItemElement({sku, name, image}));
     const button = document.querySelectorAll('.item__add');
-    button[index].addEventListener('click', () => creteItemCart(item.sku));
+    button[index].addEventListener('click', () => creteItemCart(sku));
   });
 }
 createItems();
