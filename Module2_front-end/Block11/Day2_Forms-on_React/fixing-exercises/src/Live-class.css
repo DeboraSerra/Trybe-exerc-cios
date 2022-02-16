@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.course {
+  border: 2px solid gray;
+  margin: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.form textarea {
+  display: block;
+  resize: none;
+  height: 50px;
+}
