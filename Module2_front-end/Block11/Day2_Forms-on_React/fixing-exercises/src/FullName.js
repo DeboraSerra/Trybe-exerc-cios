@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class FullName extends React.Component {
   
@@ -18,6 +19,11 @@ class FullName extends React.Component {
       </section>
     )
   }
+}
+
+FullName.propTypes = {
+  value: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
 }
 
 export default FullName;

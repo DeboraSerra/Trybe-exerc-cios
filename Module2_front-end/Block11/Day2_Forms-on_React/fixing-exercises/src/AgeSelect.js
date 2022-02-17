@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class Age extends React.Component {
   render() {
@@ -19,6 +20,11 @@ class Age extends React.Component {
       </section>
     )
   }
+}
+
+Age.proTypes = {
+  value: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
 }
 
 export default Age;
