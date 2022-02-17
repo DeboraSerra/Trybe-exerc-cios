@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class SocialField extends React.Component {
   render() {
@@ -15,6 +16,11 @@ class SocialField extends React.Component {
       />
     )
   }
+}
+
+SocialField.propTypes = {
+  value: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
 }
 
 export default SocialField;

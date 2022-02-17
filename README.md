@@ -84,11 +84,11 @@ The program includes more than 1500 hours of live and online classes, and approa
 
 ##### Block 10: Introduction to React
 
-- [ ] 10-1: _Introduction - Front-end_
-- [ ] 10-1: _Introduction - React_
-- [ ] 10-1: _'Hello, world!' on React!_
-- [ ] 11-2: _React Components_
-- [ ] 11-3: _[Project - Solar System]()_
+- [x] 10-1: _Introduction - Front-end_
+- [x] 10-1: _Introduction - React_
+- [x] 10-1: _'Hello, world!' on React!_
+- [ ] 10-2: _React Components_
+- [ ] 10-3: _[Project - Solar System]()_
 
 ##### Block 11: State components, events and formularies with React
 

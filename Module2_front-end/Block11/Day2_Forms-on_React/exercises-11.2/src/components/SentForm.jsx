@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class SentForm extends React.Component {
   render() {
@@ -16,6 +17,21 @@ class SentForm extends React.Component {
       </div>
     )
   }
+}
+
+SentForm.propTypes = {
+  currentState: PropTypes.shape({
+    fullName: PropTypes.string,
+    email: PropTypes.string,
+    social: PropTypes.string,
+    adress: PropTypes.string,
+    city: PropTypes.string,
+    state: PropTypes.string,
+    housing: PropTypes.string,
+    resume: PropTypes.string,
+    position: PropTypes.string,
+    jobDescription: PropTypes.string,
+  }).isRequired,
 }
 
 export default SentForm;

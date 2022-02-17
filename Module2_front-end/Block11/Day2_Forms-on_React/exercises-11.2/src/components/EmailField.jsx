@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class EmailField extends React.Component {
   render() {
@@ -16,6 +17,11 @@ class EmailField extends React.Component {
       />
     )
   }
+}
+
+EmailField.propTypes = {
+  value: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
 }
 
 export default EmailField;

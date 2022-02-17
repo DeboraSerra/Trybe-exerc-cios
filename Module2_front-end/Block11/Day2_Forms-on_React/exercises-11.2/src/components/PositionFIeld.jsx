@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class PositionField extends React.Component {
   render() {
@@ -16,6 +17,12 @@ class PositionField extends React.Component {
       ></textarea>
     )
   }
+}
+
+PositionField.propTypes = {
+  value: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  createPositionAlert: PropTypes.func.isRequired,
 }
 
 export default PositionField;

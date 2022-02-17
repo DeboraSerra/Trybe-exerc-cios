@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class HousingField extends React.Component {
   render() {
@@ -28,6 +29,10 @@ class HousingField extends React.Component {
       </section>
     )
   }
+}
+
+HousingField.propTypes = {
+  handleChange: PropTypes.func.isRequired,
 }
 
 export default HousingField;

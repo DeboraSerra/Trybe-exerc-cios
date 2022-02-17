@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class AdressField extends React.Component {
   render() {
@@ -16,6 +17,11 @@ class AdressField extends React.Component {
       />
     )
   }
+}
+
+AdressField.propTypes = {
+  value: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
 }
 
 export default AdressField;

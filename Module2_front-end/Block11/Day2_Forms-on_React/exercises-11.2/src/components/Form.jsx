@@ -41,7 +41,7 @@ class Form extends React.Component {
     this.state = {
       fullName: "",
       email: "",
-      social: "",
+      social: '',
       adress: "",
       city: "",
       state: "",

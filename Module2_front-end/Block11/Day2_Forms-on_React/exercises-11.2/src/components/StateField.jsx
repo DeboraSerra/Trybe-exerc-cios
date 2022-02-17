@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class StateField extends React.Component {
   render() {
@@ -18,6 +19,11 @@ class StateField extends React.Component {
       </select>
     )
   }
+}
+
+StateField.propTypes = {
+  value: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
 }
 
 export default StateField;

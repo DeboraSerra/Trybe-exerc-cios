@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class CityField extends React.Component {
   render() {
@@ -17,6 +18,12 @@ class CityField extends React.Component {
       />
     )
   }
+}
+
+CityField.propTypes = {
+  handleChange: PropTypes.func.isRequired,
+  handleCity: PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired,
 }
 
 export default CityField;

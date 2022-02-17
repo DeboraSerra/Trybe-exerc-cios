@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class JobDescription extends React.Component {
   render() {
@@ -17,6 +18,11 @@ class JobDescription extends React.Component {
       />
     )
   }
+}
+
+JobDescription.propTypes = {
+  value: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
 }
 
 export default JobDescription;
