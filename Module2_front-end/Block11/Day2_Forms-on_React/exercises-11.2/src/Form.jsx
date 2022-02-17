@@ -11,7 +11,6 @@ import PositionField from "./PositionFIeld";
 import JobDescription from "./JobDescription";
 import CreateButton from "./Button";
 import SentForm from './SentForm';
-import NotValid from "./NotValid";
 
 const initialState = {
   fullName: "",
@@ -121,14 +120,8 @@ class Form extends React.Component {
   }
 
   handleAdress(value) {
-    if (value.includes("/") || value.includes("-")) {
-      const newValue = value
-        .split("")
-        .map((item) => (item !== "/" && item !== "-" ? item : ""))
-        .join("");
-      return newValue;
-    }
-    return value;
+    const newValue = value.replace(/[\W{1,}]/gi, ' ')
+    return newValue;
   }
 
   handleChange({ target }) {

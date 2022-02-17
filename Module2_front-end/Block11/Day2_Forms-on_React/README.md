@@ -57,3 +57,7 @@ Create a new react project to your application and use css if you want.
 3. Create a button that, when it is clicked, shows a `div` with the data from the form;
 
 4. Create a _clear_ button to clear the form fields and the `div` create before.
+
+## Bonus
+
+Try to use `regex` with the code.
