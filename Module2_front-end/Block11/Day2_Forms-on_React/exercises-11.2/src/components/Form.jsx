@@ -1,16 +1,9 @@
 import React from "react";
-import NameField from "./NameField";
-import EmailField from "./EmailField";
-import SocialField from "./SocialField";
-import AdressField from "./AdressField";
-import CityField from "./CityField";
-import StateField from "./StateField";
-import HousingField from "./HousingField";
-import Resume from "./Resume";
-import PositionField from "./PositionFIeld";
-import JobDescription from "./JobDescription";
 import CreateButton from "./Button";
 import SentForm from './SentForm';
+import PersonalInfo from "./PersonalInfo";
+import JobInfo from "./JobInfo";
+import NotValid from './NotValid';
 
 const initialState = {
   fullName: "",
@@ -25,7 +18,7 @@ const initialState = {
   jobDescription: "",
   alert: false,
   sent: false,
-  validForm: true,
+  formError: {},
 }
 
 class Form extends React.Component {
@@ -67,29 +60,12 @@ class Form extends React.Component {
 
   formValidate(field, value) {
     switch (field) {
-      case 'name':
-        return value ? '' : 'Required field';
       case 'email':
-        const valid = value.includes('@')
-        return valid ? '' : 'Invalid email';
+        const validEmail = value.match(/[\w.!#$%&'*+=?^_`{|}~-]+@[\w.-]+\.[A-Z]{2,}/gi);
+        return validEmail ? '' : 'Invalid email';
       case 'social':
         const validateSocial = value.split('').some((num) => isNaN(num));
-        console.log(validateSocial)
         return !validateSocial ? '' : 'Must contain only numbers';
-      case 'adress':
-        return value ? '' : 'Required field';
-      case 'city':
-        return value ? '' : 'Required field';
-      case 'state':
-        return value ? '' : 'Select a State';
-      case 'housing':
-        return value ? '' : 'Select a housing type';
-      case 'resume':
-        return value ? '' : 'Required field';
-      case 'position':
-        return value ? '' : 'Required field';
-      case 'jobDescription':
-        return value ? '' : 'Required field';
       default:
         break;
     }
@@ -126,70 +102,23 @@ class Form extends React.Component {
 
   handleChange({ target }) {
     let { name, value } = target;
-    if (value && name === 'fullName') value = value.toUpperCase();
-    if (value && name === 'adress') value = this.handleAdress(value);
-    this.updateState(name, value);
+    if (name === 'fullName') value = value.toUpperCase();
+    if (name === 'adress') value = this.handleAdress(value);
+    if(value) this.updateState(name, value);
   }
 
   render() {
-    const { fullName, email, social, adress, city, state, housing, resume, position, jobDescription, sent } = this.state;
+    const { sent, formError } = this.state;
     return (
       <section>
         <header>
           <h1 className="title">Fill your resume</h1>
         </header>
         <form>
-          <fieldset>
-            <legend>Personal Info</legend>
-            <NameField
-              handleChange={this.handleChange}
-              value={fullName}
-            />
-            <EmailField
-              handleChange={this.handleChange}
-              value={email}
-            />
-            <SocialField
-              handleChange={this.handleChange}
-              value={social}
-            />
-            <AdressField
-              handleChange={this.handleChange}
-              value={adress}
-            />
-            <CityField
-              handleChange={this.handleChange}
-              handleCity={this.handleCity}
-              value={city}
-            />
-            <StateField
-              handleChange={this.handleChange}
-              value={state}
-            />
-            <HousingField
-              handleChange={this.handleChange}
-              value={housing}
-            />
-          </fieldset>
-          <fieldset>
-            <legend>Job info</legend>
-            <Resume
-              handleChange={this.handleChange}
-              value={resume}
-            />
-            <PositionField
-              handleChange={this.handleChange}
-              createPositionAlert={this.createPositionAlert}
-              value={position}
-            />
-            <JobDescription
-              handleChange={this.handleChange}
-              value={jobDescription}
-            />
-          </fieldset>
+          <PersonalInfo value={this.state} handleChange={this.handleChange} handleCity={this.handleCity}/>
+          <JobInfo value={this.state} handleChange={this.handleChange} createPositionAlert={this.createPositionAlert}/>
           <section className="btn-container">
             <CreateButton
-              type={'submit'}
               text={'Send'}
               funct={this.sendForm}
             />
@@ -200,6 +129,7 @@ class Form extends React.Component {
             />
           </section>
         </form>
+        {formError && <NotValid formError={this.state.formError}/>}
         {sent && <SentForm currentState={this.state} />}
       </section>
     );

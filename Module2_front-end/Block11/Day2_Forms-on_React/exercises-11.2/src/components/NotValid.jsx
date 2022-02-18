@@ -7,7 +7,7 @@ class NotValid extends React.Component {
       <section>
         {
           Object.keys(formError)
-            .filter((error) => formError[error].length !== 0)
+            .filter((error) => formError[error] !== undefined && formError[error].length !== 0)
             .map((field, index) => (
             <p key={index}>
               {field}: {formError[field]};

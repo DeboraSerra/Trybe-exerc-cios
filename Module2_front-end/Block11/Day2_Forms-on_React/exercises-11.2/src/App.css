@@ -18,6 +18,7 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 15px;
 }
 
 input[type=text] {
@@ -36,6 +37,7 @@ select {
 
 legend {
   font-size: 1.5rem;
+  margin: 15px;
 }
 
 .housing {
