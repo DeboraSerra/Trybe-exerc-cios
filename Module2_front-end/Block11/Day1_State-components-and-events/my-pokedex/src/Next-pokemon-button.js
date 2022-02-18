@@ -8,10 +8,8 @@ class NextPokemon extends React.Component {
   constructor() {
     super();
     this.state = {
-      currPokemon: {
-        pokemons: pokemons,
-        index: 0,
-      },
+      pokemons: pokemons,
+      index: 0,
     }
     this.nextPokemon = this.nextPokemon.bind(this)
     this.filter = this.filter.bind(this);
@@ -26,34 +24,28 @@ class NextPokemon extends React.Component {
       filtered = pokemons.filter((pokemon) => pokemon.type === type);
     }
     this.setState({
-      currPokemon: {
-        pokemons: filtered,
-        index: 0,
-      }
+      pokemons: filtered,
+      index: 0,
     })
   }
 
   nextPokemon() {
-    const length = this.state.currPokemon.pokemons.length - 1;
-    if (this.state.currPokemon.index === length) {
+    const length = this.state.pokemons.length - 1;
+    if (this.state.index === length) {
       this.setState((prevSt, _props) => ({
-        currPokemon: {
-          pokemons: prevSt.currPokemon.pokemons,
-          index: 0,
-        }
+        pokemons: prevSt.pokemons,
+        index: 0,
       }))
     } else {
       this.setState((prevVal, _props) => ({
-        currPokemon: {
-          pokemons: prevVal.currPokemon.pokemons,
-          index: prevVal.currPokemon.index + 1,
-        }
+        pokemons: prevVal.pokemons,
+        index: prevVal.index + 1,
       }))
     }
   }
 
   disableBtn() {
-    if (this.state.currPokemon.pokemons.length === 1){
+    if (this.state.pokemons.length === 1){
       return true;
     }
     return false;
@@ -68,7 +60,7 @@ class NextPokemon extends React.Component {
     })
     return (
       <section className='card-btn-parent'>
-        <Pokemon pokemon={this.state.currPokemon.pokemons[this.state.currPokemon.index]}/>
+        <Pokemon pokemon={this.state.pokemons[this.state.index]}/>
         <section className='btn-parent'>
           <CreateFilterButtons 
             className={`type-btn all`}
