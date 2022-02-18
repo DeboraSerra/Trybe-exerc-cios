@@ -2,6 +2,7 @@ import './App.css';
 import Image from './Image';
 import Order from './Order';
 import UserProfile from './UserProfile';
+import cuteCat from './Images/cuteCat.jpg';
 
 const headphone = {
   id: 102,
@@ -41,7 +42,7 @@ const users = [
 function App() {
   return (
     <div>
-      <Image source='https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg' alternativeText='Cute cat staring'/>
+      <Image source={cuteCat} alternativeText='Cute cat staring'/>
 
       <div className='App'>
         <h1>Orders recently created</h1>

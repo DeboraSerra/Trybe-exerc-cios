@@ -46,10 +46,8 @@ function cartItemClickListener(event) {
   const item = event.target;
   cartParent.removeChild(item);
   saveCartItems('cartItems', cartParent.innerHTML);
-  const newArray = item.innerText.split(' ');
-  const priceArray = newArray[newArray.length - 1].split('');
-  priceArray.shift();
-  subPrice(priceArray.join(''));
+  const newArray = item.innerText.split('$');
+  subPrice(newArray[1]);
 }
 
 function createCartItemElement({ sku, name, salePrice }) {
@@ -62,15 +60,10 @@ function createCartItemElement({ sku, name, salePrice }) {
 
 async function creteItemCart(id) {
   const item = await fetchItem(id);
-  const itemData = {
-    sku: item.id,
-    image: item.thumbnail,
-    name: item.title,
-    salePrice: item.price,
-  };
-  cartParent.appendChild(createCartItemElement(itemData));
+  const {id: sku, title: name, price: salePrice} = item;
+  cartParent.appendChild(createCartItemElement({sku, name, salePrice}));
   saveCartItems('cartItems', cartParent.innerHTML);
-  sumPrice(itemData.salePrice);
+  sumPrice(salePrice);
 }
 
 function loading(parent) {
@@ -88,16 +81,10 @@ async function createItems() {
   loading(itemsParent);
   const products = await fetchProducts('computador');
   loaded(itemsParent);
-  products.results.forEach((product, index) => {
-    const item = {
-      sku: product.id,
-      image: product.thumbnail,
-      name: product.title,
-      salePrice: product.price,
-    };
-    itemsParent.appendChild(createProductItemElement(item));
+  products.results.forEach(({id: sku, title: name, thumbnail: image}, index) => {
+    itemsParent.appendChild(createProductItemElement({sku, name, image}));
     const button = document.querySelectorAll('.item__add');
-    button[index].addEventListener('click', () => creteItemCart(item.sku));
+    button[index].addEventListener('click', () => creteItemCart(sku));
   });
 }
 createItems();
@@ -118,10 +105,8 @@ window.onload = () => {
     const lis = document.querySelectorAll('li');
     lis.forEach((li) => {
       li.addEventListener('click', cartItemClickListener);
-      const newArray = li.innerText.split(' ');
-      const priceArray = newArray[newArray.length - 1].split('');
-      priceArray.shift();
-      sumPrice(priceArray.join(''));
+      const newArray = li.innerText.split('$');
+      sumPrice(newArray[1]);
     });
   }
 };
