@@ -30,8 +30,9 @@ class NextPokemon extends React.Component {
   }
 
   nextPokemon() {
-    const length = this.state.pokemons.length - 1;
-    if (this.state.index === length) {
+    const { pokemons, index } = this.state;
+    const length = pokemons.length - 1;
+    if (index === length) {
       this.setState((prevSt, _props) => ({
         pokemons: prevSt.pokemons,
         index: 0,
@@ -52,6 +53,7 @@ class NextPokemon extends React.Component {
   }
   
   render() {
+    const { pokemons, index } = this.state;
     const pokemonTypes = [];
     pokemons.forEach((pokemon) => {
       if (!pokemonTypes.includes(pokemon.type)) {
@@ -60,7 +62,7 @@ class NextPokemon extends React.Component {
     })
     return (
       <section className='card-btn-parent'>
-        <Pokemon pokemon={this.state.pokemons[this.state.index]}/>
+        <Pokemon pokemon={pokemons[index]}/>
         <section className='btn-parent'>
           <CreateFilterButtons 
             className={`type-btn all`}
