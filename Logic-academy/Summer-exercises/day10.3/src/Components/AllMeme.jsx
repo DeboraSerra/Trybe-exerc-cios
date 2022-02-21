@@ -9,7 +9,7 @@ class AllMeme extends React.Component {
       <main>
         <h1>Choose your meme</h1>
         <section className="all-meme">
-        {memes.map((meme) => <Meme meme={meme}/>)}
+        {memes.map((meme) => <Meme key={ meme.id } meme={ meme }/>)}
         </section>
       </main>
     )
@@ -19,6 +19,7 @@ class AllMeme extends React.Component {
 AllMeme.propTypes = {
   memes: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.string,
       name: PropTypes.string,
       url: PropTypes.string,
       width: PropTypes.number,
