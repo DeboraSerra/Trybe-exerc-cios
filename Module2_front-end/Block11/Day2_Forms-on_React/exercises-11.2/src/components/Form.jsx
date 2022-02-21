@@ -96,7 +96,7 @@ class Form extends React.Component {
   }
 
   handleAdress(value) {
-    const newValue = value.replace(/[\W{1,}]/gi, ' ')
+    const newValue = value.replace(/[\W{1,}]/gi, '')
     return newValue;
   }
 
