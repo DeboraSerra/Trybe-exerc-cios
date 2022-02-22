@@ -32,17 +32,10 @@ class NextPokemon extends React.Component {
   nextPokemon() {
     const { pokemons, index } = this.state;
     const length = pokemons.length - 1;
-    if (index === length) {
-      this.setState((prevSt, _props) => ({
-        pokemons: prevSt.pokemons,
-        index: 0,
-      }))
-    } else {
       this.setState((prevVal, _props) => ({
         pokemons: prevVal.pokemons,
-        index: prevVal.index + 1,
+        index: prevVal.index === length ? 0 : prevVal.index + 1,
       }))
-    }
   }
 
   disableBtn() {
