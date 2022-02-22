@@ -11,7 +11,6 @@ class Resume extends React.Component {
         name="resume"
         placeholder="Resume abstract"
         onChange={handleChange}
-        value={value}
         autoComplete='off'
       ></textarea>
     )
@@ -19,7 +18,7 @@ class Resume extends React.Component {
 }
 
 Resume.propTypes = {
-  value: PropTypes.string.isRequired,
+
   handleChange: PropTypes.func.isRequired,
 }
 

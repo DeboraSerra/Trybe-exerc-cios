@@ -11,7 +11,6 @@ class SocialField extends React.Component {
         placeholder="Social Security Number"
         maxLength={11}
         onChange={handleChange}
-        value={value}
         autoComplete='off'
       />
     )
@@ -19,7 +18,7 @@ class SocialField extends React.Component {
 }
 
 SocialField.propTypes = {
-  value: PropTypes.string.isRequired,
+
   handleChange: PropTypes.func.isRequired,
 }
 

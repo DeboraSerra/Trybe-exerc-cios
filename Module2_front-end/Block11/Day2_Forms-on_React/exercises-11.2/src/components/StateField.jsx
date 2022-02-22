@@ -12,7 +12,6 @@ class StateField extends React.Component {
       <select
         name="state"
         onChange={handleChange}
-        value={value}
       >
         <option value={''}>Choose your State</option>
         {states.map((state, index) => <option key={index} value={values[index]}>{state}</option>)}
@@ -22,7 +21,7 @@ class StateField extends React.Component {
 }
 
 StateField.propTypes = {
-  value: PropTypes.string.isRequired,
+
   handleChange: PropTypes.func.isRequired,
 }
 

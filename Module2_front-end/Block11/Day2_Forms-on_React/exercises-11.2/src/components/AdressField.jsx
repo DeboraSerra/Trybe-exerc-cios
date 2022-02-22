@@ -11,7 +11,6 @@ class AdressField extends React.Component {
         name="adress"
         placeholder="Adress"
         maxLength={200}
-        value={value}
         onChange={handleChange}
         autoComplete='off'
       />
@@ -20,7 +19,7 @@ class AdressField extends React.Component {
 }
 
 AdressField.propTypes = {
-  value: PropTypes.string.isRequired,
+
   handleChange: PropTypes.func.isRequired,
 }
 
