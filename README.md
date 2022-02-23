@@ -87,13 +87,13 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 10-1: _Introduction - Front-end_
 - [x] 10-1: _Introduction - React_
 - [x] 10-1: _'Hello, world!' on React!_
-- [ ] 10-2: _React Components_
-- [ ] 10-3: _[Project - Solar System]()_
+- [x] 10-2: _React Components_
+- [x] 10-3: _[Project - Solar System]()_
 
 ##### Block 11: State components, events and formularies with React
 
-- [ ] 11-1: _Components with estate and events_
-- [ ] 11-2: _Formularies on React_
+- [x] 11-1: _Components with estate and events_
+- [x] 11-2: _Formularies on React_
 - [ ] 11-3: _[Project - Tryunfo]()_
 
 ##### Block 12: Life cicle of components and React Router
