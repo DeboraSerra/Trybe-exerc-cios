@@ -12,7 +12,6 @@ class NameField extends React.Component {
         placeholder="Full Name"
         maxLength={40}
         onChange={handleChange}
-        value={value}
         autoComplete='off'
       />
     )
@@ -20,7 +19,7 @@ class NameField extends React.Component {
 }
 
 NameField.propTypes = {
-  value: PropTypes.string.isRequired,
+
   handleChange: PropTypes.func.isRequired,
 }
 

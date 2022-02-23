@@ -6,13 +6,13 @@ import PropTypes from 'prop-types';
 
 class JobInfo extends React.Component {
   render() {
-    const { handleChange, createPositionAlert, value: { resume, position, jobDescription } } = this.props
+    const { handleChange, createPositionAlert } = this.props
     return (
       <fieldset>
         <legend>Job Info</legend>
-        <Resume value={resume} handleChange={handleChange}/>
-        <PositionField value={position} handleChange={handleChange} createPositionAlert={createPositionAlert}/>
-        <JobDescription value={jobDescription} handleChange={handleChange}/>
+        <Resume handleChange={handleChange}/>
+        <PositionField handleChange={handleChange} createPositionAlert={createPositionAlert}/>
+        <JobDescription handleChange={handleChange}/>
       </fieldset>
     )
   }
@@ -21,11 +21,7 @@ class JobInfo extends React.Component {
 JobInfo.propTypes = {
   handleChange: PropTypes.func.isRequired,
   createPositionAlert: PropTypes.func.isRequired,
-  value: PropTypes.shape({
-    resume: PropTypes.string,
-    position: PropTypes.string,
-    jobDescription: PropTypes.string,
-  }).isRequired,
+
 }
 
 export default JobInfo;

@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 
 class PersonalInfo extends React.Component {
   render() {
-    const { value: { fullName, email, social, adress, city, state, housing }, handleChange, handleCity } = this.props;
+    const { handleChange, handleCity, cityValue } = this.props;
     return (
       <fieldset>
         <legend>Personal Info</legend>
@@ -27,15 +27,6 @@ class PersonalInfo extends React.Component {
 }
 
 PersonalInfo.propTypes = {
-  value: PropTypes.shape({
-    fullName: PropTypes.string,
-    email: PropTypes.string,
-    social: PropTypes.string,
-    adress: PropTypes.string,
-    city: PropTypes.string,
-    state: PropTypes.string,
-    housing: PropTypes.string,
-  }).isRequired,
   handleChange: PropTypes.func.isRequired,
   handleCity: PropTypes.func.isRequired,
 }

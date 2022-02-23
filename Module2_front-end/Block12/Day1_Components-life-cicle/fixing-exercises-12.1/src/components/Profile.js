@@ -53,4 +53,8 @@ class Profile extends React.Component {
   }
 }
 
+<<<<<<< HEAD
 export default Profile;
+=======
+export default Profile;
+>>>>>>> cf68a5a6ccae9632c3b9dfb51c7ea4e40aaa57fe

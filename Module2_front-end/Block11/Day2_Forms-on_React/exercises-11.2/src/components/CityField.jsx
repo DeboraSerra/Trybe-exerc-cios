@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class CityField extends React.Component {
   render() {
-    const { handleChange, handleCity, value } = this.props;
+    const { handleChange, handleCity, cityValue } = this.props;
     return (
       <input
         className="city"
@@ -13,7 +13,7 @@ class CityField extends React.Component {
         maxLength={28}
         onChange={handleChange}
         onBlur={handleCity}
-        value={value}
+        value={cityValue}
         autoComplete='off'
       />
     )
@@ -23,7 +23,7 @@ class CityField extends React.Component {
 CityField.propTypes = {
   handleChange: PropTypes.func.isRequired,
   handleCity: PropTypes.func.isRequired,
-  value: PropTypes.string.isRequired,
+
 }
 
 export default CityField;

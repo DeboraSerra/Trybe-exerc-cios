@@ -109,15 +109,15 @@ class Form extends React.Component {
   }
 
   render() {
-    const { sent, formError } = this.state;
+    const { sent, formError, city } = this.state;
     return (
       <section>
         <header>
           <h1 className="title">Fill your resume</h1>
         </header>
         <form>
-          <PersonalInfo value={this.state} handleChange={this.handleChange} handleCity={this.handleCity}/>
-          <JobInfo value={this.state} handleChange={this.handleChange} createPositionAlert={this.createPositionAlert}/>
+          <PersonalInfo cityValue={city} handleChange={this.handleChange} handleCity={this.handleCity}/>
+          <JobInfo handleChange={this.handleChange} createPositionAlert={this.createPositionAlert}/>
           <section className="btn-container">
             <CreateButton
               text={'Send'}
