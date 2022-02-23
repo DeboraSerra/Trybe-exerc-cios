@@ -12,7 +12,6 @@ class JobDescription extends React.Component {
         maxLength={500}
         placeholder="Job Description"
         onChange={handleChange}
-        value={value}
         required
         autoComplete='off'
       />
@@ -21,7 +20,7 @@ class JobDescription extends React.Component {
 }
 
 JobDescription.propTypes = {
-  value: PropTypes.string.isRequired,
+
   handleChange: PropTypes.func.isRequired,
 }
 

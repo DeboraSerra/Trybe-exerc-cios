@@ -10,32 +10,23 @@ import PropTypes from 'prop-types';
 
 class PersonalInfo extends React.Component {
   render() {
-    const { value: { fullName, email, social, adress, city, state, housing }, handleChange, handleCity } = this.props;
+    const { handleChange, handleCity, cityValue } = this.props;
     return (
       <fieldset>
         <legend>Personal Info</legend>
-        <NameField value={fullName} handleChange={handleChange}/>
-        <EmailField value={email} handleChange={handleChange}/>
-        <SocialField value={social} handleChange={handleChange}/>
-        <AdressField value={adress} handleChange={handleChange}/>
-        <CityField value={city} handleChange={handleChange} handleCity={handleCity}/>
-        <StateField value={state} handleChange={handleChange}/>
-        <HousingField valu={housing} handleChange={handleChange}/>
+        <NameField handleChange={handleChange}/>
+        <EmailField handleChange={handleChange}/>
+        <SocialField handleChange={handleChange}/>
+        <AdressField handleChange={handleChange}/>
+        <CityField cityValue={cityValue} handleChange={handleChange} handleCity={handleCity}/>
+        <StateField handleChange={handleChange}/>
+        <HousingField handleChange={handleChange}/>
       </fieldset>
     )
   }
 }
 
 PersonalInfo.propTypes = {
-  value: PropTypes.shape({
-    fullName: PropTypes.string,
-    email: PropTypes.string,
-    social: PropTypes.string,
-    adress: PropTypes.string,
-    city: PropTypes.string,
-    state: PropTypes.string,
-    housing: PropTypes.string,
-  }).isRequired,
   handleChange: PropTypes.func.isRequired,
   handleCity: PropTypes.func.isRequired,
 }

@@ -88,15 +88,15 @@ class Form extends React.Component {
   }
 
   handleCity({ target }) {
-    const { value } = target;
-    if (typeof parseInt(value[0]) === "number") {
-      target.innerHtml = "";
+    let { value } = target;
+    if (!isNaN(value[0])) {
+      value = '';
       this.updateState('city', value);
     }
   }
 
   handleAdress(value) {
-    const newValue = value.replace(/[\W{1,}]/gi, ' ')
+    const newValue = value.replace(/[^\w\s]/gi, '')
     return newValue;
   }
 
@@ -108,15 +108,15 @@ class Form extends React.Component {
   }
 
   render() {
-    const { sent, formError } = this.state;
+    const { sent, formError, city } = this.state;
     return (
       <section>
         <header>
           <h1 className="title">Fill your resume</h1>
         </header>
         <form>
-          <PersonalInfo value={this.state} handleChange={this.handleChange} handleCity={this.handleCity}/>
-          <JobInfo value={this.state} handleChange={this.handleChange} createPositionAlert={this.createPositionAlert}/>
+          <PersonalInfo cityValue={city} handleChange={this.handleChange} handleCity={this.handleCity}/>
+          <JobInfo handleChange={this.handleChange} createPositionAlert={this.createPositionAlert}/>
           <section className="btn-container">
             <CreateButton
               text={'Send'}

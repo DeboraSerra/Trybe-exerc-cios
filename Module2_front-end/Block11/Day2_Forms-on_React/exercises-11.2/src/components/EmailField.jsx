@@ -12,7 +12,6 @@ class EmailField extends React.Component {
         placeholder="E-mail"
         maxLength={50}
         onChange={handleChange}
-        value={value}
         autoComplete='off'
       />
     )
@@ -20,7 +19,7 @@ class EmailField extends React.Component {
 }
 
 EmailField.propTypes = {
-  value: PropTypes.string.isRequired,
+
   handleChange: PropTypes.func.isRequired,
 }
 

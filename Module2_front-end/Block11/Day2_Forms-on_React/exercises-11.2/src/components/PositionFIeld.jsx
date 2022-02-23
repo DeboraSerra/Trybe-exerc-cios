@@ -12,7 +12,6 @@ class PositionField extends React.Component {
         onChange={handleChange}  
         onMouseEnter={createPositionAlert}
         placeholder="Position"
-        value={value}
         autoComplete='off'    
       ></textarea>
     )
@@ -20,7 +19,7 @@ class PositionField extends React.Component {
 }
 
 PositionField.propTypes = {
-  value: PropTypes.string.isRequired,
+
   handleChange: PropTypes.func.isRequired,
   createPositionAlert: PropTypes.func.isRequired,
 }
