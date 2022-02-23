@@ -1,26 +1,63 @@
 import React from "react";
-import NameField from './NameField';
-import EmailField from './EmailField';
-import SocialField from './SocialField';
-import AdressField from './AdressField';
-import CityField from './CityField';
+import CreateInput from "./CreateInput";
 import StateField from './StateField';
 import HousingField from './HousingField';
 import PropTypes from 'prop-types';
 
 class PersonalInfo extends React.Component {
   render() {
-    const { handleChange, handleCity, cityValue } = this.props;
+    const { handleChange, handleCity, value: { fullName, email, social, adress, city, state, housing } } = this.props;
     return (
       <fieldset>
         <legend>Personal Info</legend>
-        <NameField value={fullName} handleChange={handleChange}/>
-        <EmailField value={email} handleChange={handleChange}/>
-        <SocialField value={social} handleChange={handleChange}/>
-        <AdressField value={adress} handleChange={handleChange}/>
-        <CityField value={city} handleChange={handleChange} handleCity={handleCity}/>
-        <StateField value={state} handleChange={handleChange}/>
-        <HousingField value={housing} handleChange={handleChange}/>
+        <CreateInput
+          className='full-name'
+          text='Full Name'
+          onChange={handleChange}
+          name='fullName'
+          value={fullName}
+          onBlur={null}
+        />
+        <CreateInput
+          className='email'
+          text='E-mail'
+          onChange={handleChange}
+          name='email'
+          value={email}
+          onBlur={null}
+        />
+        <CreateInput
+          className='social'
+          text='Social security number'
+          onChange={handleChange}
+          name='social'
+          value={social}
+          onBlur={null}
+        />
+        <CreateInput
+          className='adress'
+          text='Adress'
+          onChange={handleChange}
+          name='adress'
+          value={adress}
+          onBlur={null}
+        />
+        <CreateInput
+          className='city'
+          text='City'
+          onChange={handleChange}
+          name='city'
+          value={city}
+          onBlur={handleCity}
+        />
+        <StateField
+          value={state}
+          handleChange={handleChange}
+        />
+        <HousingField
+          value={housing}
+          handleChange={handleChange}
+        />
       </fieldset>
     )
   }
