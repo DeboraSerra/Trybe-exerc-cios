@@ -53,12 +53,13 @@ class Form extends React.Component {
       [name]: value,
       formError: {
         ...state.formError,
-        [name]: this.formValidate(name, value),
+        [name]: name === 'email' || name === 'social' ? this.formValidate(name, value) : '',
       }
     }));
   }
 
   formValidate(field, value) {
+    // if (field !== 'email' || field !== 'social') stop;
     switch (field) {
       case 'email':
         const validEmail = value.match(/[\w.!#$%&'*+=?^_`{|}~-]+@[\w.-]+\.[A-Z]{2,}/gi);
@@ -88,15 +89,15 @@ class Form extends React.Component {
   }
 
   handleCity({ target }) {
-    const { value } = target;
-    if (typeof parseInt(value[0]) === "number") {
-      target.innerHtml = "";
+    let { value } = target;
+    if (!isNaN(value[0])) {
+      value = '';
       this.updateState('city', value);
     }
   }
 
   handleAdress(value) {
-    const newValue = value.replace(/[\W{1,}]/gi, '')
+    const newValue = value.replace(/[^\w\s]/gi, '')
     return newValue;
   }
 
@@ -104,7 +105,7 @@ class Form extends React.Component {
     let { name, value } = target;
     if (name === 'fullName') value = value.toUpperCase();
     if (name === 'adress') value = this.handleAdress(value);
-    if(value) this.updateState(name, value);
+    this.updateState(name, value);
   }
 
   render() {

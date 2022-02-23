@@ -20,7 +20,7 @@ class PersonalInfo extends React.Component {
         <AdressField value={adress} handleChange={handleChange}/>
         <CityField value={city} handleChange={handleChange} handleCity={handleCity}/>
         <StateField value={state} handleChange={handleChange}/>
-        <HousingField valu={housing} handleChange={handleChange}/>
+        <HousingField value={housing} handleChange={handleChange}/>
       </fieldset>
     )
   }
