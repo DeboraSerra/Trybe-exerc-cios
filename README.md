@@ -94,7 +94,7 @@ The program includes more than 1500 hours of live and online classes, and approa
 
 - [x] 11-1: _Components with estate and events_
 - [x] 11-2: _Formularies on React_
-- [ ] 11-3: _[Project - Tryunfo]()_
+- [x] 11-3: _[Project - Tryunfo]()_
 
 ##### Block 12: Life cicle of components and React Router
 
