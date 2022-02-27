@@ -1,18 +1,38 @@
 import React from "react";
-import Resume from "./Resume";
-import PositionField from "./PositionFIeld";
-import JobDescription from "./JobDescription";
+import CreateInput from "./CreateInput";
+import CreateTextarea from "./CreateTextarea";
 import PropTypes from 'prop-types';
 
 class JobInfo extends React.Component {
   render() {
-    const { handleChange, createPositionAlert } = this.props
+    const { handleChange, createPositionAlert, value: { resume, position, jobDescription } } = this.props
     return (
       <fieldset>
         <legend>Job Info</legend>
-        <Resume handleChange={handleChange}/>
-        <PositionField handleChange={handleChange} createPositionAlert={createPositionAlert}/>
-        <JobDescription handleChange={handleChange}/>
+        <CreateTextarea
+          className='resume'
+          text="Resume abstract"
+          onChange={handleChange}
+          name='resume'
+          value={resume}
+          onMouseEnter={null}
+        />
+        <CreateTextarea
+          className='position'
+          text="Position"
+          onChange={handleChange}
+          name='position'
+          value={position}
+          onMouseEnter={createPositionAlert}
+        />
+        <CreateInput
+          className='job-description'
+          text='Job Description'
+          onChange={handleChange}
+          name='jobDescription'
+          value={jobDescription}
+          onBlur={null}
+        />
       </fieldset>
     )
   }

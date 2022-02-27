@@ -11,6 +11,7 @@ class StateField extends React.Component {
     return (
       <select
         name="state"
+        value={value}
         onChange={handleChange}
       >
         <option value={''}>Choose your State</option>

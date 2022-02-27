@@ -53,12 +53,13 @@ class Form extends React.Component {
       [name]: value,
       formError: {
         ...state.formError,
-        [name]: this.formValidate(name, value),
+        [name]: name === 'email' || name === 'social' ? this.formValidate(name, value) : '',
       }
     }));
   }
 
   formValidate(field, value) {
+    // if (field !== 'email' || field !== 'social') stop;
     switch (field) {
       case 'email':
         const validEmail = value.match(/[\w.!#$%&'*+=?^_`{|}~-]+@[\w.-]+\.[A-Z]{2,}/gi);
@@ -104,19 +105,19 @@ class Form extends React.Component {
     let { name, value } = target;
     if (name === 'fullName') value = value.toUpperCase();
     if (name === 'adress') value = this.handleAdress(value);
-    if(value) this.updateState(name, value);
+    this.updateState(name, value);
   }
 
   render() {
-    const { sent, formError, city } = this.state;
+    const { sent, formError } = this.state;
     return (
       <section>
         <header>
           <h1 className="title">Fill your resume</h1>
         </header>
         <form>
-          <PersonalInfo cityValue={city} handleChange={this.handleChange} handleCity={this.handleCity}/>
-          <JobInfo handleChange={this.handleChange} createPositionAlert={this.createPositionAlert}/>
+          <PersonalInfo value={this.state} handleChange={this.handleChange} handleCity={this.handleCity}/>
+          <JobInfo value={this.state} handleChange={this.handleChange} createPositionAlert={this.createPositionAlert}/>
           <section className="btn-container">
             <CreateButton
               text={'Send'}
