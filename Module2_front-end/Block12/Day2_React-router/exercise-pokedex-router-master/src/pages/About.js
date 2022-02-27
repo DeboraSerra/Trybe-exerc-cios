@@ -1,11 +1,11 @@
 import React from "react";
+import '../About.css';
 
 class About extends React.Component {
   render() {
     return (
-      <section>
-        <h1>Pokedex</h1>
-        <img src="https://static.wikia.nocookie.net/tkoc/images/5/58/Pok%C3%A9dex.png/revision/latest?cb=20200623144843&path-prefix=pt-br" alt="Pokedex" />
+      <section className="about-sect">
+        <img src="http://1.bp.blogspot.com/-LizoMRGaQ_c/UPIU6UknFXI/AAAAAAAAAUs/KKDynTNuwoo/s1600/pokedex-pro.png" alt="Pokedex" />
 
         <p>The Pokédex is an invaluable tool to Trainers in the Pokémon world. It gives information about all Pokémon in the world that are contained in its database, although it differs in how it acquires and presents information over the different media. However, they are also only given to a few Trainers at a time, generally to the ones that are felt to have exceptional potential and skill. Regional Pokédexes give information about Pokémon native to a particular region, while the National Pokédex records information about all known Pokémon. While the concept of a Pokédex has existed for a long period, the digital version of it is a more recent invention created by Professor Oak.</p>
 

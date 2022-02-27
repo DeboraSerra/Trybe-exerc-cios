@@ -1,0 +1,10 @@
+.fave-sect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.pokemon div {
+  margin: 5px 10px;
+}
