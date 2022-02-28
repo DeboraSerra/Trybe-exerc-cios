@@ -3,6 +3,7 @@ import Form from './components/Form';
 import Card from './components/Card';
 import NewCard from './components/NewCard';
 import './App.css';
+import GamePlay from './components/GamePlay';
 
 const cleanState = {
   cardName: '',
@@ -94,7 +95,7 @@ class App extends React.Component {
   isSaveButtonDisabled() {
     const { cardName, cardDescription, cardAttr1, cardAttr2, cardAttr3,
       cardImage, cardRare } = this.state;
-    let disable = false;
+    let disable = true;
     const maxAttrSum = 210;
     const maxAttr = 90;
     const attrs = [parseInt(cardAttr1, 10),
@@ -102,10 +103,10 @@ class App extends React.Component {
       parseInt(cardAttr3, 10)];
     const isAttrsValid = attrs
       .every((attr) => attr <= maxAttr && attr > 0)
-      && attrs.reduce((acc, attr) => acc + attr) <= maxAttrSum;
+      && (attrs.reduce((acc, attr) => acc + attr) <= maxAttrSum);
     const fields = [cardName, cardDescription, cardImage, cardRare];
     const areFieldsNotEmpty = fields.every((field) => field !== '');
-    if (isAttrsValid && areFieldsNotEmpty) disable = true;
+    if (isAttrsValid && areFieldsNotEmpty) disable = false;
     this.setState({
       isSaveButtonDisabled: disable,
     });
@@ -157,13 +158,11 @@ class App extends React.Component {
         <h1 className="page-title">Tryunfo</h1>
         <section className="form-parent">
           <Form
-            {...this.state}
+            { ...this.state }
             onInputChange={ this.onInputChange }
             onSaveButtonClick={ this.onSaveButtonClick }
           />
-          <Card
-            {...this.state}
-          />
+          <Card { ...this.state } />
         </section>
         <h1 className="page-title">All cards</h1>
         <section className="saved-sect">
@@ -212,6 +211,9 @@ class App extends React.Component {
               />
             ))}
           </section>
+        </section>
+        <section>
+          <GamePlay savedCards={ savedCards } />
         </section>
       </div>
     );
