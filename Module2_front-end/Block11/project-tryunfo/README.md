@@ -4,4 +4,4 @@ In this project we were asked to develop a react app where the user can create a
 
 On the GIF below, it's possiblo to se the application working.
 
-![Project tryunfo gif] (https://github.com/DeboraSerra/Trybe-exercises/blob/main/Module2_front-end/Block11/project-tryunfo/project-tryunfo.gif)
+![Project tryunfo gif](https://github.com/DeboraSerra/Trybe-exercises/blob/main/Module2_front-end/Block11/project-tryunfo/project-tryunfo.gif)
