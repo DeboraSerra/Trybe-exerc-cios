@@ -6,8 +6,8 @@ As a personal project, I implemented a function to show the missions to a specif
 
 The first GIF shows how the application works with my personal implementation.
 
-![Personal implementation for the project]()
+![Personal implementation for the project](https://github.com/DeboraSerra/Trybe-exercises/blob/main/Module2_front-end/Block10/Project-solar-system/project-solar-system2.gif)
 
 The second GIF shows the project without my personal implementation.
 
-![Finished project without my personal implementation]()
+![Finished project without my personal implementation](https://github.com/DeboraSerra/Trybe-exercises/blob/main/Module2_front-end/Block10/Project-solar-system/project-solar-system.gif)
