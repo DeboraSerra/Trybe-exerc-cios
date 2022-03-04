@@ -28,4 +28,20 @@ describe('Teste da aplicação toda', () => {
     const text = await screen.findByText(/Test is not a Digimon in our database./i)
     expect(text).toBeInTheDocument();
   });
+  it('tests the function fetch', () => {
+    global.fetch = jest.fn().mockResolvedValue({
+      json: jest.fn().mockResolvedValue([{
+        name: "Koromon",
+        img: "https://digimon.shadowsmith.com/img/koromon.jpg",
+        level: "In Training"
+      }]),
+    });
+
+    render(<App />);
+    const button = screen.getByTestId('search-button');
+    const textInput = screen.getByTestId('search-input');
+    userEvent.type(textInput, 'Koromon');
+    userEvent.click(button);
+    expect(global.fetch).toHaveBeenCalled();
+  })
 });

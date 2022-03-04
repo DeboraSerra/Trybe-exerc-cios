@@ -29,6 +29,4 @@ The first part of the exercises were developed accordingly to the guidelines bel
 
 ##### (/exercises14.2-part2)
 
-The part 2 of the exercises were made using a react application following the given exercise below:
-
-1. 
+In part2 of the exercises we were asked to develop the tests to a react application provided to us.
