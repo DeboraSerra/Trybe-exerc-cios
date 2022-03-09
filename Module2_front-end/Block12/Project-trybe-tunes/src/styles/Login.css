@@ -1,0 +1,63 @@
+:root {
+
+  --light-blue: rgb(1, 79, 124);
+
+  --dark-blue: rgb(1, 47, 107);
+
+  --light-gray: rgb(225, 229, 235);
+
+  --gray1: rgb(62, 66, 75);
+
+  --gray2: rgb(40, 42, 47);
+
+  --gray3: rgb(30, 31, 36);
+
+  --gray4: rgb(26, 27, 28);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+.page-login {
+  background-color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+  border-radius: 15px;
+  box-shadow: 0 0 30px var(--gray1);
+  display: flex;
+  flex-flow: column wrap;
+  height: 80vh;
+  justify-content: center;
+  margin: 100px auto 50px;
+  text-align: center;
+  width: 50%;
+}
+
+.login-title {
+  color: var(--light-gray);
+  font-size: 3rem;
+  margin-bottom: 200px;
+  text-shadow: 0 0 30px var(--light-blue);
+}
+
+.btn-invert {
+  background-color: var(--light-gray);
+  border-radius: 15px;
+  color: var(--dark-blue);
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 50px;
+  padding: 5px 10px;
+}
+
+.btn-invert:disabled {
+  background-color: var(--light-blue);
+  color: var(--light-gray);
+  cursor: not-allowed;
+}
