@@ -1,0 +1,44 @@
+.fred {
+  width: 340px;
+  height: 400px;
+  object-fit: cover;
+  max-width: 30%;
+  /* margin-top: -200px; */
+}
+
+.fred-sect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+
+}
+
+.brasilia {
+  width: 20%;
+  min-width: 200px;
+}
+
+.city-sect {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.about-sect {
+  width: 90%;
+  margin: 20px auto 80px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.about-p1, .about-p2, .about-p3, .about-p4 {
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+.about-p1 {
+  width: 50%;
+}
