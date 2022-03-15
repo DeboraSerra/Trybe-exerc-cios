@@ -18,11 +18,13 @@ describe('Test the Header component', () => {
     const linkToContact = screen.getByRole('link', { name: 'Contact' });
     const linkToAbout = screen.getByRole('link', { name: 'About' });
     const linkToProjects = screen.getByRole('link', { name: 'Projects' });
+    const linkToResume = screen.getByRole('link', { name: 'Resume' });
 
     expect(linkToHome).toBeInTheDocument();
     expect(linkToContact).toBeInTheDocument();
     expect(linkToAbout).toBeInTheDocument();
     expect(linkToProjects).toBeInTheDocument();
+    expect(linkToResume).toBeInTheDocument();
   })
   it('tests if the page goes to the right path when Contact is clicked', () => {
     const { history } = renderWithRouter(<App />);
@@ -76,5 +78,18 @@ describe('Test the Header component', () => {
 
     ({ pathname } = history.location)
     expect(pathname).toBe('/');
+  })
+  it('tests if the page goes to the right path when Resume is clicked', () => {
+    const { history } = renderWithRouter(<App />);
+
+    const linkToResume = screen.getByRole('link', { name: 'Resume' });
+    
+    let { pathname } = history.location;
+    expect(pathname).toBe('/');
+
+    userEvent.click(linkToResume);
+
+    ({ pathname } = history.location)
+    expect(pathname).toBe('/resume');
   })
 })

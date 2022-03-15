@@ -8,6 +8,7 @@ class Links extends React.Component {
         <Link className="link" to="/">Home</Link>
         <Link className="link" to="/contact">Contact</Link>
         <Link className="link" to="/about">About</Link>
+        <Link className="link" to="/resume">Resume</Link>
         <Link className="link" to="/projects">Projects</Link>
       </nav>
     )
