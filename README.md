@@ -62,7 +62,7 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions and template literals_
 - [x] 7-2: _JavaScript ES6 - Exeption flow and Objects_
 - [x] 7-3: _First steps in Jest_
-- [x] 7-4: _[Project - JavaScript Unitary tests]()_
+- [x] 7-4: _[Project - JavaScript Unitary tests](https://github.com/DeboraSerra/Jest-repository)_
 
 ##### Block 8: JavaScript ES6
 
@@ -78,7 +78,7 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 9-1: _Asynchronus JavaScript and Callbacks_
 - [x] 9-2: _Asynchronous JavaScript - Fetch API and async/await_
 - [x] 9-2: _Jest - Asynchronous tests_
-- [x] 9-3: _[Project - Shopping cart]()_
+- [x] 9-3: _[Project - Shopping cart](https://github.com/DeboraSerra/Trybe-exercises/tree/main/Module1_fundaments/Block9/Project-shopping-cart)_
 
 ## Front-end Development :hourglass_flowing_sand:
 
@@ -88,19 +88,19 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 10-1: _Introduction - React_
 - [x] 10-1: _'Hello, world!' on React!_
 - [x] 10-2: _React Components_
-- [x] 10-3: _[Project - Solar System]()_
+- [x] 10-3: _[Project - Solar System](https://github.com/DeboraSerra/Trybe-exercises/tree/main/Module2_front-end/Block10/Project-solar-system)_
 
 ##### Block 11: State components, events and formularies with React
 
 - [x] 11-1: _Components with estate and events_
 - [x] 11-2: _Formularies on React_
-- [x] 11-3: _[Project - Tryunfo]()_
+- [x] 11-3: _[Project - Tryunfo](https://github.com/DeboraSerra/Trybe-exercises/tree/main/Module2_front-end/Block11/project-tryunfo)_
 
 ##### Block 12: Life cicle of components and React Router
 
-- [ ] 12-1: _Life cicle of components_
-- [ ] 12-2: _React Router_
-- [ ] 12-3: _[Project - TrybeTunes]()_
+- [x] 12-1: _Life cicle of components_
+- [x] 12-2: _React Router_
+- [x] 12-3: _[Project - TrybeTunes](https://github.com/DeboraSerra/Trybe-exercises/tree/main/Module2_front-end/Block12/Project-trybe-tunes)_
 
 ##### Block 13: Agile methodologies
 
