@@ -88,28 +88,28 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 10-1: _Introduction - React_
 - [x] 10-1: _'Hello, world!' on React!_
 - [x] 10-2: _React Components_
-- [x] 10-3: _[Project - Solar System](https://github.com/DeboraSerra/Trybe-exercises/tree/main/Module2_front-end/Block10/Project-solar-system)_
+- [x] 10-3: _[Project - Solar System](https://github.com/DeboraSerra/project-solar-system/tree/master)_
 
 ##### Block 11: State components, events and formularies with React
 
 - [x] 11-1: _Components with estate and events_
 - [x] 11-2: _Formularies on React_
-- [x] 11-3: _[Project - Tryunfo](https://github.com/DeboraSerra/Trybe-exercises/tree/main/Module2_front-end/Block11/project-tryunfo)_
+- [x] 11-3: _[Project - Tryunfo](https://github.com/DeboraSerra/project-tryunfo/tree/master)_
 
 ##### Block 12: Life cicle of components and React Router
 
 - [x] 12-1: _Life cicle of components_
 - [x] 12-2: _React Router_
-- [x] 12-3: _[Project - TrybeTunes](https://github.com/DeboraSerra/Trybe-exercises/tree/main/Module2_front-end/Block12/Project-trybe-tunes)_
+- [x] 12-3: _[Project - TrybeTunes](https://github.com/DeboraSerra/project-trybe-tunes/tree/master)_
 
 ##### Block 13: Agile methodologies
 
-- [ ] 13-1: _Agile methodologies_
-- [ ] 13-2: _[Project - Frontend Online Store]()_
+- [x] 13-1: _Agile methodologies_
+- [x] 13-2: _[Project - Frontend Online Store](https://github.com/DeboraSerra/project-online-store/tree/master)_
 
 ##### Block 14: Automate tests with React Testing Library
 
-- [ ] 14-1: _RTL - First steps_
+- [x] 14-1: _RTL - First steps_
 - [ ] 14-2: _RTL - Mocks and Inputs_
 - [ ] 14-3: _RTL - Testing React Router_
 - [ ] 14-4: _[Project - React Tests]()_
