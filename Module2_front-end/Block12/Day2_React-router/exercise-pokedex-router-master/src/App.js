@@ -1,11 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './App.css';
 import Content from './components/Content';
 
 function App() {
   return (
-    <BrowserRouter>
       <div className="App">
         <h1> Pokedex </h1>
         <nav>
@@ -15,7 +14,6 @@ function App() {
         </nav>
         <Content />
       </div>
-    </BrowserRouter>
   );
 }
 
