@@ -9,11 +9,11 @@ class FavoritePokemons extends React.Component {
     const { favoritePokes } = this.props;
     return (
       <section className="fave-sect">
-        {!favoritePokes.length ? <p className="App">No favorite Pokemon</p>
+        {!favoritePokes ? <p className="App">No favorite Pokemon</p>
         : favoritePokes.map((item) => {
           const { name, type, averageWeight, image, id } = item;
           return (
-            <div className="pokemon" key={id}>
+            <section data-testid="fave-poke" className="pokemon" key={id}>
               <div>
                 <p>{name}</p>
                 <p>{type}</p>
@@ -23,7 +23,7 @@ class FavoritePokemons extends React.Component {
               </div>
               <img src={image} alt={`${name} sprite`} />
               <Link className="Link" to={`/pokemon/${id}`}>Back to pokemon</Link>
-            </div>
+            </section>
           )
         })}
       </section>

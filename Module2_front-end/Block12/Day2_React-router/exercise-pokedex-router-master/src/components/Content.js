@@ -22,7 +22,7 @@ class Content extends React.Component {
 
   saveStorage = (favorites) => {
     this.setState({
-      favorites,
+      favorites: favorites || [],
     })
   }
 
@@ -52,7 +52,7 @@ class Content extends React.Component {
       <Switch>
         <Route exact path="/" render={() => <Pokedex pokemons={pokemons} favoritePokes={favorites} />} />
         <Route path="/about" component={ About } />
-        <Route path="/pokemon/:id" render={ (props) => <PokemonDetails {...props} pokemons={pokemons} handleCheck={ (e) => this.handleCheck(e) } /> } />
+        <Route path="/pokemon/:id" render={ (props) => <PokemonDetails {...props} pokemons={pokemons} handleCheck={ this.handleCheck } /> } />
         <Route path="/favorite-poke" render={() => <FavoritePokemons favoritePokes={ favorites } />} />
         <Route path="*" component={ NotFound } />
       </Switch>
