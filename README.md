@@ -110,17 +110,17 @@ The program includes more than 1500 hours of live and online classes, and approa
 ##### Block 14: Automate tests with React Testing Library
 
 - [x] 14-1: _RTL - First steps_
-- [ ] 14-2: _RTL - Mocks and Inputs_
-- [ ] 14-3: _RTL - Testing React Router_
-- [ ] 14-4: _[Project - React Tests]()_
+- [x] 14-2: _RTL - Mocks and Inputs_
+- [x] 14-3: _RTL - Testing React Router_
+- [x] 14-4: _[Project - React Tests](https://github.com/DeboraSerra/Trybe-exercises/tree/main/Module2_front-end/Block14/Project-RTL)_
 
 ##### Block 15: Managing state with Redux
 
-- [ ] 15-1: _Redux Introduction - The global state of the aplication_
-- [ ] 15-2: _Using Redux on React_
-- [ ] 15-3: _Using Redux on React - Practice_
-- [ ] 15-4: _Using Redux on React - Asynchronous actions_
-- [ ] 15-5: _Tests in React-redux_
+- [x] 15-1: _Redux Introduction - The global state of the aplication_
+- [x] 15-2: _Using Redux on React_
+- [x] 15-3: _Using Redux on React - Practice_
+- [x] 15-4: _Using Redux on React - Asynchronous actions_
+- [x] 15-5: _Tests in React-redux_
 - [ ] 15-6: _[Project - Trybe Wallet]()_
 
 ##### Block 16: Project Trivia Game
