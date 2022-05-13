@@ -80,7 +80,7 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 9-2: _Jest - Asynchronous tests_
 - [x] 9-3: _[Project - Shopping cart](https://github.com/DeboraSerra/Trybe-exercises/tree/main/Module1_fundaments/Block9/Project-shopping-cart)_
 
-## Front-end Development :hourglass_flowing_sand:
+## Front-end Development :heavy_check_mark:
 
 ##### Block 10: Introduction to React
 
@@ -121,30 +121,30 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 15-3: _Using Redux on React - Practice_
 - [x] 15-4: _Using Redux on React - Asynchronous actions_
 - [x] 15-5: _Tests in React-redux_
-- [ ] 15-6: _[Project - Trybe Wallet]()_
+- [x] 15-6: _[Project - Trybe Wallet](https://github.com/DeboraSerra/project-trybewallet)_
 
 ##### Block 16: Project Trivia Game
 
-- [ ] 16-1: _[Project - Trivia Game]()_
+- [x] 16-1: _[Project - Trivia Game](https://github.com/DeboraSerra/project-trivia-game)_
 
 ##### Block 17: React & Context API
 
-- [ ] 17-1: _Context API on React_
-- [ ] 17-2: _React Hooks - useState and useContext_
-- [ ] 17-3: _React Hooks - useEffect and customized Hooks_
-- [ ] 17-4: _[Project - StarWars Datatable with Context API and Hooks]()_
+- [x] 17-1: _Context API on React_
+- [x] 17-2: _React Hooks - useState and useContext_
+- [x] 17-3: _React Hooks - useEffect and customized Hooks_
+- [x] 17-4: _[Project - StarWars Datatable with Context API and Hooks](https://github.com/DeboraSerra/project-starwars-planets)_
 
 ##### Block 18: Final Project on Front-end
 
-- [ ] 18-1: _[Project - Receipes app]()_
+- [x] 18-1: _[Project - Recipes app](https://github.com/DeboraSerra/project-recipes-app)_
 
 ## Back-end development :hourglass_flowing_sand:
 
 ##### Block 19: Docker: Using Containers
 
-- [ ] 19-1: _Introduction - Back-end_
-- [ ] 19-1: _Using containers - Docker_
-- [ ] 19-2: _Image manipulation and creation on Docker_
+- [x] 19-1: _Introduction - Back-end_
+- [x] 19-1: _Using containers - Docker_
+- [x] 19-2: _Image manipulation and creation on Docker_
 - [ ] 19-3: _Orchestrating containers with Docker Compose_
 - [ ] 19-4: _[Project - Docker To-do list]()_
 
