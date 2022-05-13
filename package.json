@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "eslint": "^8.15.0",
+    "git-commit-msg-linter": "^4.1.2"
+  }
+}
