@@ -23,3 +23,14 @@ WHERE length BETWEEN 0 AND 100;
 UPDATE film
 SET rental_rate = 20
 WHERE length > 100;
+
+UPDATE film
+SET rental_rate = (
+	CASE 
+		WHEN length BETWEEN 0 AND 100 THEN 10
+        WHEN length > 100 THEN 20
+	ELSE rental_rate
+END);
+
+SELECT rental_rate FROM film;
+SET SQL_SAFE_UPDATES = 0;
