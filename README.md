@@ -145,24 +145,24 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 19-1: _Introduction - Back-end_
 - [x] 19-1: _Using containers - Docker_
 - [x] 19-2: _Image manipulation and creation on Docker_
-- [ ] 19-3: _Orchestrating containers with Docker Compose_
-- [ ] 19-4: _[Project - Docker To-do list]()_
+- [x] 19-3: _Orchestrating containers with Docker Compose_
+- [x] 19-4: _[Project - Docker To-do list]()_
 
 ##### Block 20: Introduction to SQL
 
-- [ ] 20-1: _Introduction - Relational Database_
-- [ ] 20-1: _SQL Database_
-- [ ] 20-2: _Finding data in a database_
-- [ ] 20-3: _Filtering data specificaly_
-- [ ] 20-4: _Manipulating tables_
-- [ ] 20-5: _[Project - All For One]()_
+- [x] 20-1: _Introduction - Relational Database_
+- [x] 20-1: _SQL Database_
+- [x] 20-2: _Finding data in a database_
+- [x] 20-3: _Filtering data specifically_
+- [x] 20-4: _Manipulating tables_
+- [x] 20-5: _[Project - All For One]()_
 
 ##### Block 21: SQL functions, JOINs and Normalization
 
-- [ ] 21-1: _Most used function on SQL_
-- [ ] 21-2: _Uncomplication JOINs_
-- [ ] 21-3: _Transforming ideas in a database model_
-- [ ] 21-4: _[Live lecture + Project - One For All]()_
+- [x] 21-1: _Most used function on SQL_
+- [x] 21-2: _Uncomplicating JOINs_
+- [x] 21-3: _Transforming ideas in a database model_
+- [x] 21-4: _[Live lecture + Project - One For All]()_
 
 ##### Block 22: Introduction to Web Development with Node.js
 
