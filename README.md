@@ -146,7 +146,7 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 19-1: _Using containers - Docker_
 - [x] 19-2: _Image manipulation and creation on Docker_
 - [x] 19-3: _Orchestrating containers with Docker Compose_
-- [x] 19-4: _[Project - Docker To-do list]()_
+- [x] 19-4: _[Project - Docker To-do list](https://github.com/DeboraSerra/project-docker-todo-list)_
 
 ##### Block 20: Introduction to SQL
 
@@ -155,23 +155,23 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 20-2: _Finding data in a database_
 - [x] 20-3: _Filtering data specifically_
 - [x] 20-4: _Manipulating tables_
-- [x] 20-5: _[Project - All For One]()_
+- [x] 20-5: _[Project - All For One](https://github.com/DeboraSerra/project-mysql-all-for-one)_
 
 ##### Block 21: SQL functions, JOINs and Normalization
 
 - [x] 21-1: _Most used function on SQL_
 - [x] 21-2: _Uncomplicating JOINs_
 - [x] 21-3: _Transforming ideas in a database model_
-- [x] 21-4: _[Live lecture + Project - One For All]()_
+- [x] 21-4: _[Live lecture + Project - One For All](https://github.com/DeboraSerra/project-mysql-one-for-all)_
 
 ##### Block 22: Introduction to Web Development with Node.js
 
-- [ ] 22-1: _Intro - Node.js_
-- [ ] 22-1: _Node.js - A JavaScript motor_
-- [ ] 22-2: _Node.js - Async flow_
-- [ ] 22-3: _Mocha, Chai and Sinon - Back-end tests with Node.js_
-- [ ] 22-4: _Express - HTTP with Node.js_
-- [ ] 22-5: _Express - Middlewares_
+- [x] 22-1: _Intro - Node.js_
+- [x] 22-1: _Node.js - A JavaScript motor_
+- [x] 22-2: _Node.js - Async flow_
+- [x] 22-3: _Mocha, Chai and Sinon - Back-end tests with Node.js_
+- [x] 22-4: _Express - HTTP with Node.js_
+- [x] 22-5: _Express - Middlewares_
 - [ ] 22-6: _[Project - Talker Manager]()_
 
 ##### Block 23: Node,js: Service layer and Rest and Restful Architecture

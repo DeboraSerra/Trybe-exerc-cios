@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const { application } = require('express');
 const fs = require('fs').promises;
 const crypto = require('crypto');
 const app = express();
