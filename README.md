@@ -172,12 +172,12 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 22-3: _Mocha, Chai and Sinon - Back-end tests with Node.js_
 - [x] 22-4: _Express - HTTP with Node.js_
 - [x] 22-5: _Express - Middlewares_
-- [ ] 22-6: _[Project - Talker Manager]()_
+- [X] 22-6: _[Project - Talker Manager]()_
 
 ##### Block 23: Node,js: Service layer and Rest and Restful Architecture
 
 - [ ] 23-1: _Introduction - Software architecture_
-- [ ] 23-1: _Software architecture - Model layer_
+- [ ] 23-1: _Node.js - Model layer and Rest and Restful Architecture_
 - [ ] 23-2: _Software architecture - Controller and Service layer_
 - [ ] 23-3: _Web Architecture - Rest and Restful_
 - [ ] 23-4: _Software architecture - Testing layers_
