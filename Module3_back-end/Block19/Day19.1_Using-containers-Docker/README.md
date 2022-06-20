@@ -29,4 +29,3 @@ As exercise we were oriented to follow the directions below:
 13. (Bonus) Create and run in interactive mode and 'Cleanup' mode the image `andrius/ascii-patrol`;
 
 14. (Bonus) Finish the container using `ctrl + c`.
-15. 
