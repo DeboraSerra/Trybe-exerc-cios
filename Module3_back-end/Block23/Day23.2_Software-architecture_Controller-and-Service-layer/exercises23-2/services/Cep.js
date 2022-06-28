@@ -32,7 +32,7 @@ const createCep = async ({ cep, logradouro, bairro, localidade, uf }) => {
     bairo: Joi.string().max(20).required(),
     localidade: Joi.string().max(20).required(),
     uf: Joi.string().max(2).required(),
-  });
+  }).validate({ cep, logradouro, bairro, localidade, uf });
   if (error.isJoi) return { code: 400, message: error.details[0].message };
   const exists = await findCep(cep);
   if (exists.data) return { code: 409, message: 'CEP already exists' };

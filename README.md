@@ -172,7 +172,7 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 22-3: _Mocha, Chai and Sinon - Back-end tests with Node.js_
 - [x] 22-4: _Express - HTTP with Node.js_
 - [x] 22-5: _Express - Middlewares_
-- [X] 22-6: _[Project - Talker Manager]()_
+- [X] 22-6: _[Project - Talker Manager](https://github.com/DeboraSerra/Project-talker-manager)_
 
 ##### Block 23: Node,js: Service layer and Rest and Restful Architecture
 
