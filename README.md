@@ -2,9 +2,9 @@
 
 This repository contains all the learning activities developed by _[Débora Serra](www.linkedin.com/in/debora-r-serra)_ as she was a student in [Trybe](https://www.betrybe.com/) :rocket:
 
-_"Trybe is a school from the future to anyone who whants to improve their lives and build a succesfull career in tecnology, where they only pay when they get a good job."_
+_"Trybe is a school from the future to anyone who wants to improve their lives and build a successful career in technology, where they only pay when they get a good job."_
 
-The program includes more than 1500 hours of live and online classes, and approaches introduction to software development, front-end, back-end, computer science, software engeneering, agile methodologies and behavioral skills.
+The program includes more than 1500 hours of live and online classes, and approaches introduction to software development, front-end, back-end, computer science, software engineering, agile methodologies and behavioral skills.
 
 ## Fundaments of Web Development :heavy_check_mark:
 
@@ -31,7 +31,7 @@ The program includes more than 1500 hours of live and online classes, and approa
 
 - [X] 4-1: _JavaScript - First steps_
 - [X] 4-2: _JavaScript - Array and loop For_
-- [X] 4-3: _JavaScript - Programming logic and Algoritms_
+- [X] 4-3: _JavaScript - Programming logic and Algorithms_
 - [X] 4-4: _JavaScript - Objects e function_
 - [X] 4-5: _[Project - Playground Functions](https://github.com/DeboraSerra/Trybe-exercicios/tree/main/Module_fundamentals/Block4/Day4_Objects-%26-functions/Project)_
 
@@ -45,7 +45,7 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 5-6: _[Project - To do List](https://github.com/DeboraSerra/Trybe-exercicios/tree/main/Module_fundaments/Block5/Project-to-do-list)_
 - [x] 5-7: _[Project - Meme Generator](https://github.com/DeboraSerra/Trybe-exercicios/tree/main/Module_fundaments/Block5/Project-meme-generator)_
 - [x] 5-7: _[Project - Guess the color](https://github.com/DeboraSerra/Trybe-exercicios/tree/main/Module_fundaments/Block5/Project-color-guess)_
-- [x] 5-7: _[Project - Mistery card](https://github.com/DeboraSerra/Trybe-exercicios/tree/main/Module_fundaments/Block5/Project-mystery-letter)_
+- [x] 5-7: _[Project - Mystery card](https://github.com/DeboraSerra/Trybe-exercicios/tree/main/Module_fundaments/Block5/Project-mystery-letter)_
 
 ##### Block 6: HTML & CSS advanced
 
@@ -60,7 +60,7 @@ The program includes more than 1500 hours of live and online classes, and approa
 ##### Block 7: JavaScript ES6 & Unitary tests
 
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions and template literals_
-- [x] 7-2: _JavaScript ES6 - Exeption flow and Objects_
+- [x] 7-2: _JavaScript ES6 - Exception flow and Objects_
 - [x] 7-3: _First steps in Jest_
 - [x] 7-4: _[Project - JavaScript Unitary tests](https://github.com/DeboraSerra/Jest-repository)_
 
@@ -69,13 +69,13 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 8-1: _Introduction to Higher Order Functions_
 - [x] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 - [x] 8-3: _JavaScript ES6 - Higher Order Functions - map and filter_
-- [x] 8-4: _JavaScript ES6 - Hagher Order Functions - reduce_
+- [x] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [x] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring and more_
 - [x] 8-6: _[Project - Zoo functions](https://github.com/DeboraSerra/Trybe-exercicios/tree/main/Module1_fundaments/Block8/Project-zoo-functions)_
 
 ##### Block 9: Asynchronicity & Callbacks
 
-- [x] 9-1: _Asynchronus JavaScript and Callbacks_
+- [x] 9-1: _Asynchronous JavaScript and Callbacks_
 - [x] 9-2: _Asynchronous JavaScript - Fetch API and async/await_
 - [x] 9-2: _Jest - Asynchronous tests_
 - [x] 9-3: _[Project - Shopping cart](https://github.com/DeboraSerra/Trybe-exercises/tree/main/Module1_fundaments/Block9/Project-shopping-cart)_
@@ -90,15 +90,15 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 10-2: _React Components_
 - [x] 10-3: _[Project - Solar System](https://github.com/DeboraSerra/project-solar-system/tree/master)_
 
-##### Block 11: State components, events and formularies with React
+##### Block 11: State components, events and formulary with React
 
 - [x] 11-1: _Components with estate and events_
-- [x] 11-2: _Formularies on React_
+- [x] 11-2: _Formulary on React_
 - [x] 11-3: _[Project - Tryunfo](https://github.com/DeboraSerra/project-tryunfo/tree/master)_
 
-##### Block 12: Life cicle of components and React Router
+##### Block 12: Life cycle of components and React Router
 
-- [x] 12-1: _Life cicle of components_
+- [x] 12-1: _Life cycle of components_
 - [x] 12-2: _React Router_
 - [x] 12-3: _[Project - TrybeTunes](https://github.com/DeboraSerra/project-trybe-tunes/tree/master)_
 
@@ -116,7 +116,7 @@ The program includes more than 1500 hours of live and online classes, and approa
 
 ##### Block 15: Managing state with Redux
 
-- [x] 15-1: _Redux Introduction - The global state of the aplication_
+- [x] 15-1: _Redux Introduction - The global state of the application_
 - [x] 15-2: _Using Redux on React_
 - [x] 15-3: _Using Redux on React - Practice_
 - [x] 15-4: _Using Redux on React - Asynchronous actions_
@@ -176,24 +176,24 @@ The program includes more than 1500 hours of live and online classes, and approa
 
 ##### Block 23: Node,js: Service layer and Rest and Restful Architecture
 
-- [ ] 23-1: _Introduction - Software architecture_
-- [ ] 23-1: _Node.js - Model layer and Rest and Restful Architecture_
-- [ ] 23-2: _Software architecture - Controller and Service layer_
-- [ ] 23-3: _Web Architecture - Rest and Restful_
-- [ ] 23-4: _Software architecture - Testing layers_
-- [ ] 23-5: _[Project - Store Manager]()_
+- [x] 23-1: _Introduction - Software architecture_
+- [x] 23-1: _Node.js - Model layer and Rest and Restful Architecture_
+- [x] 23-2: _Software architecture - Controller and Service layer_
+- [x] 23-3: _Web Architecture - Rest and Restful_
+- [x] 23-4: _Software architecture - Testing layers_
+- [x] 23-5: _[Project - Store Manager](https://github.com/tryber/sd-019-b-store-manager)_
 
-##### Block 24: Node.js: ORM and Autentication
+##### Block 24: Node.js: ORM and Authentication
 
-- [ ] 24-1: _Introduction - Node.js: ORM and Autentication_
-- [ ] 24-1: _ORM - Aplication interface with database_
+- [ ] 24-1: _Introduction - Node.js: ORM and Authentication_
+- [ ] 24-1: _ORM - Application interface with database_
 - [ ] 24-2: _ORM - Associations_
 - [ ] 24-3: _JWT - (JSON Web Token)_
 - [ ] 24-4: _[Project - Blogs API]()_
 
 ##### Block 25: Deployment
 
-- [ ] 25-1: _Introduction - Deply_
+- [ ] 25-1: _Introduction - Deploy_
 - [ ] 25-1: _Infrastructure - Deploy with Heroku_
 - [ ] 25-2: _Deploy Docker & Heroku_
 - [ ] 25-3: _[Project - Stranger Things]()_
@@ -246,7 +246,7 @@ The program includes more than 1500 hours of live and online classes, and approa
 
 ##### Block 33: Introduction to Python
 
-- [ ] 30-1: _Introduction - Computer Sciece_
+- [ ] 30-1: _Introduction - Computer Science_
 - [ ] 30-1: _Learning Python_
 - [ ] 30-2: _Data Input and Output_
 - [ ] 30-3: _Tests_
