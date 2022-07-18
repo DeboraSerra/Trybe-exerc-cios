@@ -185,11 +185,12 @@ The program includes more than 1500 hours of live and online classes, and approa
 
 ##### Block 24: Node.js: ORM and Authentication
 
-- [ ] 24-1: _Introduction - Node.js: ORM and Authentication_
-- [ ] 24-1: _ORM - Application interface with database_
-- [ ] 24-2: _ORM - Associations_
-- [ ] 24-3: _JWT - (JSON Web Token)_
-- [ ] 24-4: _[Project - Blogs API]()_
+- [x] 24-1: _Introduction - Node.js: ORM and Authentication_
+- [x] 24-1: _ORM - Application interface with database_
+- [x] 24-2: _ORM - Associations_
+- [x] 24-3: _JWT - (JSON Web Token)_
+- [ ] 24.4: _Testing APIS with Integration Tests_
+- [ ] 24-5: _[Project - Blogs API]()_
 
 ##### Block 25: Deployment
 
