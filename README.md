@@ -189,23 +189,23 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 24-1: _ORM - Application interface with database_
 - [x] 24-2: _ORM - Associations_
 - [x] 24-3: _JWT - (JSON Web Token)_
-- [ ] 24.4: _Testing APIS with Integration Tests_
-- [ ] 24-5: _[Project - Blogs API]()_
+- [x] 24.4: _Testing APIS with Integration Tests_
+- [x] 24-5: _[Project - Blogs API](https://github.com/DeboraSerra/project-blogs-api)_
 
 ##### Block 25: Deployment
 
-- [ ] 25-1: _Introduction - Deploy_
-- [ ] 25-1: _Infrastructure - Deploy with Heroku_
-- [ ] 25-2: _Deploy Docker & Heroku_
-- [ ] 25-3: _[Project - Stranger Things]()_
+- [x] 25-1: _Introduction - Deploy_
+- [x] 25-1: _Infrastructure - Deploy with Heroku_
+- [x] 25-2: _Deploy Docker & Heroku_
+- [x] 25-3: Project - Stranger Things
 
 ##### Block 26: TypeScript
 
-- [ ] 26-1: _Introduction - TypeScript_
-- [ ] 26-1: _Introduction to TypeScript_
-- [ ] 26-2: _Static Typing and Generics_
-- [ ] 26-3: _Express with TypeScript_
-- [ ] 26-4: _[Project - Trybe Smith]()_
+- [X] 26-1: _Introduction - TypeScript_
+- [x] 26-1: _Introduction to TypeScript_
+- [x] 26-2: _Static Typing and Generics_
+- [x] 26-3: _Express with TypeScript_
+- [X] 26-4: _[Project - Trybe Smith]()_
 
 ##### Block 27: Object Oriented Programming and SOLID
 
