@@ -202,10 +202,10 @@ The program includes more than 1500 hours of live and online classes, and approa
 ##### Block 26: TypeScript
 
 - [X] 26-1: _Introduction - TypeScript_
-- [ ] 26-1: _Introduction to TypeScript_
-- [ ] 26-2: _Static Typing and Generics_
-- [ ] 26-3: _Express with TypeScript_
-- [ ] 26-4: _[Project - Trybe Smith]()_
+- [x] 26-1: _Introduction to TypeScript_
+- [x] 26-2: _Static Typing and Generics_
+- [x] 26-3: _Express with TypeScript_
+- [X] 26-4: _[Project - Trybe Smith]()_
 
 ##### Block 27: Object Oriented Programming and SOLID
 
