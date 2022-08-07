@@ -205,14 +205,14 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 26-1: _Introduction to TypeScript_
 - [x] 26-2: _Static Typing and Generics_
 - [x] 26-3: _Express with TypeScript_
-- [X] 26-4: _[Project - Trybe Smith]()_
+- [X] 26-4: _[Project - Trybe Smith](https://github.com/DeboraSerra/project-trybesmith)_
 
 ##### Block 27: Object Oriented Programming and SOLID
 
-- [ ] 27-1: _Introduction to Object Orientation_
-- [ ] 27-2: _Heritage and interfaces_
-- [ ] 27-3: _Polymorphism_
-- [ ] 27-4: _SOLID - Introduction_
+- [x] 27-1: _Introduction to Object Orientation_
+- [x] 27-2: _Heritage and interfaces_
+- [x] 27-3: _Polymorphism_
+- [x] 27-4: _SOLID - Introduction_
 - [ ] 27-5: _SOLID - Part 2_
 - [ ] 27-6: _[Project - Trybers and Dragons]()_
 
