@@ -205,43 +205,45 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 26-1: _Introduction to TypeScript_
 - [x] 26-2: _Static Typing and Generics_
 - [x] 26-3: _Express with TypeScript_
-- [X] 26-4: _[Project - Trybe Smith]()_
+- [X] 26-4: _[Project - Trybe Smith](https://github.com/DeboraSerra/project-trybesmith)_
 
 ##### Block 27: Object Oriented Programming and SOLID
 
-- [ ] 27-1: _Introduction to Object Orientation_
-- [ ] 27-2: _Heritage and interfaces_
-- [ ] 27-3: _Polymorphism_
-- [ ] 27-4: _SOLID - Introduction_
-- [ ] 27-5: _SOLID - Part 2_
-- [ ] 27-6: _[Project - Trybers and Dragons]()_
+- [x] 27-1: _Introduction to Object Orientation_
+- [x] 27-2: _Heritage and interfaces_
+- [x] 27-3: _Polymorphism_
+- [x] 27-4: _SOLID - Introduction_
+- [x] 27-5: _SOLID - Part 2_
+- [x] 27-6: _[Project - Trybers and Dragons](https://github.com/DeboraSerra/project-trybers-and-dragons)_
 
 ##### Block 28: Project - TFC - Trybe Football Club
 
-- [ ] 28-1: _[Project - TFC - Trybe Football Club]()_
+- [x] 28-1: _[Project - TFC - Trybe Football Club](https://github.com/DeboraSerra/project-trybe-futebol-clube)_
 
 ##### Block 29: Introduction to MongoDB
 
-- [ ] 29-1: _Introduction - NoSQL_
-- [ ] 29-1: _MongoDB - Introduction_
-- [ ] 29-2: _Filter Operators_
-- [ ] 29-3: _[Project - Data Flights]()_
+- [x] 29-1: _Introduction - NoSQL_
+- [x] 29-1: _MongoDB - Introduction_
+- [x] 29-2: _Filter Operators_
+- [x] 29-3: _Search operators_
+- [x] 29-4: _Simple Updates_
+- [ ] 29-5: _Complex Updates - Arrays_
+- [ ] 29-6: _[Project - Commerce]()_
 
 ##### Block 30: MongoDB: Simple and Complexes Updates
 
-- [ ] 30-1: _Simple Updates_
-- [ ] 30-2: _Complexes Updates - Arrays - Part 1_
-- [ ] 30-3: _Complexes Updates - Arrays - Part 2_
-- [ ] 30-4: _[Project - Commerce]()_
+- [ ] 30-1: _Mongoose and MSC architecture (Model layer)_
+- [ ] 30-2: _Mongoose and MSC architecture (Service and Controller layer)_
+- [ ] 30-4: _[Project - Car Shop]()_
 
-##### Block 31: MasterClass - VPS, CI/CD
+##### Block 31: Project Delivery App
 
-- [ ] 31-1: _Day 1_
-- [ ] 31-2: _Day 2_
+- [ ] 31-1: _[Project - Delivery App]()_
 
-##### Block 32: Project Delivery App
+##### Block 32: MasterClass - VPS, CI/CD
 
-- [ ] 32-1: _[Project - Delivery App]()_
+- [ ] 32-1: _Day 1 - VPS_
+- [ ] 32-2: _Day 2_
 
 ## Computer Science :hourglass_flowing_sand:
 
@@ -253,18 +255,18 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [ ] 30-3: _Tests_
 - [ ] 30-4: _[Project - Job Insights]()_
 
-##### Block 34: Object Oriented Programming and Project Standards
+##### Block 34: Project Standards
 
-- [ ] 34-1: _Introduction to Object Oriented Programming_
-- [ ] 34-2: _Heritage, Composition and Interfaces_
-- [ ] 34-3: _Project Standards_
+- [ ] 34-1: _OOP in Python_
+- [ ] 34-2: _Patterns - Iterator, Adapter, Strategy_
+- [ ] 34-3: _Patterns - Decorator, Observer, Factory_
 - [ ] 34-4: _[Project - Stock Report]()_
 
 ##### Block 35: Networks and Data Scraping
 
-- [ ] 35-1: _Networks Architecture_
-- [ ] 35-2: _Computer networks, tools and security_
-- [ ] 35-3: _Data Scraping_
+- [ ] 35-1: _Networks Architecture, tools and security_
+- [ ] 35-2: _Data Scraping_
+- [ ] 35-3: _Other tools of data scraping_
 - [ ] 35-4: _[Project - Tech News]()_
 
 ##### Block 36: Algorithms
@@ -274,18 +276,18 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [ ] 36-3: _Sort and search algorithms_
 - [ ] 36-5: _[Project - Algorithms]()_
 
-##### Block 37: Data Structure I: Arrays, Hashmaps and Sets
+##### Block 37: Data Structure I: Arrays, Lists, Lines and Stacks
 
 - [ ] 37-1: _Computer Architecture_
 - [ ] 37-2: _Arrays_
-- [ ] 37-3: _Hashmap and Dict_
-- [ ] 37-4: _Set_
-- [ ] 37-5: _[Project - Restaurant Orders]()_
+- [ ] 37-3: _Knots and Chained lists_
+- [ ] 37-4: _Stacks and lines_
+- [ ] 37-5: _[Project - TING - Trybe Is Not Google]()_
 
-##### Block 38: Data Structure II: Lists, Lines and Stacks
+##### Block 38: Data Structure II:  Hashmaps and Sets
 
-- [ ] 38-1: _Knots and Chained lists_
-- [ ] 38-2: _Stacks and lines_
-- [ ] 38-3: _[Project - TING - Trybe Is Not Google]()_
+- [ ] 38-1: _Hashmap and Dict_
+- [ ] 38-2: _Set_
+- [ ] 38-3: _[Project - Restaurant Orders]()_
 
 The exercises produced during the classes to exercise our programming logic skills are located on the Logic Academy Directory.
