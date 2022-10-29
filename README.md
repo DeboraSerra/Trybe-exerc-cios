@@ -227,33 +227,33 @@ The program includes more than 1500 hours of live and online classes, and approa
 - [x] 29-2: _Filter Operators_
 - [x] 29-3: _Search operators_
 - [x] 29-4: _Simple Updates_
-- [ ] 29-5: _Complex Updates - Arrays_
-- [ ] 29-6: _[Project - Commerce]()_
+- [x] 29-5: _Complex Updates - Arrays_
+- [x] 29-6: _[Project - Commerce](https://github.com/DeboraSerra/project-commerce)_
 
 ##### Block 30: MongoDB: Simple and Complexes Updates
 
-- [ ] 30-1: _Mongoose and MSC architecture (Model layer)_
-- [ ] 30-2: _Mongoose and MSC architecture (Service and Controller layer)_
-- [ ] 30-4: _[Project - Car Shop]()_
+- [x] 30-1: _Mongoose and MSC architecture (Model layer)_
+- [x] 30-2: _Mongoose and MSC architecture (Service and Controller layer)_
+- [x] 30-4: _[Project - Car Shop](https://github.com/DeboraSerra/project-car-shop)_
 
 ##### Block 31: Project Delivery App
 
-- [ ] 31-1: _[Project - Delivery App]()_
+- [x] 31-1: _[Project - Delivery App](https://github.com/DeboraSerra/project-delivery-app)_
 
 ##### Block 32: MasterClass - VPS, CI/CD
 
-- [ ] 32-1: _Day 1 - VPS_
-- [ ] 32-2: _Day 2_
+- [x] 32-1: _Day 1 - VPS_
+- [x] 32-2: _Day 2_
 
 ## Computer Science :hourglass_flowing_sand:
 
 ##### Block 33: Introduction to Python
 
-- [ ] 30-1: _Introduction - Computer Science_
-- [ ] 30-1: _Learning Python_
-- [ ] 30-2: _Data Input and Output_
-- [ ] 30-3: _Tests_
-- [ ] 30-4: _[Project - Job Insights]()_
+- [x] 30-1: _Introduction - Computer Science_
+- [x] 30-1: _Learning Python_
+- [x] 30-2: _Data Input and Output_
+- [x] 30-3: _Tests_
+- [x] 30-4: _[Project - Job Insights](https://github.com/DeboraSerra/project-job-insights)_
 
 ##### Block 34: Project Standards
 
