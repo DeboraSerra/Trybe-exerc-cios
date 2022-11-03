@@ -257,10 +257,10 @@ The program includes more than 1500 hours of live and online classes, and approa
 
 ##### Block 34: Project Standards
 
-- [ ] 34-1: _OOP in Python_
-- [ ] 34-2: _Patterns - Iterator, Adapter, Strategy_
-- [ ] 34-3: _Patterns - Decorator, Observer, Factory_
-- [ ] 34-4: _[Project - Stock Report]()_
+- [x] 34-1: _OOP in Python_
+- [x] 34-2: _Patterns - Iterator, Adapter, Strategy_
+- [x] 34-3: _Patterns - Decorator, Observer, Factory_
+- [x] 34-4: _[Project - Stock Report](https://github.com/DeboraSerra/project-inventory-report)_
 
 ##### Block 35: Networks and Data Scraping
 
